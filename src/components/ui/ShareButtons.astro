@@ -7,9 +7,19 @@ interface Props {
 
 const { url, title, text = '' } = Astro.props;
 
-const encodedUrl = encodeURIComponent(url);
-const encodedTitle = encodeURIComponent(title);
-const encodedText = encodeURIComponent(text.slice(0, 100) + '...');
+// Sanitize strings to remove invalid characters before encoding
+const sanitize = (str: string) => str.replace(/[\uD800-\uDFFF]/g, '').replace(/[^\x00-\x7F]/g, char => {
+  try {
+    encodeURIComponent(char);
+    return char;
+  } catch {
+    return '';
+  }
+});
+
+const encodedUrl = encodeURIComponent(sanitize(url));
+const encodedTitle = encodeURIComponent(sanitize(title));
+const encodedText = encodeURIComponent(sanitize(text.slice(0, 100)) + '...');
 
 const whatsappUrl = `https://wa.me/?text=${encodedTitle}%0A%0A${encodedText}%0A%0A${encodedUrl}`;
 const twitterUrl = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;

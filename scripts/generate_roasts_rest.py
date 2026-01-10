@@ -128,7 +128,7 @@ def main():
             with open(products_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
 
-        time.sleep(0.5)  # Rate limiting
+        time.sleep(0.3)  # Rate limiting - Gemini has generous limits
 
     # Final save
     print(f"\n💾 Saving final ({generated} roasts)...")
