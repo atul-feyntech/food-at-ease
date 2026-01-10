@@ -103,6 +103,84 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-gold-accent);
 }
 
+/* Light variants */
+.text-green-light {
+  color: var(--color-green-light);
+}
+
+.bg-green-light {
+  background-color: var(--color-green-light);
+}
+
+.text-amber-light {
+  color: var(--color-amber-light);
+}
+
+.bg-amber-light {
+  background-color: var(--color-amber-light);
+}
+
+.text-mizan-teal-light {
+  color: var(--color-mizan-teal-light);
+}
+
+.bg-mizan-teal-light {
+  background-color: var(--color-mizan-teal-light);
+}
+
+.text-mizan-teal-dark {
+  color: var(--color-mizan-teal-dark);
+}
+
+.bg-mizan-teal-dark {
+  background-color: var(--color-mizan-teal-dark);
+}
+
+.text-gold-light {
+  color: var(--color-gold-light);
+}
+
+.bg-gold-light {
+  background-color: var(--color-gold-light);
+}
+
+.text-red-light {
+  color: var(--color-red-light);
+}
+
+.bg-red-light {
+  background-color: var(--color-red-light);
+}
+
+/* Hover variants */
+.hover\:bg-green-light:hover {
+  background-color: var(--color-green-light);
+}
+
+.hover\:bg-amber-light:hover {
+  background-color: var(--color-amber-light);
+}
+
+.hover\:bg-mizan-teal-light:hover {
+  background-color: var(--color-mizan-teal-light);
+}
+
+.hover\:bg-mizan-teal-dark:hover {
+  background-color: var(--color-mizan-teal-dark);
+}
+
+.hover\:text-green-light:hover {
+  color: var(--color-green-light);
+}
+
+.hover\:text-amber-light:hover {
+  color: var(--color-amber-light);
+}
+
+.hover\:text-mizan-teal-light:hover {
+  color: var(--color-mizan-teal-light);
+}
+
 /* Star Rating */
 .star-filled {
   color: var(--color-gold-accent);

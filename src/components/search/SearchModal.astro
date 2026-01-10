@@ -1,0 +1,262 @@
+---
+// Global search modal - available on all pages
+---
+
+<!-- Search Modal Overlay -->
+<div
+  id="search-modal"
+  class="fixed inset-0 z-[100] hidden"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="search-title"
+>
+  <!-- Backdrop -->
+  <div
+    id="search-backdrop"
+    class="absolute inset-0 bg-black/60 backdrop-blur-sm"
+  ></div>
+
+  <!-- Modal Content -->
+  <div class="relative z-10 flex items-start justify-center pt-20 px-4">
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden">
+      <!-- Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+        <h2 id="search-title" class="font-heading text-lg text-mizan-teal font-bold flex items-center gap-2">
+          <span>🔍</span>
+          Search Products
+        </h2>
+        <button
+          id="close-search"
+          class="p-2 hover:bg-gray-100 rounded-full transition-colors"
+          aria-label="Close search"
+        >
+          <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Search Content -->
+      <div class="p-6">
+        <div id="search-container"></div>
+
+        <!-- Keyboard hint -->
+        <div class="mt-4 text-center text-xs text-gray-400">
+          Press <kbd class="px-2 py-0.5 bg-gray-100 rounded text-gray-600 font-mono">ESC</kbd> to close
+          or <kbd class="px-2 py-0.5 bg-gray-100 rounded text-gray-600 font-mono">/</kbd> to open search
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  import { PagefindUI } from '@pagefind/default-ui';
+
+  let pagefindInstance: any = null;
+
+  function initPagefind() {
+    if (pagefindInstance) return;
+
+    const container = document.getElementById('search-container');
+    if (!container) return;
+
+    pagefindInstance = new PagefindUI({
+      element: '#search-container',
+      showSubResults: true,
+      showImages: false,
+      autofocus: true,
+      translations: {
+        placeholder: 'Search for Maggi, Kurkure, Bournvita...',
+        zero_results: 'Kuch nahi mila "[SEARCH_TERM]" ke liye. Try a different search!',
+      },
+    });
+  }
+
+  function openSearch() {
+    const modal = document.getElementById('search-modal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      initPagefind();
+      // Focus the search input
+      setTimeout(() => {
+        const input = modal.querySelector('.pagefind-ui__search-input') as HTMLInputElement;
+        input?.focus();
+      }, 100);
+    }
+  }
+
+  function closeSearch() {
+    const modal = document.getElementById('search-modal');
+    if (modal) {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  }
+
+  // Initialize event listeners
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('search-modal');
+    const backdrop = document.getElementById('search-backdrop');
+    const closeBtn = document.getElementById('close-search');
+
+    // Close on backdrop click
+    backdrop?.addEventListener('click', closeSearch);
+
+    // Close on button click
+    closeBtn?.addEventListener('click', closeSearch);
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal?.classList.contains('hidden')) {
+        closeSearch();
+      }
+      // Open on "/" key (if not typing)
+      if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement)?.tagName)) {
+        e.preventDefault();
+        openSearch();
+      }
+    });
+
+    // Listen for custom event to open search
+    document.addEventListener('open-search', openSearch);
+
+    // Handle search trigger buttons
+    document.querySelectorAll('[data-search-trigger]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openSearch();
+      });
+    });
+  });
+
+  // Expose globally for other scripts
+  (window as any).openMizanSearch = openSearch;
+  (window as any).closeMizanSearch = closeSearch;
+</script>
+
+<style is:global>
+  /* Pagefind UI Customization for Mizan Modal */
+  #search-container .pagefind-ui {
+    --pagefind-ui-scale: 1;
+    --pagefind-ui-primary: #0D5C63;
+    --pagefind-ui-text: #1f2937;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #e5e7eb;
+    --pagefind-ui-tag: #0D5C63;
+    --pagefind-ui-border-width: 2px;
+    --pagefind-ui-border-radius: 12px;
+    --pagefind-ui-font: inherit;
+  }
+
+  #search-container .pagefind-ui__form {
+    position: relative;
+  }
+
+  #search-container .pagefind-ui__search-input {
+    font-size: 1.125rem !important;
+    padding: 1rem 1.25rem !important;
+    padding-left: 3rem !important;
+    border-radius: 12px !important;
+    border: 2px solid #e5e7eb !important;
+    transition: border-color 0.2s, box-shadow 0.2s !important;
+    width: 100% !important;
+  }
+
+  #search-container .pagefind-ui__search-input:focus {
+    outline: none !important;
+    border-color: #0D5C63 !important;
+    box-shadow: 0 0 0 4px rgba(13, 92, 99, 0.1) !important;
+  }
+
+  #search-container .pagefind-ui__search-input::placeholder {
+    color: #9ca3af !important;
+  }
+
+  #search-container .pagefind-ui__search-clear {
+    top: calc(50% - 10px) !important;
+    right: 1rem !important;
+    background: #f3f4f6 !important;
+    border-radius: 50% !important;
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  #search-container .pagefind-ui__results-area {
+    margin-top: 1rem !important;
+    max-height: 50vh !important;
+    overflow-y: auto !important;
+  }
+
+  #search-container .pagefind-ui__result {
+    padding: 1rem !important;
+    border-radius: 12px !important;
+    margin-bottom: 0.75rem !important;
+    background: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+    transition: all 0.2s !important;
+  }
+
+  #search-container .pagefind-ui__result:hover {
+    background: #f3f4f6 !important;
+    border-color: #0D5C63 !important;
+    transform: translateX(4px);
+  }
+
+  #search-container .pagefind-ui__result-link {
+    color: #0D5C63 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    font-size: 1rem !important;
+  }
+
+  #search-container .pagefind-ui__result-link:hover {
+    text-decoration: underline !important;
+  }
+
+  #search-container .pagefind-ui__result-excerpt {
+    color: #6b7280 !important;
+    font-size: 0.875rem !important;
+    margin-top: 0.5rem !important;
+    line-height: 1.5 !important;
+  }
+
+  #search-container .pagefind-ui__result-excerpt mark {
+    background: #C9A227 !important;
+    color: #1f2937 !important;
+    padding: 0 2px !important;
+    border-radius: 2px !important;
+  }
+
+  #search-container .pagefind-ui__message {
+    color: #6b7280 !important;
+    font-size: 0.875rem !important;
+    padding: 2rem 1rem !important;
+    text-align: center !important;
+  }
+
+  #search-container .pagefind-ui__button {
+    background: #0D5C63 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    padding: 0.75rem 1.5rem !important;
+    font-weight: 500 !important;
+    transition: background 0.2s !important;
+  }
+
+  #search-container .pagefind-ui__button:hover {
+    background: #094449 !important;
+  }
+
+  /* Hide Pagefind branding */
+  #search-container .pagefind-ui__suppressed {
+    display: none !important;
+  }
+
+  /* Loading state */
+  #search-container .pagefind-ui__loading {
+    padding: 2rem !important;
+    text-align: center !important;
+  }
+</style>

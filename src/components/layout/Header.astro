@@ -33,14 +33,15 @@
       </nav>
 
       <!-- Search Button (Desktop) -->
-      <div class="hidden md:block">
-        <a
-          href="/#search"
-          class="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-sm"
+      <div class="hidden md:flex items-center gap-3">
+        <button
+          data-search-trigger
+          class="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-sm cursor-pointer"
         >
           <span>🔍</span>
-          <span>Search products...</span>
-        </a>
+          <span>Search...</span>
+          <kbd class="hidden lg:inline-block px-1.5 py-0.5 bg-white/10 rounded text-xs">/</kbd>
+        </button>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -84,13 +85,13 @@
         <span>Hum (About)</span>
       </a>
       <div class="pt-3 border-t border-white/20">
-        <a
-          href="/#search"
-          class="flex items-center gap-2 py-2 text-gold-accent"
+        <button
+          data-search-trigger
+          class="flex items-center gap-2 py-2 text-gold-accent w-full text-left"
         >
           <span>🔍</span>
           <span>Search products...</span>
-        </a>
+        </button>
       </div>
     </nav>
   </div>
