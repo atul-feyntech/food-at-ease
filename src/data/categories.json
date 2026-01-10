@@ -1,0 +1,68 @@
+{
+  "categories": [
+    {
+      "slug": "nashta",
+      "name": "Breakfast",
+      "name_hindi": "नाश्ता",
+      "description": "Breakfast cereals, instant noodles, oats, and morning foods",
+      "description_hindi": "नाश्ते के सीरियल, इंस्टेंट नूडल्स, ओट्स",
+      "icon": "🍳"
+    },
+    {
+      "slug": "namkeen",
+      "name": "Savory Snacks",
+      "name_hindi": "नमकीन",
+      "description": "Chips, namkeen, bhujia, and crispy snacks",
+      "description_hindi": "चिप्स, नमकीन, भुजिया और कुरकुरे स्नैक्स",
+      "icon": "🥨"
+    },
+    {
+      "slug": "biscuits",
+      "name": "Biscuits & Cookies",
+      "name_hindi": "बिस्किट",
+      "description": "Sweet and savory biscuits, cookies, rusks",
+      "description_hindi": "मीठे और नमकीन बिस्किट, कुकीज़, रस्क",
+      "icon": "🍪"
+    },
+    {
+      "slug": "drinks",
+      "name": "Beverages",
+      "name_hindi": "पेय पदार्थ",
+      "description": "Soft drinks, juices, energy drinks, health drinks",
+      "description_hindi": "सॉफ्ट ड्रिंक्स, जूस, एनर्जी ड्रिंक्स",
+      "icon": "🥤"
+    },
+    {
+      "slug": "bachon-ke-liye",
+      "name": "For Kids",
+      "name_hindi": "बच्चों के लिए",
+      "description": "Products marketed for children - health drinks, snacks",
+      "description_hindi": "बच्चों के लिए मार्केट किए गए उत्पाद",
+      "icon": "👶"
+    },
+    {
+      "slug": "meetha",
+      "name": "Sweets & Chocolates",
+      "name_hindi": "मिठाई",
+      "description": "Chocolates, candies, traditional sweets",
+      "description_hindi": "चॉकलेट, कैंडी, मिठाई",
+      "icon": "🍫"
+    },
+    {
+      "slug": "dairy",
+      "name": "Dairy Products",
+      "name_hindi": "डेयरी",
+      "description": "Packaged milk, cheese, yogurt, butter",
+      "description_hindi": "पैकेज्ड दूध, पनीर, दही, मक्खन",
+      "icon": "🧀"
+    },
+    {
+      "slug": "ready-to-eat",
+      "name": "Ready to Eat",
+      "name_hindi": "तैयार खाना",
+      "description": "Instant meals, frozen foods, packaged meals",
+      "description_hindi": "इंस्टेंट खाना, फ्रोज़न फूड",
+      "icon": "🍱"
+    }
+  ]
+}

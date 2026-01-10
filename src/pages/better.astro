@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCard from '../components/product/ProductCard.astro';
+import productsData from '../data/products.json';
+import type { Product } from '../types';
+
+const products = productsData.products as Product[];
+
+// Sort by best score
+const bestProducts = [...products]
+  .sort((a, b) => b.mizan_score.stars - a.mizan_score.stars)
+  .slice(0, 20);
+---
+
+<BaseLayout
+  title="Behtar Options (Better Choices) | Mizan"
+  description="The best-rated packaged food products in India. Healthier choices with honest ratings. Based on FSSAI guidelines."
+>
+  <section class="py-8 md:py-12">
+    <div class="container mx-auto px-4">
+
+      <!-- Header -->
+      <header class="mb-8 text-center">
+        <div class="text-5xl mb-4">✅</div>
+        <h1 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          BEHTAR OPTIONS
+        </h1>
+        <p class="text-xl text-gray-600">Better Choices Available</p>
+        <p class="text-gray-500 mt-2 max-w-xl mx-auto">
+          Yeh products Mizan ke scale pe better score karte hain. Inka matlab ye nahi ke unlimited khao —
+          par ye relatively healthier options hain.
+        </p>
+      </header>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        {bestProducts.map((product) => (
+          <ProductCard product={product} variant="featured" />
+        ))}
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-12 text-center">
+        <a href="/worst" class="inline-flex items-center gap-2 px-6 py-3 bg-amber-warning text-white rounded-full font-medium hover:bg-amber-600 transition-colors">
+          <span>⚠️</span>
+          Worst rated dekho
+        </a>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>

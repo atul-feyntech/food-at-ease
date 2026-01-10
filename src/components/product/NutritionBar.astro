@@ -1,0 +1,55 @@
+---
+interface Props {
+  label: string;
+  value: number;
+  unit: string;
+  dailyPercent?: number;
+  maxValue?: number;
+  status: 'ok' | 'moderate' | 'high' | 'critical';
+}
+
+const { label, value, unit, dailyPercent, maxValue = 100, status } = Astro.props;
+
+const statusColors: Record<string, string> = {
+  ok: 'nutrition-ok',
+  moderate: 'nutrition-moderate',
+  high: 'nutrition-high',
+  critical: 'nutrition-critical',
+};
+
+const statusBgColors: Record<string, string> = {
+  ok: 'bg-green-safe/10',
+  moderate: 'bg-amber-warning/10',
+  high: 'bg-amber-warning/10',
+  critical: 'bg-red-critical/10',
+};
+
+const percentage = Math.min((value / maxValue) * 100, 100);
+---
+
+<div class="flex items-center gap-3 py-2">
+  <div class="w-20 md:w-24 flex-shrink-0">
+    <span class="text-sm font-medium text-gray-700">{label}</span>
+  </div>
+
+  <div class="flex-grow">
+    <div class={`h-2.5 rounded-full ${statusBgColors[status]} overflow-hidden`}>
+      <div
+        class={`h-full rounded-full ${statusColors[status]} transition-all duration-500`}
+        style={`width: ${percentage}%`}
+      />
+    </div>
+  </div>
+
+  <div class="w-24 md:w-28 flex-shrink-0 text-right flex items-center justify-end gap-1">
+    <span class="font-mono text-sm font-semibold">{value}{unit}</span>
+    {dailyPercent !== undefined && (
+      <span class={`text-xs ${status === 'critical' ? 'text-red-critical font-bold' : 'text-gray-400'}`}>
+        ({dailyPercent}%)
+      </span>
+    )}
+    {status === 'critical' && (
+      <span class="text-red-critical ml-1">⚠️</span>
+    )}
+  </div>
+</div>

@@ -1,0 +1,237 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCard from '../components/product/ProductCard.astro';
+import productsData from '../data/products.json';
+import categoriesData from '../data/categories.json';
+import type { Product, Category } from '../types';
+
+const products = productsData.products as Product[];
+const categories = categoriesData.categories as Category[];
+
+// Sort products by score
+const sortedByScore = [...products].sort((a, b) => a.mizan_score.stars - b.mizan_score.stars);
+const worstProducts = sortedByScore.slice(0, 4);
+const bestProducts = sortedByScore.slice(-4).reverse();
+
+// Trending searches
+const trendingSearches = ['Maggi', 'Bournvita', 'Kurkure', 'Parle-G', 'Coca-Cola'];
+---
+
+<BaseLayout
+  title="Mizan - Ab tolo, phir khao | Indian Packaged Food Health Ratings"
+  description="Mizan weighs your packaged food's true health impact. Search 100+ Indian products with honest ratings, safe limits, and witty verdicts. Free forever."
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-mizan-teal to-[#094449] text-white py-16 md:py-24">
+    <div class="container mx-auto px-4 text-center">
+      <div class="text-6xl mb-4">⚖️</div>
+      <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-2">MIZAN</h1>
+      <p class="text-2xl mb-4 font-urdu opacity-90">میزان</p>
+      <p class="text-xl md:text-2xl text-white/90 mb-8">Ab tolo, phir khao.</p>
+      <p class="text-sm text-white/70 mb-8 max-w-md mx-auto">
+        The scale that weighs your packaged food's true worth. Not the marketing, the reality.
+      </p>
+
+      <!-- Search Box -->
+      <div id="search" class="max-w-2xl mx-auto mb-6">
+        <div class="relative">
+          <span class="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-xl">🔍</span>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Koi bhi packaged food search karo..."
+            class="w-full py-4 px-14 bg-white text-gray-900 rounded-full text-lg focus:outline-none focus:ring-4 focus:ring-gold-accent/50 shadow-lg"
+            autocomplete="off"
+          />
+        </div>
+        <!-- Search Results -->
+        <div id="search-results" class="hidden mt-2 bg-white rounded-xl shadow-lg text-left max-h-96 overflow-y-auto"></div>
+      </div>
+
+      <!-- Trending -->
+      <div class="flex flex-wrap justify-center gap-2 items-center">
+        <span class="text-white/60 text-sm">Trending:</span>
+        {trendingSearches.map((term) => (
+          <button
+            class="search-term text-sm text-white/80 hover:text-gold-accent transition-colors cursor-pointer"
+            data-term={term}
+          >
+            {term}
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Worst & Best Section -->
+  <section class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <!-- Worst Rated -->
+        <div>
+          <div class="flex items-center gap-2 mb-6">
+            <span class="text-2xl">⚠️</span>
+            <h2 class="font-heading text-2xl font-bold text-gray-900">SAB SE BURE</h2>
+            <span class="text-gray-500 text-sm">(Worst Rated)</span>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            {worstProducts.map((product) => (
+              <ProductCard product={product} variant="compact" />
+            ))}
+          </div>
+          <a href="/worst" class="inline-flex items-center gap-1 mt-4 text-mizan-teal hover:text-mizan-teal-dark font-medium text-sm">
+            Sab dekho <span>→</span>
+          </a>
+        </div>
+
+        <!-- Better Options -->
+        <div>
+          <div class="flex items-center gap-2 mb-6">
+            <span class="text-2xl">✅</span>
+            <h2 class="font-heading text-2xl font-bold text-gray-900">BEHTAR OPTIONS</h2>
+            <span class="text-gray-500 text-sm">(Better Choices)</span>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            {bestProducts.map((product) => (
+              <ProductCard product={product} variant="compact" />
+            ))}
+          </div>
+          <a href="/better" class="inline-flex items-center gap-1 mt-4 text-green-safe hover:text-green-600 font-medium text-sm">
+            Aur dekho <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center gap-2 mb-6">
+        <span class="text-2xl">📊</span>
+        <h2 class="font-heading text-2xl font-bold text-gray-900">CATEGORIES</h2>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        {categories.map((category) => (
+          <a
+            href={`/category/${category.slug}`}
+            class="flex items-center gap-2 px-4 py-2 bg-warm-white rounded-full hover:bg-mizan-teal hover:text-white transition-colors border border-gray-200"
+          >
+            <span>{category.icon}</span>
+            <span>{category.name_hindi}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Mizan Section -->
+  <section class="py-12 md:py-16 bg-mizan-teal/5">
+    <div class="container mx-auto px-4 max-w-3xl text-center">
+      <h2 class="font-heading text-2xl md:text-3xl font-bold text-mizan-teal mb-8">🇮🇳 KYUN MIZAN?</h2>
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white p-6 rounded-xl card-shadow">
+          <div class="text-3xl font-bold text-red-critical mb-2">73%</div>
+          <p class="text-gray-600">Indians protein deficient hain</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl card-shadow">
+          <div class="text-3xl font-bold text-red-critical mb-2">57%</div>
+          <p class="text-gray-600">Auraton ko anemia hai</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl card-shadow">
+          <div class="text-3xl font-bold text-red-critical mb-2">89M</div>
+          <p class="text-gray-600">Indians ko diabetes hai</p>
+        </div>
+      </div>
+      <p class="text-lg text-gray-700 mb-6">
+        Aur jo hum kha rahe hain — uska sach labels mein chhupa hai.<br />
+        Hum wo sach samajhne laayak bana rahe hain.
+      </p>
+      <a href="/hum" class="inline-flex items-center gap-2 text-mizan-teal hover:text-mizan-teal-dark font-medium">
+        Poora padhein <span>→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- All Products Grid -->
+  <section class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">📦</span>
+          <h2 class="font-heading text-2xl font-bold text-gray-900">ALL PRODUCTS</h2>
+        </div>
+        <span class="text-gray-500 text-sm">{products.length} products</span>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        {products.map((product) => (
+          <ProductCard product={product} />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script define:vars={{ products }}>
+  // Client-side search
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const searchTermBtns = document.querySelectorAll('.search-term');
+
+  function performSearch(query) {
+    if (!query || query.length < 2) {
+      searchResults.classList.add('hidden');
+      return;
+    }
+
+    const lowerQuery = query.toLowerCase();
+    const matches = products.filter(p =>
+      p.name.toLowerCase().includes(lowerQuery) ||
+      p.brand.toLowerCase().includes(lowerQuery) ||
+      p.category.toLowerCase().includes(lowerQuery)
+    ).slice(0, 8);
+
+    if (matches.length > 0) {
+      searchResults.innerHTML = matches.map(p => `
+        <a href="/product/${p.slug}" class="block p-4 hover:bg-gray-50 border-b border-gray-100 last:border-0">
+          <div class="flex items-center justify-between">
+            <div>
+              <div class="font-medium text-gray-900">${p.name}</div>
+              <div class="text-sm text-gray-500">${p.brand} • ${p.category}</div>
+            </div>
+            <div class="text-gold-accent font-bold">${p.mizan_score.stars}★</div>
+          </div>
+        </a>
+      `).join('');
+      searchResults.classList.remove('hidden');
+    } else {
+      searchResults.innerHTML = '<div class="p-4 text-gray-500">Koi result nahi mila</div>';
+      searchResults.classList.remove('hidden');
+    }
+  }
+
+  let debounceTimer;
+  searchInput?.addEventListener('input', (e) => {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      performSearch(e.target.value);
+    }, 200);
+  });
+
+  // Trending search clicks
+  searchTermBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const term = btn.getAttribute('data-term');
+      searchInput.value = term;
+      performSearch(term);
+      searchInput.focus();
+    });
+  });
+
+  // Hide results when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!searchInput?.contains(e.target) && !searchResults?.contains(e.target)) {
+      searchResults?.classList.add('hidden');
+    }
+  });
+</script>

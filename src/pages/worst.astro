@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCard from '../components/product/ProductCard.astro';
+import productsData from '../data/products.json';
+import type { Product } from '../types';
+
+const products = productsData.products as Product[];
+
+// Sort by worst score
+const worstProducts = [...products]
+  .sort((a, b) => a.mizan_score.stars - b.mizan_score.stars)
+  .slice(0, 20);
+---
+
+<BaseLayout
+  title="Sab Se Bure (Worst Rated) Products | Mizan"
+  description="The worst-rated packaged food products in India. See what to avoid and why. Based on FSSAI guidelines."
+>
+  <section class="py-8 md:py-12">
+    <div class="container mx-auto px-4">
+
+      <!-- Header -->
+      <header class="mb-8 text-center">
+        <div class="text-5xl mb-4">⚠️</div>
+        <h1 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          SAB SE BURE
+        </h1>
+        <p class="text-xl text-gray-600">The Worst Rated Products</p>
+        <p class="text-gray-500 mt-2 max-w-xl mx-auto">
+          Yeh products Mizan ke scale pe sabse neeche hain. Inka matlab ye nahi ke kabhi mat khao —
+          bas samajho ke zyada khaoge to kya hoga.
+        </p>
+      </header>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        {worstProducts.map((product) => (
+          <ProductCard product={product} variant="featured" />
+        ))}
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-12 text-center">
+        <a href="/better" class="inline-flex items-center gap-2 px-6 py-3 bg-green-safe text-white rounded-full font-medium hover:bg-green-600 transition-colors">
+          <span>✅</span>
+          Behtar options dekho
+        </a>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>

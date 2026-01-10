@@ -1,0 +1,83 @@
+---
+import type { SafeLimit as SafeLimitType } from '../../types';
+
+interface Props {
+  safeLimit: SafeLimitType;
+  packageSize: number;
+}
+
+const { safeLimit, packageSize } = Astro.props;
+
+const servingRatio = safeLimit.recommended_serving_g / packageSize;
+const servingPercentage = Math.round(servingRatio * 100);
+
+// Pre-compute display text
+const servingText = servingPercentage <= 100
+  ? `(${servingPercentage}% of packet)`
+  : `(${Math.round(safeLimit.servings_per_package)} servings/pack)`;
+
+// Pre-compute classes
+const sodiumClass = safeLimit.daily_percentages.sodium > 20 ? "text-xl font-bold text-red-critical" : "text-xl font-bold text-gray-900";
+const sugarClass = safeLimit.daily_percentages.sugar > 20 ? "text-xl font-bold text-red-critical" : "text-xl font-bold text-gray-900";
+const fatClass = safeLimit.daily_percentages.saturated_fat > 20 ? "text-xl font-bold text-red-critical" : "text-xl font-bold text-gray-900";
+---
+
+<div class="bg-amber-warning/10 border border-amber-warning/30 rounded-xl p-5">
+  <div class="flex items-center gap-2 mb-4">
+    <span class="text-2xl">⚠️</span>
+    <h3 class="font-heading text-xl text-amber-warning font-bold">
+      ROZ KI HADD
+    </h3>
+    <span class="text-sm text-gray-500">(Daily Limit)</span>
+  </div>
+
+  <div class="flex items-baseline gap-2 mb-3">
+    <span class="text-4xl font-bold text-gray-900">
+      {safeLimit.recommended_serving_g}g
+    </span>
+    <span class="text-lg text-gray-600">
+      {servingText}
+    </span>
+  </div>
+
+  <p class="text-gray-700 mb-3">
+    {safeLimit.explanation}
+  </p>
+
+  {safeLimit.explanation_hindi && (
+    <p class="text-gray-500 text-sm mb-4">
+      {safeLimit.explanation_hindi}
+    </p>
+  )}
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 pt-4 border-t border-amber-warning/30">
+    <div class="text-center">
+      <div class={sodiumClass}>
+        {safeLimit.daily_percentages.sodium}%
+      </div>
+      <div class="text-xs text-gray-500">Sodium</div>
+    </div>
+    <div class="text-center">
+      <div class={sugarClass}>
+        {safeLimit.daily_percentages.sugar}%
+      </div>
+      <div class="text-xs text-gray-500">Sugar</div>
+    </div>
+    <div class="text-center">
+      <div class={fatClass}>
+        {safeLimit.daily_percentages.saturated_fat}%
+      </div>
+      <div class="text-xs text-gray-500">Sat. Fat</div>
+    </div>
+    <div class="text-center">
+      <div class="text-xl font-bold text-gray-900">
+        {safeLimit.daily_percentages.calories}%
+      </div>
+      <div class="text-xs text-gray-500">Calories</div>
+    </div>
+  </div>
+
+  <p class="text-xs text-gray-400 mt-4 text-center">
+    Based on ICMR-NIN 2024 guidelines for Indian adults
+  </p>
+</div>

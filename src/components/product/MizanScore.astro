@@ -1,0 +1,62 @@
+---
+import StarRating from '../ui/StarRating.astro';
+import type { MizanScore as MizanScoreType } from '../../types';
+
+interface Props {
+  score: MizanScoreType;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { score, size = 'md' } = Astro.props;
+
+const gradeColors: Record<string, string> = {
+  'A': 'grade-a',
+  'B': 'grade-b',
+  'C': 'grade-c',
+  'D': 'grade-d',
+  'F': 'grade-f',
+};
+
+const sizeClasses = {
+  sm: 'p-3',
+  md: 'p-5',
+  lg: 'p-6',
+};
+---
+
+<div class={`bg-white rounded-xl card-shadow ${sizeClasses[size]}`}>
+  <div class="flex items-center gap-2 mb-4">
+    <span class="text-2xl">⚖️</span>
+    <h2 class="font-heading text-xl text-mizan-teal font-bold">MIZAN SCORE</h2>
+  </div>
+
+  <div class="flex items-center gap-4 mb-4">
+    <StarRating stars={score.stars} maxStars={5} size={size} />
+    <span class={`px-3 py-1 rounded-full text-sm font-bold ${gradeColors[score.grade]}`}>
+      Grade {score.grade}
+    </span>
+  </div>
+
+  <p class="text-lg text-gray-700 font-medium mb-1">
+    {score.summary}
+  </p>
+
+  {score.summary_hindi && (
+    <p class="text-sm text-gray-500">
+      {score.summary_hindi}
+    </p>
+  )}
+
+  {score.limiting_factors.length > 0 && (
+    <div class="mt-4 pt-4 border-t border-gray-100">
+      <span class="text-xs text-gray-500 uppercase tracking-wide">Limited by:</span>
+      <div class="flex flex-wrap gap-2 mt-2">
+        {score.limiting_factors.map((factor) => (
+          <span class="px-2 py-1 bg-amber-warning/10 text-amber-warning rounded text-xs font-medium capitalize">
+            {factor.replace('_', ' ')}
+          </span>
+        ))}
+      </div>
+    </div>
+  )}
+</div>

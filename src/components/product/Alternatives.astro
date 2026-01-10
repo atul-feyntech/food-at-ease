@@ -1,0 +1,48 @@
+---
+import type { Alternative } from '../../types';
+
+interface Props {
+  alternatives: Alternative[];
+}
+
+const { alternatives } = Astro.props;
+
+const typeIcons: Record<string, string> = {
+  product: '📦',
+  homemade: '🏠',
+  category: '📂',
+};
+---
+
+<div class="bg-green-safe/5 border border-green-safe/20 rounded-xl p-5">
+  <div class="flex items-center gap-2 mb-4">
+    <span class="text-2xl">🔄</span>
+    <h3 class="font-heading text-xl text-green-safe font-bold">
+      BEHTAR OPTIONS
+    </h3>
+    <span class="text-sm text-gray-500">(Better Alternatives)</span>
+  </div>
+
+  <div class="space-y-3">
+    {alternatives.map((alt) => (
+      <div class="flex items-start gap-3 p-3 bg-white rounded-lg">
+        <span class="text-xl flex-shrink-0">{typeIcons[alt.type]}</span>
+        <div class="flex-grow">
+          {alt.product_slug ? (
+            <a href={`/product/${alt.product_slug}`} class="font-medium text-mizan-teal hover:underline">
+              {alt.name}
+            </a>
+          ) : (
+            <span class="font-medium text-gray-900">{alt.name}</span>
+          )}
+          <p class="text-sm text-gray-600 mt-0.5">{alt.reason}</p>
+          {alt.comparison && (
+            <span class="inline-block mt-1 text-xs px-2 py-0.5 bg-green-safe/10 text-green-safe rounded-full">
+              {alt.comparison}
+            </span>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductCard from '../../components/product/ProductCard.astro';
+import productsData from '../../data/products.json';
+import categoriesData from '../../data/categories.json';
+import type { Product, Category } from '../../types';
+
+const products = productsData.products as Product[];
+const allCategories = categoriesData.categories as Category[];
+
+export async function getStaticPaths() {
+  const categories = (await import('../../data/categories.json')).categories;
+  return categories.map((category: Category) => ({
+    params: { slug: category.slug },
+    props: { category },
+  }));
+}
+
+interface Props {
+  category: Category;
+}
+
+const { category } = Astro.props;
+
+// Filter and sort products by category
+const categoryProducts = products
+  .filter((p) => p.category_slug === category.slug)
+  .sort((a, b) => b.mizan_score.stars - a.mizan_score.stars);
+---
+
+<BaseLayout
+  title={`${category.name} (${category.name_hindi}) - Health Ratings | Mizan`}
+  description={`Browse ${categoryProducts.length} ${category.name.toLowerCase()} products with Mizan health ratings. ${category.description}`}
+>
+  <section class="py-8 md:py-12">
+    <div class="container mx-auto px-4">
+
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-gray-500 mb-6">
+        <a href="/" class="hover:text-mizan-teal">Home</a>
+        <span class="mx-2">›</span>
+        <span class="text-gray-700">{category.name}</span>
+      </nav>
+
+      <!-- Header -->
+      <header class="mb-8">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-4xl">{category.icon}</span>
+          <h1 class="font-heading text-3xl font-bold text-gray-900">
+            {category.name}
+          </h1>
+        </div>
+        <p class="text-xl text-gray-600">{category.name_hindi}</p>
+        <p class="text-gray-500 mt-2">{category.description}</p>
+        <p class="text-sm text-gray-400 mt-1">{categoryProducts.length} products</p>
+      </header>
+
+      <!-- Products Grid -->
+      {categoryProducts.length > 0 ? (
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          {categoryProducts.map((product) => (
+            <ProductCard product={product} />
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-12 bg-white rounded-xl card-shadow">
+          <p class="text-gray-500 text-lg">Is category mein abhi koi product nahi hai.</p>
+          <a href="/" class="text-mizan-teal hover:underline mt-2 inline-block">Homepage par jaao →</a>
+        </div>
+      )}
+
+      <!-- Other Categories -->
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <h2 class="font-heading text-xl font-bold text-gray-900 mb-4">Other Categories</h2>
+        <div class="flex flex-wrap gap-3">
+          {allCategories.filter(c => c.slug !== category.slug).map((cat) => (
+            <a
+              href={`/category/${cat.slug}`}
+              class="flex items-center gap-2 px-4 py-2 bg-warm-white rounded-full hover:bg-mizan-teal hover:text-white transition-colors border border-gray-200"
+            >
+              <span>{cat.icon}</span>
+              <span>{cat.name_hindi}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>

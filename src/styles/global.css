@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+/* Mizan Brand Colors */
+@theme {
+  /* Primary Colors */
+  --color-mizan-teal: #0D5C63;
+  --color-mizan-teal-light: #1A7A82;
+  --color-mizan-teal-dark: #094449;
+
+  /* Background */
+  --color-warm-white: #F8F4E9;
+
+  /* Status Colors */
+  --color-amber-warning: #E8871E;
+  --color-amber-light: #F5A94D;
+  --color-red-critical: #C23B22;
+  --color-red-light: #D4553D;
+  --color-green-safe: #4A7C59;
+  --color-green-light: #5E9970;
+
+  /* Accent */
+  --color-gold-accent: #C9A227;
+  --color-gold-light: #DAB94A;
+
+  /* Fonts */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+  --font-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-warm-white);
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Urdu Text */
+.font-urdu {
+  font-family: var(--font-urdu);
+  direction: rtl;
+}
+
+/* Utility Classes */
+.text-mizan-teal {
+  color: var(--color-mizan-teal);
+}
+
+.bg-mizan-teal {
+  background-color: var(--color-mizan-teal);
+}
+
+.text-warm-white {
+  color: var(--color-warm-white);
+}
+
+.bg-warm-white {
+  background-color: var(--color-warm-white);
+}
+
+.text-amber-warning {
+  color: var(--color-amber-warning);
+}
+
+.bg-amber-warning {
+  background-color: var(--color-amber-warning);
+}
+
+.text-red-critical {
+  color: var(--color-red-critical);
+}
+
+.bg-red-critical {
+  background-color: var(--color-red-critical);
+}
+
+.text-green-safe {
+  color: var(--color-green-safe);
+}
+
+.bg-green-safe {
+  background-color: var(--color-green-safe);
+}
+
+.text-gold-accent {
+  color: var(--color-gold-accent);
+}
+
+.bg-gold-accent {
+  background-color: var(--color-gold-accent);
+}
+
+/* Star Rating */
+.star-filled {
+  color: var(--color-gold-accent);
+}
+
+.star-empty {
+  color: #d1d5db;
+}
+
+/* Nutrition Bar Colors */
+.nutrition-ok {
+  background-color: var(--color-green-safe);
+}
+
+.nutrition-moderate {
+  background-color: var(--color-amber-warning);
+}
+
+.nutrition-high {
+  background-color: var(--color-amber-warning);
+}
+
+.nutrition-critical {
+  background-color: var(--color-red-critical);
+}
+
+/* Grade Badge Colors */
+.grade-a {
+  background-color: var(--color-green-safe);
+  color: white;
+}
+
+.grade-b {
+  background-color: var(--color-green-light);
+  color: white;
+}
+
+.grade-c {
+  background-color: var(--color-amber-warning);
+  color: white;
+}
+
+.grade-d {
+  background-color: var(--color-amber-light);
+  color: #1a1a1a;
+}
+
+.grade-f {
+  background-color: var(--color-red-critical);
+  color: white;
+}
+
+/* Card Shadows */
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.card-shadow-hover:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Focus States */
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--color-mizan-teal);
+  outline-offset: 2px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-warm-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-mizan-teal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-mizan-teal-dark);
+}

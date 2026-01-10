@@ -1,0 +1,42 @@
+---
+interface Props {
+  stars: number;
+  maxStars?: number;
+  size?: 'sm' | 'md' | 'lg';
+  showNumber?: boolean;
+}
+
+const { stars, maxStars = 5, size = 'md', showNumber = true } = Astro.props;
+
+const sizeClasses = {
+  sm: 'text-lg',
+  md: 'text-2xl',
+  lg: 'text-3xl'
+};
+
+const fullStars = Math.floor(stars);
+const hasHalfStar = stars % 1 >= 0.5;
+const emptyStars = maxStars - fullStars - (hasHalfStar ? 1 : 0);
+---
+
+<div class="flex items-center gap-2">
+  <div class={`flex items-center ${sizeClasses[size]}`}>
+    {Array(fullStars).fill(0).map(() => (
+      <span class="star-filled">★</span>
+    ))}
+    {hasHalfStar && (
+      <span class="relative">
+        <span class="star-empty">★</span>
+        <span class="absolute inset-0 overflow-hidden w-1/2 star-filled">★</span>
+      </span>
+    )}
+    {Array(emptyStars).fill(0).map(() => (
+      <span class="star-empty">★</span>
+    ))}
+  </div>
+  {showNumber && (
+    <span class={`font-mono font-bold ${size === 'lg' ? 'text-2xl' : size === 'md' ? 'text-lg' : 'text-sm'}`}>
+      {stars}/{maxStars}
+    </span>
+  )}
+</div>

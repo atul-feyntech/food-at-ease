@@ -1,0 +1,2035 @@
+{
+  "products": [
+    {
+      "id": "maggi-masala-noodles-70g",
+      "slug": "maggi-masala-noodles",
+      "name": "Maggi 2-Minute Noodles Masala",
+      "name_hindi": "मैगी 2-मिनट नूडल्स मसाला",
+      "brand": "Nestlé",
+      "brand_slug": "nestle",
+      "category": "Breakfast",
+      "category_slug": "nashta",
+      "serving_size_g": 70,
+      "package_size_g": 70,
+      "price_inr": 14,
+      "barcode": "8901058851342",
+      "nutrients": {
+        "energy_kcal": 396,
+        "protein_g": 9.5,
+        "carbohydrates_g": 56,
+        "sugars_g": 1.5,
+        "fat_g": 15,
+        "saturated_fat_g": 6.7,
+        "trans_fat_g": 0,
+        "fiber_g": 2,
+        "sodium_mg": 1060
+      },
+      "ingredients": [
+        "Wheat Flour",
+        "Palm Oil",
+        "Salt",
+        "Spices",
+        "Hydrolyzed Vegetable Protein",
+        "Sugar",
+        "Onion Powder",
+        "MSG (INS 621)"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Wheat Flour",
+          "Palm Oil",
+          "Salt"
+        ],
+        "hidden_sugars": [],
+        "additives": [
+          {
+            "code": "INS 621",
+            "name": "Monosodium Glutamate",
+            "name_hindi": "अजीनोमोटो",
+            "category": "flavor",
+            "concern_level": "caution",
+            "description": "Flavor enhancer, may cause sensitivity in some people"
+          }
+        ],
+        "allergens": [
+          "Wheat",
+          "Gluten"
+        ],
+        "flags": [
+          {
+            "type": "high_sodium",
+            "severity": "critical",
+            "message": "Contains 53% of daily sodium in one packet",
+            "message_hindi": "एक पैकेट में दैनिक सोडियम का 53%"
+          },
+          {
+            "type": "ultra_processed",
+            "severity": "warning",
+            "message": "NOVA Group 4 - Ultra-processed food"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 2,
+        "grade": "D",
+        "inr_score": 13,
+        "baseline_points": 20,
+        "modifying_points": 7,
+        "limiting_factors": [
+          "High sodium (1060mg per 100g)",
+          "High saturated fat (6.7g per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 38,
+        "limiting_factor": "sodium",
+        "servings_per_package": 1.9,
+        "daily_percentages": {
+          "sodium": 20.0,
+          "sugar": 0.0,
+          "saturated_fat": 11.5,
+          "calories": 7.5
+        },
+        "explanation": "Limit to 38g to stay within sodium limits.",
+        "explanation_hindi": "38g tak hi khao, sodium ke liye."
+      },
+      "roast": {
+        "text": "Ready in 2 minutes, heart patient in 2 decades. The tastemaker packet has so much sodium — if they'd labeled it 'salt packet' at least it would be honest. Giving this to kids daily? Start practicing their BP chart now.",
+        "text_hindi": "Do minute mein tayaar, do decade mein dil ka mareez. Tastemaker mein itna sodium hai ke 'namak ki potli' likhte to kam se kam imandaari hoti.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Homemade noodles with vegetables",
+          "type": "homemade",
+          "reason": "You control the salt",
+          "comparison": "Up to 80% less sodium"
+        },
+        {
+          "name": "Poha or Upma",
+          "type": "category",
+          "reason": "Traditional, balanced nutrition",
+          "comparison": "70% less sodium"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "bournvita-chocolate-500g",
+      "slug": "bournvita-chocolate-health-drink",
+      "name": "Cadbury Bournvita Chocolate Health Drink",
+      "name_hindi": "कैडबरी बॉर्नविटा चॉकलेट हेल्थ ड्रिंक",
+      "brand": "Cadbury",
+      "brand_slug": "cadbury",
+      "category": "For Kids",
+      "category_slug": "bachon-ke-liye",
+      "serving_size_g": 20,
+      "package_size_g": 500,
+      "price_inr": 235,
+      "nutrients": {
+        "energy_kcal": 390,
+        "protein_g": 7,
+        "carbohydrates_g": 82,
+        "sugars_g": 39,
+        "fat_g": 2,
+        "saturated_fat_g": 1,
+        "fiber_g": 0,
+        "sodium_mg": 150
+      },
+      "ingredients": [
+        "Sugar",
+        "Malted Barley",
+        "Cocoa Solids",
+        "Wheat Flour",
+        "Milk Solids",
+        "Vitamins",
+        "Minerals"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Sugar",
+          "Malted Barley",
+          "Cocoa Solids"
+        ],
+        "hidden_sugars": [
+          "Maltodextrin"
+        ],
+        "additives": [],
+        "allergens": [
+          "Milk",
+          "Wheat",
+          "Gluten"
+        ],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "critical",
+            "message": "39% sugar - Ingredient #1 is sugar",
+            "message_hindi": "39% चीनी - पहला ingredient चीनी है"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 4,
+        "grade": "B",
+        "inr_score": 1,
+        "baseline_points": 5,
+        "modifying_points": 4,
+        "limiting_factors": [
+          "No major concerns"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 103,
+        "limiting_factor": "calories",
+        "servings_per_package": 4.9,
+        "daily_percentages": {
+          "sodium": 7.7,
+          "sugar": 0.0,
+          "saturated_fat": 4.7,
+          "calories": 20.0
+        },
+        "explanation": "Limit to 103g to stay within calories limits.",
+        "explanation_hindi": "103g tak hi khao, calories ke liye."
+      },
+      "roast": {
+        "text": "You're paying ₹235 to add sugar to milk and call it 'brain food.' Ingredient #1 is literally sugar. Milk solids show up at position 5. The kid in the advertisement grew up despite this product, not because of it.",
+        "text_hindi": "₹235 de kar doodh mein cheeni mila rahe ho aur use 'brain food' bol rahe ho. Ingredient number 1: cheeni. Ad wala bachha iske baawajood bada hua.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Sattu (roasted gram flour)",
+          "type": "homemade",
+          "reason": "20g protein, 0g added sugar",
+          "comparison": "100% less sugar, 3x protein"
+        },
+        {
+          "name": "Plain milk + banana",
+          "type": "homemade",
+          "reason": "Natural nutrition, no additives",
+          "comparison": "No added sugar"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "kurkure-masala-munch-90g",
+      "slug": "kurkure-masala-munch",
+      "name": "Kurkure Masala Munch",
+      "name_hindi": "कुरकुरे मसाला मंच",
+      "brand": "PepsiCo",
+      "brand_slug": "pepsico",
+      "category": "Savory Snacks",
+      "category_slug": "namkeen",
+      "serving_size_g": 30,
+      "package_size_g": 90,
+      "price_inr": 20,
+      "nutrients": {
+        "energy_kcal": 530,
+        "protein_g": 6,
+        "carbohydrates_g": 60,
+        "sugars_g": 3,
+        "fat_g": 30,
+        "saturated_fat_g": 14,
+        "trans_fat_g": 0,
+        "fiber_g": 2,
+        "sodium_mg": 800
+      },
+      "ingredients": [
+        "Rice Meal",
+        "Edible Vegetable Oil",
+        "Corn Meal",
+        "Gram Meal",
+        "Spices",
+        "Salt",
+        "Sugar"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Rice Meal",
+          "Edible Vegetable Oil",
+          "Corn Meal"
+        ],
+        "hidden_sugars": [],
+        "additives": [
+          {
+            "code": "INS 621",
+            "name": "Monosodium Glutamate",
+            "category": "flavor",
+            "concern_level": "caution",
+            "description": "Flavor enhancer"
+          }
+        ],
+        "allergens": [],
+        "flags": [
+          {
+            "type": "high_sodium",
+            "severity": "warning",
+            "message": "High sodium content - 40% daily value per 100g"
+          },
+          {
+            "type": "ultra_processed",
+            "severity": "warning",
+            "message": "NOVA Group 4 - Ultra-processed"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 1,
+        "grade": "F",
+        "inr_score": 19,
+        "baseline_points": 24,
+        "modifying_points": 5,
+        "limiting_factors": [
+          "High sodium (800mg per 100g)",
+          "High saturated fat (14g per 100g)",
+          "High calorie density (530kcal per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 31,
+        "limiting_factor": "saturated_fat",
+        "servings_per_package": 2.9,
+        "daily_percentages": {
+          "sodium": 12.6,
+          "sugar": 0.0,
+          "saturated_fat": 20.0,
+          "calories": 8.3
+        },
+        "explanation": "Limit to 31g to stay within saturated fat limits.",
+        "explanation_hindi": "31g tak hi khao, saturated fat ke liye."
+      },
+      "roast": {
+        "text": "That 'tedha hai par mera hai' attitude? Your arteries don't share it. 30% fat, engineered to make you eat the whole packet. The crunch is designed in a lab to override your brain's 'stop eating' signal.",
+        "text_hindi": "Wo 'tedha hai par mera hai' attitude? Aapki arteries ko ye pasand nahi. 30% fat, poora packet khatam karne ke liye engineer kiya gaya.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Roasted makhana",
+          "type": "homemade",
+          "reason": "Low calorie, high protein",
+          "comparison": "70% less fat"
+        },
+        {
+          "name": "Roasted chana",
+          "type": "homemade",
+          "reason": "High fiber and protein",
+          "comparison": "5x more protein"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "parle-g-80g",
+      "slug": "parle-g-glucose-biscuits",
+      "name": "Parle-G Glucose Biscuits",
+      "name_hindi": "पार्ले-जी ग्लूकोज बिस्किट",
+      "brand": "Parle",
+      "brand_slug": "parle",
+      "category": "Biscuits & Cookies",
+      "category_slug": "biscuits",
+      "serving_size_g": 25,
+      "package_size_g": 80,
+      "price_inr": 10,
+      "nutrients": {
+        "energy_kcal": 460,
+        "protein_g": 6.5,
+        "carbohydrates_g": 75,
+        "sugars_g": 26,
+        "fat_g": 15,
+        "saturated_fat_g": 7,
+        "fiber_g": 1,
+        "sodium_mg": 280
+      },
+      "ingredients": [
+        "Wheat Flour",
+        "Sugar",
+        "Edible Vegetable Oil",
+        "Invert Syrup",
+        "Milk Solids",
+        "Raising Agents",
+        "Salt"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Wheat Flour",
+          "Sugar",
+          "Edible Vegetable Oil"
+        ],
+        "hidden_sugars": [
+          "Invert Syrup"
+        ],
+        "additives": [],
+        "allergens": [
+          "Wheat",
+          "Milk",
+          "Gluten"
+        ],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "warning",
+            "message": "26% sugar plus invert syrup"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 3,
+        "grade": "C",
+        "inr_score": 9,
+        "baseline_points": 14,
+        "modifying_points": 5,
+        "limiting_factors": [
+          "High saturated fat (7g per 100g)",
+          "High calorie density (460kcal per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 63,
+        "limiting_factor": "saturated_fat",
+        "servings_per_package": 1.3,
+        "daily_percentages": {
+          "sodium": 8.8,
+          "sugar": 0.0,
+          "saturated_fat": 20.0,
+          "calories": 14.5
+        },
+        "explanation": "Limit to 63g to stay within saturated fat limits.",
+        "explanation_hindi": "63g tak hi khao, saturated fat ke liye."
+      },
+      "roast": {
+        "text": "India's most loved biscuit. Also India's most normalized sugar delivery system. 2-3 biscuits with chai seems innocent until you do it 3 times a day. That's 40% of your daily sugar just from biscuits.",
+        "text_hindi": "India ka sabse pyaara biscuit. Aur sabse normalized cheeni delivery system. 2-3 biscuit chai ke saath din mein 3 baar = 40% daily sugar sirf biscuit se.",
+        "tone": "sympathetic",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Marie biscuits",
+          "type": "product",
+          "reason": "Lower sugar option",
+          "comparison": "40% less sugar"
+        },
+        {
+          "name": "Oats biscuits",
+          "type": "product",
+          "reason": "Higher fiber",
+          "comparison": "3x more fiber"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "coca-cola-300ml",
+      "slug": "coca-cola-original",
+      "name": "Coca-Cola Original Taste",
+      "name_hindi": "कोका-कोला ओरिजिनल",
+      "brand": "Coca-Cola",
+      "brand_slug": "coca-cola",
+      "category": "Beverages",
+      "category_slug": "drinks",
+      "serving_size_g": 300,
+      "package_size_g": 300,
+      "price_inr": 40,
+      "nutrients": {
+        "energy_kcal": 42,
+        "protein_g": 0,
+        "carbohydrates_g": 10.6,
+        "sugars_g": 10.6,
+        "fat_g": 0,
+        "saturated_fat_g": 0,
+        "fiber_g": 0,
+        "sodium_mg": 5
+      },
+      "ingredients": [
+        "Carbonated Water",
+        "Sugar",
+        "Caramel Color (INS 150d)",
+        "Phosphoric Acid",
+        "Natural Flavors",
+        "Caffeine"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Carbonated Water",
+          "Sugar",
+          "Caramel Color"
+        ],
+        "hidden_sugars": [],
+        "additives": [
+          {
+            "code": "INS 150d",
+            "name": "Caramel Color (Sulfite Ammonia)",
+            "category": "color",
+            "concern_level": "caution",
+            "description": "Contains 4-MEI, a potential carcinogen in high amounts"
+          }
+        ],
+        "allergens": [],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "critical",
+            "message": "32g sugar in one bottle - 64% of daily limit"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 4,
+        "grade": "B",
+        "inr_score": 0,
+        "baseline_points": 0,
+        "modifying_points": 0,
+        "limiting_factors": [
+          "No major concerns"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 300,
+        "limiting_factor": "calories",
+        "servings_per_package": 1.0,
+        "daily_percentages": {
+          "sodium": 0.8,
+          "sugar": 0.0,
+          "saturated_fat": 0.0,
+          "calories": 6.3
+        },
+        "explanation": "You can eat the whole packet without exceeding recommended daily limits.",
+        "explanation_hindi": "Pura packet kha sakte ho, daily limit cross nahi hogi."
+      },
+      "roast": {
+        "text": "10 teaspoons of sugar dissolved in fizzy water. That's what you're buying. The caffeine keeps you addicted, the sugar spikes your insulin, the phosphoric acid attacks your bones. Refresh ho gaya?",
+        "text_hindi": "10 chamach cheeni fizzy paani mein. Yahi khareed rahe ho. Caffeine addiction, sugar se insulin spike, phosphoric acid se haddiyan weak. Refresh ho gaya?",
+        "tone": "stern",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Nimbu pani",
+          "type": "homemade",
+          "reason": "Natural, refreshing, cheap",
+          "comparison": "90% less sugar"
+        },
+        {
+          "name": "Coconut water",
+          "type": "category",
+          "reason": "Natural electrolytes",
+          "comparison": "70% less sugar"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "amul-butter-100g",
+      "slug": "amul-butter",
+      "name": "Amul Butter Pasteurised",
+      "name_hindi": "अमूल बटर पाश्चराइज्ड",
+      "brand": "Amul",
+      "brand_slug": "amul",
+      "category": "Dairy Products",
+      "category_slug": "dairy",
+      "serving_size_g": 10,
+      "package_size_g": 100,
+      "price_inr": 56,
+      "nutrients": {
+        "energy_kcal": 729,
+        "protein_g": 0.5,
+        "carbohydrates_g": 0.5,
+        "sugars_g": 0.5,
+        "fat_g": 81,
+        "saturated_fat_g": 52,
+        "fiber_g": 0,
+        "sodium_mg": 750
+      },
+      "ingredients": [
+        "Milk Fat",
+        "Common Salt",
+        "Permitted Natural Color - Annatto"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Milk Fat",
+          "Common Salt"
+        ],
+        "hidden_sugars": [],
+        "additives": [],
+        "allergens": [
+          "Milk"
+        ],
+        "flags": []
+      },
+      "mizan_score": {
+        "stars": 1,
+        "grade": "F",
+        "inr_score": 27,
+        "baseline_points": 27,
+        "modifying_points": 0,
+        "limiting_factors": [
+          "High sodium (750mg per 100g)",
+          "High saturated fat (52g per 100g)",
+          "High calorie density (729kcal per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 8,
+        "limiting_factor": "saturated_fat",
+        "servings_per_package": 11.8,
+        "daily_percentages": {
+          "sodium": 3.2,
+          "sugar": 0.0,
+          "saturated_fat": 20.0,
+          "calories": 3.1
+        },
+        "explanation": "Very limited portion recommended. Just 8g due to high saturated fat.",
+        "explanation_hindi": "Bahut kam khana chahiye. Sirf 8g kyunki saturated fat zyada hai."
+      },
+      "roast": {
+        "text": "Utterly butterly delicious, utterly butterly 52% saturated fat. It's a condiment, not a food group. That thick layer on your paratha? Your heart sees it even if you don't.",
+        "text_hindi": "Utterly butterly delicious, utterly butterly 52% saturated fat. Ye condiment hai, food group nahi. Parathe pe wo moti layer? Dil dekhta hai chahe aap na dekho.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Ghee (clarified butter)",
+          "type": "product",
+          "reason": "Traditional, no salt, better for cooking",
+          "comparison": "Zero sodium"
+        },
+        {
+          "name": "Olive oil",
+          "type": "category",
+          "reason": "Healthier fats",
+          "comparison": "80% less saturated fat"
+        }
+      ],
+      "nova_group": 2,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "lays-classic-salted-52g",
+      "slug": "lays-classic-salted",
+      "name": "Lay's Classic Salted Chips",
+      "name_hindi": "लेज़ क्लासिक साल्टेड चिप्स",
+      "brand": "PepsiCo",
+      "brand_slug": "pepsico",
+      "category": "Savory Snacks",
+      "category_slug": "namkeen",
+      "serving_size_g": 30,
+      "package_size_g": 52,
+      "price_inr": 20,
+      "nutrients": {
+        "energy_kcal": 536,
+        "protein_g": 6,
+        "carbohydrates_g": 52,
+        "sugars_g": 1,
+        "fat_g": 34,
+        "saturated_fat_g": 3,
+        "fiber_g": 4,
+        "sodium_mg": 600
+      },
+      "ingredients": [
+        "Potatoes",
+        "Edible Vegetable Oil",
+        "Iodised Salt"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Potatoes",
+          "Edible Vegetable Oil",
+          "Iodised Salt"
+        ],
+        "hidden_sugars": [],
+        "additives": [],
+        "allergens": [],
+        "flags": [
+          {
+            "type": "high_sodium",
+            "severity": "warning",
+            "message": "30% of daily sodium in one small packet"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 3,
+        "grade": "C",
+        "inr_score": 7,
+        "baseline_points": 14,
+        "modifying_points": 7,
+        "limiting_factors": [
+          "High sodium (600mg per 100g)",
+          "High calorie density (536kcal per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 52,
+        "limiting_factor": "sodium",
+        "servings_per_package": 1.0,
+        "daily_percentages": {
+          "sodium": 15.6,
+          "sugar": 0.0,
+          "saturated_fat": 7.1,
+          "calories": 13.9
+        },
+        "explanation": "You can eat the whole packet without exceeding recommended daily limits.",
+        "explanation_hindi": "Pura packet kha sakte ho, daily limit cross nahi hogi."
+      },
+      "roast": {
+        "text": "Just potatoes, oil, and salt - sounds innocent. But 34% fat means you're basically eating deep-fried potatoes shaped into thin discs. The packet says 'sharing size' but we all know how that ends.",
+        "text_hindi": "Sirf aloo, tel, namak - innocent lagta hai. Par 34% fat matlab deep-fried aloo patli disc mein. Packet pe 'sharing size' likha hai par sab jaante hain kya hota hai.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Baked chips",
+          "type": "product",
+          "reason": "Less oil",
+          "comparison": "50% less fat"
+        },
+        {
+          "name": "Air-fried homemade chips",
+          "type": "homemade",
+          "reason": "Control the oil and salt",
+          "comparison": "70% less fat"
+        }
+      ],
+      "nova_group": 3,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "haldirams-aloo-bhujia-200g",
+      "slug": "haldirams-aloo-bhujia",
+      "name": "Haldiram's Aloo Bhujia",
+      "name_hindi": "हल्दीराम आलू भुजिया",
+      "brand": "Haldiram's",
+      "brand_slug": "haldirams",
+      "category": "Savory Snacks",
+      "category_slug": "namkeen",
+      "serving_size_g": 30,
+      "package_size_g": 200,
+      "price_inr": 65,
+      "nutrients": {
+        "energy_kcal": 560,
+        "protein_g": 12,
+        "carbohydrates_g": 48,
+        "sugars_g": 2,
+        "fat_g": 35,
+        "saturated_fat_g": 15,
+        "fiber_g": 3,
+        "sodium_mg": 950
+      },
+      "ingredients": [
+        "Potato Flakes",
+        "Gram Flour",
+        "Edible Vegetable Oil",
+        "Salt",
+        "Spices",
+        "Black Salt"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Potato Flakes",
+          "Gram Flour",
+          "Edible Vegetable Oil"
+        ],
+        "hidden_sugars": [],
+        "additives": [],
+        "allergens": [],
+        "flags": [
+          {
+            "type": "high_sodium",
+            "severity": "critical",
+            "message": "Very high sodium - 47% daily value per 100g"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 2,
+        "grade": "D",
+        "inr_score": 18,
+        "baseline_points": 26,
+        "modifying_points": 8,
+        "limiting_factors": [
+          "High sodium (950mg per 100g)",
+          "High saturated fat (15g per 100g)",
+          "High calorie density (560kcal per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 29,
+        "limiting_factor": "saturated_fat",
+        "servings_per_package": 6.8,
+        "daily_percentages": {
+          "sodium": 13.9,
+          "sugar": 0.0,
+          "saturated_fat": 20.0,
+          "calories": 8.2
+        },
+        "explanation": "Very limited portion recommended. Just 29g due to high saturated fat.",
+        "explanation_hindi": "Bahut kam khana chahiye. Sirf 29g kyunki saturated fat zyada hai."
+      },
+      "roast": {
+        "text": "The official snack of 'just ek aur mutthi.' Problem is, that mutthi has 10% of your daily sodium. By the time you've eaten half the packet while watching TV, your kidneys are filing for overtime.",
+        "text_hindi": "Official snack 'just ek aur mutthi' ka. Problem ye hai ke us mutthi mein 10% daily sodium hai. TV dekhte dekhte aadha packet khatam, kidneys overtime maang rahi hain.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Roasted peanuts",
+          "type": "homemade",
+          "reason": "Higher protein, lower sodium",
+          "comparison": "80% less sodium"
+        },
+        {
+          "name": "Makhana",
+          "type": "category",
+          "reason": "Low calorie, high fiber",
+          "comparison": "60% less calories"
+        }
+      ],
+      "nova_group": 3,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "britannia-good-day-75g",
+      "slug": "britannia-good-day-cashew",
+      "name": "Britannia Good Day Cashew Cookies",
+      "name_hindi": "ब्रिटानिया गुड डे काजू कुकीज़",
+      "brand": "Britannia",
+      "brand_slug": "britannia",
+      "category": "Biscuits & Cookies",
+      "category_slug": "biscuits",
+      "serving_size_g": 25,
+      "package_size_g": 75,
+      "price_inr": 30,
+      "nutrients": {
+        "energy_kcal": 485,
+        "protein_g": 6,
+        "carbohydrates_g": 68,
+        "sugars_g": 24,
+        "fat_g": 21,
+        "saturated_fat_g": 10,
+        "fiber_g": 1,
+        "sodium_mg": 300
+      },
+      "ingredients": [
+        "Wheat Flour",
+        "Sugar",
+        "Edible Vegetable Oil",
+        "Cashew",
+        "Invert Syrup",
+        "Raising Agents",
+        "Salt",
+        "Emulsifier"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Wheat Flour",
+          "Sugar",
+          "Edible Vegetable Oil"
+        ],
+        "hidden_sugars": [
+          "Invert Syrup"
+        ],
+        "additives": [],
+        "allergens": [
+          "Wheat",
+          "Cashew",
+          "Gluten"
+        ],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "warning",
+            "message": "24% sugar plus invert syrup"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 2,
+        "grade": "D",
+        "inr_score": 14,
+        "baseline_points": 18,
+        "modifying_points": 4,
+        "limiting_factors": [
+          "High saturated fat (10g per 100g)",
+          "High calorie density (485kcal per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 44,
+        "limiting_factor": "saturated_fat",
+        "servings_per_package": 1.7,
+        "daily_percentages": {
+          "sodium": 6.6,
+          "sugar": 0.0,
+          "saturated_fat": 20.0,
+          "calories": 10.7
+        },
+        "explanation": "Limit to 44g to stay within saturated fat limits.",
+        "explanation_hindi": "44g tak hi khao, saturated fat ke liye."
+      },
+      "roast": {
+        "text": "Those tiny cashew bits you're paying extra for? About 3% of the cookie. The rest is the same sugar-flour-oil trinity as any other biscuit. Good Day? More like Sugar Day.",
+        "text_hindi": "Wo chhote chhote cashew ke tukde jiske liye extra de rahe ho? Cookie ka 3%. Baaki wahi sugar-flour-oil combo. Good Day? Sugar Day bolo.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Digestive biscuits",
+          "type": "product",
+          "reason": "Less sugar, more fiber",
+          "comparison": "30% less sugar"
+        },
+        {
+          "name": "Oats cookies (homemade)",
+          "type": "homemade",
+          "reason": "Control the sugar",
+          "comparison": "50% less sugar possible"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "tropicana-mixed-fruit-1l",
+      "slug": "tropicana-mixed-fruit-juice",
+      "name": "Tropicana Mixed Fruit Delight",
+      "name_hindi": "ट्रोपिकाना मिक्स्ड फ्रूट डिलाइट",
+      "brand": "PepsiCo",
+      "brand_slug": "pepsico",
+      "category": "Beverages",
+      "category_slug": "drinks",
+      "serving_size_g": 200,
+      "package_size_g": 1000,
+      "price_inr": 120,
+      "nutrients": {
+        "energy_kcal": 48,
+        "protein_g": 0.2,
+        "carbohydrates_g": 11.5,
+        "sugars_g": 10.5,
+        "fat_g": 0,
+        "saturated_fat_g": 0,
+        "fiber_g": 0,
+        "sodium_mg": 15
+      },
+      "ingredients": [
+        "Water",
+        "Mixed Fruit Juice Concentrate",
+        "Sugar",
+        "Acidity Regulator",
+        "Antioxidant",
+        "Stabilizer"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Water",
+          "Mixed Fruit Juice Concentrate",
+          "Sugar"
+        ],
+        "hidden_sugars": [],
+        "additives": [],
+        "allergens": [],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "warning",
+            "message": "Contains added sugar despite being called 'juice'"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 4,
+        "grade": "B",
+        "inr_score": 0,
+        "baseline_points": 0,
+        "modifying_points": 0,
+        "limiting_factors": [
+          "No major concerns"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 833,
+        "limiting_factor": "calories",
+        "servings_per_package": 1.2,
+        "daily_percentages": {
+          "sodium": 6.2,
+          "sugar": 0.0,
+          "saturated_fat": 0.0,
+          "calories": 20.0
+        },
+        "explanation": "Limit to 833g to stay within calories limits.",
+        "explanation_hindi": "833g tak hi khao, calories ke liye."
+      },
+      "roast": {
+        "text": "It says 'fruit' on the label 17 times, but actual fruit content? Maybe 10%. The rest is water, concentrate, and added sugar. You're paying ₹120 for what a ₹5 orange would give you better.",
+        "text_hindi": "Label pe 'fruit' 17 baar likha hai, par actual fruit? Shayad 10%. Baaki paani, concentrate, aur added sugar. ₹120 mein wo le rahe ho jo ₹5 ka santra behtar deta.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Fresh fruit",
+          "type": "homemade",
+          "reason": "Actual vitamins and fiber",
+          "comparison": "100% more fiber"
+        },
+        {
+          "name": "Fresh-squeezed juice",
+          "type": "homemade",
+          "reason": "No added sugar",
+          "comparison": "50% less sugar"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "kelloggs-chocos-375g",
+      "slug": "kelloggs-chocos",
+      "name": "Kellogg's Chocos",
+      "name_hindi": "केलॉग्स चोकोस",
+      "brand": "Kellogg's",
+      "brand_slug": "kelloggs",
+      "category": "Breakfast",
+      "category_slug": "nashta",
+      "serving_size_g": 30,
+      "package_size_g": 375,
+      "price_inr": 199,
+      "nutrients": {
+        "energy_kcal": 386,
+        "protein_g": 6,
+        "carbohydrates_g": 79,
+        "sugars_g": 32,
+        "fat_g": 4,
+        "saturated_fat_g": 2,
+        "fiber_g": 4,
+        "sodium_mg": 320
+      },
+      "ingredients": [
+        "Wheat",
+        "Sugar",
+        "Cocoa",
+        "Malt Extract",
+        "Salt",
+        "Vitamins and Minerals"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Wheat",
+          "Sugar",
+          "Cocoa"
+        ],
+        "hidden_sugars": [
+          "Malt Extract"
+        ],
+        "additives": [],
+        "allergens": [
+          "Wheat",
+          "Gluten"
+        ],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "critical",
+            "message": "32% sugar - designed to taste like chocolate dessert"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 4,
+        "grade": "B",
+        "inr_score": 1,
+        "baseline_points": 8,
+        "modifying_points": 7,
+        "limiting_factors": [
+          "No major concerns"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 104,
+        "limiting_factor": "calories",
+        "servings_per_package": 3.6,
+        "daily_percentages": {
+          "sodium": 16.6,
+          "sugar": 0.0,
+          "saturated_fat": 9.4,
+          "calories": 20.0
+        },
+        "explanation": "Limit to 104g to stay within calories limits.",
+        "explanation_hindi": "104g tak hi khao, calories ke liye."
+      },
+      "roast": {
+        "text": "Breakfast of champions? More like dessert before school. 32% sugar means a bowl of Chocos has as much sugar as a chocolate bar. The 'added vitamins' don't cancel out the sugar crash at 11am.",
+        "text_hindi": "Champions ka breakfast? School se pehle dessert bolo. 32% sugar matlab ek bowl Chocos = ek chocolate bar. 'Added vitamins' 11 baje ka sugar crash nahi rokenge.",
+        "tone": "stern",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Plain oats with honey",
+          "type": "homemade",
+          "reason": "Control the sugar, add real nutrition",
+          "comparison": "70% less sugar"
+        },
+        {
+          "name": "Poha",
+          "type": "category",
+          "reason": "Traditional, balanced",
+          "comparison": "90% less sugar"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "thums-up-600ml",
+      "slug": "thums-up",
+      "name": "Thums Up",
+      "name_hindi": "थम्स अप",
+      "brand": "Coca-Cola",
+      "brand_slug": "coca-cola",
+      "category": "Beverages",
+      "category_slug": "drinks",
+      "serving_size_g": 200,
+      "package_size_g": 600,
+      "price_inr": 40,
+      "nutrients": {
+        "energy_kcal": 44,
+        "protein_g": 0,
+        "carbohydrates_g": 11,
+        "sugars_g": 11,
+        "fat_g": 0,
+        "saturated_fat_g": 0,
+        "fiber_g": 0,
+        "sodium_mg": 15
+      },
+      "ingredients": [
+        "Carbonated Water",
+        "Sugar",
+        "Caramel Color",
+        "Phosphoric Acid",
+        "Natural Flavoring",
+        "Caffeine"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Carbonated Water",
+          "Sugar",
+          "Caramel Color"
+        ],
+        "hidden_sugars": [],
+        "additives": [
+          {
+            "code": "INS 150d",
+            "name": "Caramel Color",
+            "category": "color",
+            "concern_level": "caution",
+            "description": "May contain 4-MEI"
+          }
+        ],
+        "allergens": [],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "critical",
+            "message": "66g sugar in full bottle - 132% of daily limit"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 4,
+        "grade": "B",
+        "inr_score": 0,
+        "baseline_points": 0,
+        "modifying_points": 0,
+        "limiting_factors": [
+          "No major concerns"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 600,
+        "limiting_factor": "calories",
+        "servings_per_package": 1.0,
+        "daily_percentages": {
+          "sodium": 4.5,
+          "sugar": 0.0,
+          "saturated_fat": 0.0,
+          "calories": 13.2
+        },
+        "explanation": "You can eat the whole packet without exceeding recommended daily limits.",
+        "explanation_hindi": "Pura packet kha sakte ho, daily limit cross nahi hogi."
+      },
+      "roast": {
+        "text": "Taste the thunder, feel the diabetes. 600ml = 16 teaspoons of sugar. The 'toofan' they're talking about? That's your blood sugar levels. Aaj kuch TOOFANI karte hain is not medical advice.",
+        "text_hindi": "Taste the thunder, feel the diabetes. 600ml = 16 chamach cheeni. Jo 'toofan' ki baat kar rahe hain? Wo aapka blood sugar hai.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Jaljeera",
+          "type": "homemade",
+          "reason": "Refreshing, digestive, minimal sugar",
+          "comparison": "95% less sugar"
+        },
+        {
+          "name": "Buttermilk (Chaas)",
+          "type": "homemade",
+          "reason": "Probiotic, cooling",
+          "comparison": "Zero added sugar"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "hide-seek-chocolate-100g",
+      "slug": "hide-seek-chocolate",
+      "name": "Parle Hide & Seek Chocolate Chip Cookies",
+      "name_hindi": "पार्ले हाइड एंड सीक चॉकलेट चिप कुकीज़",
+      "brand": "Parle",
+      "brand_slug": "parle",
+      "category": "Biscuits & Cookies",
+      "category_slug": "biscuits",
+      "serving_size_g": 25,
+      "package_size_g": 100,
+      "price_inr": 30,
+      "nutrients": {
+        "energy_kcal": 497,
+        "protein_g": 5.5,
+        "carbohydrates_g": 66,
+        "sugars_g": 28,
+        "fat_g": 23,
+        "saturated_fat_g": 11,
+        "fiber_g": 2,
+        "sodium_mg": 280
+      },
+      "ingredients": [
+        "Wheat Flour",
+        "Sugar",
+        "Edible Vegetable Oil",
+        "Choco Chips",
+        "Cocoa Powder",
+        "Invert Syrup",
+        "Raising Agents",
+        "Salt"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Wheat Flour",
+          "Sugar",
+          "Edible Vegetable Oil"
+        ],
+        "hidden_sugars": [
+          "Invert Syrup"
+        ],
+        "additives": [],
+        "allergens": [
+          "Wheat",
+          "Gluten"
+        ],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "critical",
+            "message": "28% sugar - almost 1/3 of the cookie is sugar"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 2,
+        "grade": "D",
+        "inr_score": 14,
+        "baseline_points": 19,
+        "modifying_points": 5,
+        "limiting_factors": [
+          "High saturated fat (11g per 100g)",
+          "High calorie density (497kcal per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 40,
+        "limiting_factor": "saturated_fat",
+        "servings_per_package": 2.5,
+        "daily_percentages": {
+          "sodium": 5.6,
+          "sugar": 0.0,
+          "saturated_fat": 20.0,
+          "calories": 9.9
+        },
+        "explanation": "Limit to 40g to stay within saturated fat limits.",
+        "explanation_hindi": "40g tak hi khao, saturated fat ke liye."
+      },
+      "roast": {
+        "text": "Hide & Seek? The chocolate chips are definitely hiding. What you'll find easily is 28% sugar and 23% fat. The 'seek' part is looking for actual nutrition in this cookie.",
+        "text_hindi": "Hide & Seek? Chocolate chips definitely chhupe hue hain. Jo easily milega: 28% sugar aur 23% fat. 'Seek' karna padega actual nutrition dhundhne ke liye.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Dark chocolate (70%+)",
+          "type": "product",
+          "reason": "Real chocolate, less sugar",
+          "comparison": "40% less sugar"
+        },
+        {
+          "name": "Homemade oats cookies",
+          "type": "homemade",
+          "reason": "Control ingredients",
+          "comparison": "50% less sugar possible"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "real-fruit-power-mango-1l",
+      "slug": "real-mango-juice",
+      "name": "Real Fruit Power Mango",
+      "name_hindi": "रियल फ्रूट पावर मैंगो",
+      "brand": "Dabur",
+      "brand_slug": "dabur",
+      "category": "Beverages",
+      "category_slug": "drinks",
+      "serving_size_g": 200,
+      "package_size_g": 1000,
+      "price_inr": 99,
+      "nutrients": {
+        "energy_kcal": 60,
+        "protein_g": 0.2,
+        "carbohydrates_g": 15,
+        "sugars_g": 13,
+        "fat_g": 0,
+        "saturated_fat_g": 0,
+        "fiber_g": 0.2,
+        "sodium_mg": 10
+      },
+      "ingredients": [
+        "Mango Pulp",
+        "Water",
+        "Sugar",
+        "Acidity Regulators",
+        "Antioxidants"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Mango Pulp",
+          "Water",
+          "Sugar"
+        ],
+        "hidden_sugars": [],
+        "additives": [],
+        "allergens": [],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "warning",
+            "message": "Added sugar on top of natural fruit sugars"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 4,
+        "grade": "B",
+        "inr_score": 0,
+        "baseline_points": 0,
+        "modifying_points": 0,
+        "limiting_factors": [
+          "No major concerns"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 667,
+        "limiting_factor": "calories",
+        "servings_per_package": 1.5,
+        "daily_percentages": {
+          "sodium": 3.3,
+          "sugar": 0.0,
+          "saturated_fat": 0.0,
+          "calories": 20.0
+        },
+        "explanation": "Limit to 667g to stay within calories limits.",
+        "explanation_hindi": "667g tak hi khao, calories ke liye."
+      },
+      "roast": {
+        "text": "At least it has real mango pulp - but then they added sugar on top of the natural sugars. One glass = half your daily sugar budget. Just eat a mango instead - you'll get the fiber your intestines are begging for.",
+        "text_hindi": "Kam se kam isme real mango pulp hai - par uske upar added sugar bhi hai. Ek glass = aadha din ki sugar budget. Seedha aam khao - fiber milega jo aapki intestines maang rahi hain.",
+        "tone": "sympathetic",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Fresh mango",
+          "type": "homemade",
+          "reason": "Fiber, vitamins, no added sugar",
+          "comparison": "Zero added sugar"
+        },
+        {
+          "name": "Mango lassi (homemade)",
+          "type": "homemade",
+          "reason": "Protein from yogurt, control sugar",
+          "comparison": "30% less sugar possible"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "oreo-original-46g",
+      "slug": "oreo-original",
+      "name": "Oreo Original Vanilla Creme",
+      "name_hindi": "ओरियो ओरिजिनल वनीला क्रीम",
+      "brand": "Cadbury",
+      "brand_slug": "cadbury",
+      "category": "Biscuits & Cookies",
+      "category_slug": "biscuits",
+      "serving_size_g": 23,
+      "package_size_g": 46,
+      "price_inr": 20,
+      "nutrients": {
+        "energy_kcal": 480,
+        "protein_g": 5,
+        "carbohydrates_g": 68,
+        "sugars_g": 35,
+        "fat_g": 21,
+        "saturated_fat_g": 10,
+        "fiber_g": 2,
+        "sodium_mg": 350
+      },
+      "ingredients": [
+        "Sugar",
+        "Wheat Flour",
+        "Edible Vegetable Fat",
+        "Cocoa Solids",
+        "Invert Sugar Syrup",
+        "Raising Agents",
+        "Salt",
+        "Emulsifier"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Sugar",
+          "Wheat Flour",
+          "Edible Vegetable Fat"
+        ],
+        "hidden_sugars": [
+          "Invert Sugar Syrup"
+        ],
+        "additives": [],
+        "allergens": [
+          "Wheat",
+          "Gluten"
+        ],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "critical",
+            "message": "35% sugar - Sugar is literally the first ingredient"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 2,
+        "grade": "D",
+        "inr_score": 12,
+        "baseline_points": 17,
+        "modifying_points": 5,
+        "limiting_factors": [
+          "High saturated fat (10g per 100g)",
+          "High calorie density (480kcal per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 44,
+        "limiting_factor": "saturated_fat",
+        "servings_per_package": 1.0,
+        "daily_percentages": {
+          "sodium": 7.7,
+          "sugar": 0.0,
+          "saturated_fat": 20.0,
+          "calories": 10.6
+        },
+        "explanation": "Limit to 44g to stay within saturated fat limits.",
+        "explanation_hindi": "44g tak hi khao, saturated fat ke liye."
+      },
+      "roast": {
+        "text": "Milk's favorite cookie? More like dentist's favorite patient. Ingredient #1: Sugar. That cream you're twisting and licking? Pure vegetable fat mixed with more sugar. The ritual is fun; the nutrition is a crime.",
+        "text_hindi": "Milk ka favorite cookie? Dentist ka favorite patient bolo. Ingredient #1: Sugar. Wo cream jo twist aur lick kar rahe ho? Pure vegetable fat aur zyada sugar.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Dark chocolate digestive",
+          "type": "product",
+          "reason": "Less sugar, more fiber",
+          "comparison": "40% less sugar"
+        },
+        {
+          "name": "Marie biscuits",
+          "type": "product",
+          "reason": "Plain, lower sugar",
+          "comparison": "50% less sugar"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "frooti-mango-drink-600ml",
+      "slug": "frooti-mango",
+      "name": "Frooti Mango Drink",
+      "name_hindi": "फ्रूटी मैंगो ड्रिंक",
+      "brand": "Parle Agro",
+      "brand_slug": "parle-agro",
+      "category": "Beverages",
+      "category_slug": "drinks",
+      "serving_size_g": 200,
+      "package_size_g": 600,
+      "price_inr": 35,
+      "nutrients": {
+        "energy_kcal": 60,
+        "protein_g": 0,
+        "carbohydrates_g": 15,
+        "sugars_g": 14,
+        "fat_g": 0,
+        "saturated_fat_g": 0,
+        "fiber_g": 0,
+        "sodium_mg": 10
+      },
+      "ingredients": [
+        "Water",
+        "Sugar",
+        "Mango Pulp",
+        "Citric Acid",
+        "Mango Flavour",
+        "Preservatives"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Water",
+          "Sugar",
+          "Mango Pulp"
+        ],
+        "hidden_sugars": [],
+        "additives": [
+          {
+            "code": "INS 211",
+            "name": "Sodium Benzoate",
+            "category": "preservative",
+            "concern_level": "caution",
+            "description": "May form benzene when combined with Vitamin C"
+          }
+        ],
+        "allergens": [],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "critical",
+            "message": "14% sugar - sweet water with mango flavor"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 4,
+        "grade": "B",
+        "inr_score": 0,
+        "baseline_points": 0,
+        "modifying_points": 0,
+        "limiting_factors": [
+          "No major concerns"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 600,
+        "limiting_factor": "calories",
+        "servings_per_package": 1.0,
+        "daily_percentages": {
+          "sodium": 3.0,
+          "sugar": 0.0,
+          "saturated_fat": 0.0,
+          "calories": 18.0
+        },
+        "explanation": "You can eat the whole packet without exceeding recommended daily limits.",
+        "explanation_hindi": "Pura packet kha sakte ho, daily limit cross nahi hogi."
+      },
+      "roast": {
+        "text": "Mango Frooti, fresh and juicy? Check the ingredients: Water first, sugar second, mango third. You're giving your kids sugar water with mango perfume. A real mango costs ₹20 and won't need preservatives.",
+        "text_hindi": "Mango Frooti, fresh and juicy? Ingredients dekho: Paani pehle, cheeni doosra, aam teesra. Bachon ko de rahe ho cheeni ka paani mango perfume ke saath. Asli aam ₹20 ka hai aur preservatives nahi chahiye.",
+        "tone": "stern",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Fresh mango shake",
+          "type": "homemade",
+          "reason": "Real mango, no preservatives",
+          "comparison": "50% less sugar possible"
+        },
+        {
+          "name": "Aam panna",
+          "type": "homemade",
+          "reason": "Traditional, digestive, less sugar",
+          "comparison": "60% less sugar"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "horlicks-classic-malt-500g",
+      "slug": "horlicks-classic-malt",
+      "name": "Horlicks Classic Malt",
+      "name_hindi": "हॉर्लिक्स क्लासिक मॉल्ट",
+      "brand": "Hindustan Unilever",
+      "brand_slug": "hul",
+      "category": "For Kids",
+      "category_slug": "bachon-ke-liye",
+      "serving_size_g": 27,
+      "package_size_g": 500,
+      "price_inr": 270,
+      "nutrients": {
+        "energy_kcal": 377,
+        "protein_g": 11,
+        "carbohydrates_g": 79,
+        "sugars_g": 32,
+        "fat_g": 2,
+        "saturated_fat_g": 1,
+        "fiber_g": 1,
+        "sodium_mg": 200
+      },
+      "ingredients": [
+        "Malted Barley",
+        "Wheat Flour",
+        "Sugar",
+        "Milk Solids",
+        "Cocoa",
+        "Minerals",
+        "Vitamins"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Malted Barley",
+          "Wheat Flour",
+          "Sugar"
+        ],
+        "hidden_sugars": [
+          "Maltose from malt"
+        ],
+        "additives": [],
+        "allergens": [
+          "Wheat",
+          "Milk",
+          "Gluten"
+        ],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "critical",
+            "message": "32% sugar plus maltose from malted barley"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 4,
+        "grade": "B",
+        "inr_score": 0,
+        "baseline_points": 6,
+        "modifying_points": 6,
+        "limiting_factors": [
+          "No major concerns"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 106,
+        "limiting_factor": "calories",
+        "servings_per_package": 4.7,
+        "daily_percentages": {
+          "sodium": 10.6,
+          "sugar": 0.0,
+          "saturated_fat": 4.8,
+          "calories": 20.0
+        },
+        "explanation": "Limit to 106g to stay within calories limits.",
+        "explanation_hindi": "106g tak hi khao, calories ke liye."
+      },
+      "roast": {
+        "text": "Taller, stronger, sharper? The science says: 32% sugar. The protein is real (11g), but you're paying for it with nearly as much sugar. Malted barley sounds healthy until you realize it's basically pre-digested sugar.",
+        "text_hindi": "Taller, stronger, sharper? Science kehta hai: 32% sugar. Protein asli hai (11g), par utni hi sugar ke saath. Malted barley healthy lagta hai jab tak samajh na aaye ke ye basically pre-digested sugar hai.",
+        "tone": "sympathetic",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Plain milk + banana + nuts",
+          "type": "homemade",
+          "reason": "Real nutrition, no added sugar",
+          "comparison": "Zero added sugar"
+        },
+        {
+          "name": "Sattu",
+          "type": "homemade",
+          "reason": "Traditional, high protein, no sugar",
+          "comparison": "100% less added sugar"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "nutella-hazelnut-spread-290g",
+      "slug": "nutella-hazelnut-spread",
+      "name": "Nutella Hazelnut Spread with Cocoa",
+      "name_hindi": "नुटेला हेज़लनट स्प्रेड",
+      "brand": "Ferrero",
+      "brand_slug": "ferrero",
+      "category": "Sweets & Chocolates",
+      "category_slug": "meetha",
+      "serving_size_g": 15,
+      "package_size_g": 290,
+      "price_inr": 375,
+      "nutrients": {
+        "energy_kcal": 539,
+        "protein_g": 6.3,
+        "carbohydrates_g": 57.5,
+        "sugars_g": 56.3,
+        "fat_g": 30.9,
+        "saturated_fat_g": 10.6,
+        "fiber_g": 3.4,
+        "sodium_mg": 41
+      },
+      "ingredients": [
+        "Sugar",
+        "Palm Oil",
+        "Hazelnuts (13%)",
+        "Cocoa",
+        "Skimmed Milk Powder",
+        "Whey Powder",
+        "Lecithin",
+        "Vanillin"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Sugar",
+          "Palm Oil",
+          "Hazelnuts"
+        ],
+        "hidden_sugars": [],
+        "additives": [],
+        "allergens": [
+          "Milk",
+          "Hazelnuts"
+        ],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "critical",
+            "message": "56% sugar - more than half the jar is sugar"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 3,
+        "grade": "C",
+        "inr_score": 10,
+        "baseline_points": 16,
+        "modifying_points": 6,
+        "limiting_factors": [
+          "High saturated fat (10.6g per 100g)",
+          "High calorie density (539kcal per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 42,
+        "limiting_factor": "saturated_fat",
+        "servings_per_package": 7.0,
+        "daily_percentages": {
+          "sodium": 0.9,
+          "sugar": 0.0,
+          "saturated_fat": 20.0,
+          "calories": 11.2
+        },
+        "explanation": "Limit to 42g to stay within saturated fat limits.",
+        "explanation_hindi": "42g tak hi khao, saturated fat ke liye."
+      },
+      "roast": {
+        "text": "That 'hazelnut spread' is 56% sugar and only 13% hazelnuts. You're paying ₹375 for glorified chocolate frosting. The jar looks like it lasts weeks; at recommended servings, it lasts a month. We all know how that goes.",
+        "text_hindi": "Ye 'hazelnut spread' 56% sugar hai aur sirf 13% hazelnuts. ₹375 de rahe ho chocolate frosting ke liye. Jar lagta hai weeks chalega; recommended serving pe month. Par sab jaante hain kya hota hai.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Peanut butter (unsweetened)",
+          "type": "product",
+          "reason": "More protein, way less sugar",
+          "comparison": "95% less sugar"
+        },
+        {
+          "name": "Homemade date-nut spread",
+          "type": "homemade",
+          "reason": "Natural sweetness, real nuts",
+          "comparison": "No added sugar"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "quaker-oats-1kg",
+      "slug": "quaker-oats",
+      "name": "Quaker Oats",
+      "name_hindi": "क्वेकर ओट्स",
+      "brand": "PepsiCo",
+      "brand_slug": "pepsico",
+      "category": "Breakfast",
+      "category_slug": "nashta",
+      "serving_size_g": 40,
+      "package_size_g": 1000,
+      "price_inr": 220,
+      "nutrients": {
+        "energy_kcal": 367,
+        "protein_g": 13.5,
+        "carbohydrates_g": 60,
+        "sugars_g": 1,
+        "fat_g": 7,
+        "saturated_fat_g": 1.5,
+        "fiber_g": 10,
+        "sodium_mg": 6
+      },
+      "ingredients": [
+        "100% Whole Grain Oats"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "100% Whole Grain Oats"
+        ],
+        "hidden_sugars": [],
+        "additives": [],
+        "allergens": [
+          "Gluten"
+        ],
+        "flags": []
+      },
+      "mizan_score": {
+        "stars": 5,
+        "grade": "A",
+        "inr_score": -5,
+        "baseline_points": 5,
+        "modifying_points": 10,
+        "limiting_factors": [
+          "No major concerns"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 109,
+        "limiting_factor": "calories",
+        "servings_per_package": 9.2,
+        "daily_percentages": {
+          "sodium": 0.3,
+          "sugar": 0.0,
+          "saturated_fat": 7.4,
+          "calories": 20.0
+        },
+        "explanation": "Limit to 109g to stay within calories limits.",
+        "explanation_hindi": "109g tak hi khao, calories ke liye."
+      },
+      "roast": {
+        "text": "Finally, a product with one ingredient. No hidden sugars, no additives, no marketing tricks. Just oats. What you add to it is your choice - and your responsibility. Don't drown it in sugar.",
+        "text_hindi": "Finally, ek product jisme sirf ek ingredient hai. Koi chhupa hua sugar nahi, koi additives nahi. Sirf oats. Usme kya milate ho - wo aapki choice hai aur zimmedaari bhi.",
+        "tone": "sympathetic",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Daliya (broken wheat)",
+          "type": "category",
+          "reason": "Traditional Indian alternative",
+          "comparison": "Similar nutrition, local"
+        },
+        {
+          "name": "Ragi porridge",
+          "type": "homemade",
+          "reason": "Higher calcium, Indian superfood",
+          "comparison": "3x calcium"
+        }
+      ],
+      "nova_group": 1,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    },
+    {
+      "id": "dairy-milk-silk-150g",
+      "slug": "dairy-milk-silk",
+      "name": "Cadbury Dairy Milk Silk",
+      "name_hindi": "कैडबरी डेयरी मिल्क सिल्क",
+      "brand": "Cadbury",
+      "brand_slug": "cadbury",
+      "category": "Sweets & Chocolates",
+      "category_slug": "meetha",
+      "serving_size_g": 25,
+      "package_size_g": 150,
+      "price_inr": 180,
+      "nutrients": {
+        "energy_kcal": 546,
+        "protein_g": 6.7,
+        "carbohydrates_g": 56,
+        "sugars_g": 52,
+        "fat_g": 32,
+        "saturated_fat_g": 19,
+        "fiber_g": 2,
+        "sodium_mg": 120
+      },
+      "ingredients": [
+        "Sugar",
+        "Cocoa Butter",
+        "Milk Solids",
+        "Cocoa Mass",
+        "Vegetable Fat",
+        "Emulsifiers",
+        "Flavourings"
+      ],
+      "ingredients_analysis": {
+        "primary_ingredients": [
+          "Sugar",
+          "Cocoa Butter",
+          "Milk Solids"
+        ],
+        "hidden_sugars": [],
+        "additives": [],
+        "allergens": [
+          "Milk"
+        ],
+        "flags": [
+          {
+            "type": "hidden_sugar",
+            "severity": "critical",
+            "message": "52% sugar - more than half the bar"
+          }
+        ]
+      },
+      "mizan_score": {
+        "stars": 2,
+        "grade": "D",
+        "inr_score": 11,
+        "baseline_points": 17,
+        "modifying_points": 6,
+        "limiting_factors": [
+          "High saturated fat (19g per 100g)",
+          "High calorie density (546kcal per 100g)"
+        ]
+      },
+      "safe_limit": {
+        "recommended_serving_g": 23,
+        "limiting_factor": "saturated_fat",
+        "servings_per_package": 6.5,
+        "daily_percentages": {
+          "sodium": 1.4,
+          "sugar": 0.0,
+          "saturated_fat": 20.0,
+          "calories": 6.3
+        },
+        "explanation": "Very limited portion recommended. Just 23g due to high saturated fat.",
+        "explanation_hindi": "Bahut kam khana chahiye. Sirf 23g kyunki saturated fat zyada hai."
+      },
+      "roast": {
+        "text": "Silk = smoother texture = more fat + more sugar. 52% sugar, 32% fat. That silky feeling in your mouth? It's cocoa butter mixed with sugar melting. The entire bar is meant to last 10 days. You'll eat it in 10 minutes.",
+        "text_hindi": "Silk = smoother texture = zyada fat + zyada sugar. 52% sugar, 32% fat. Wo silky feeling muh mein? Cocoa butter aur sugar pighal rahi hai. Poori bar 10 din ke liye hai. Aap 10 minute mein khatam karoge.",
+        "tone": "witty",
+        "generated_by": "human",
+        "approved": true
+      },
+      "alternatives": [
+        {
+          "name": "Dark chocolate (70%+)",
+          "type": "product",
+          "reason": "Less sugar, more cocoa",
+          "comparison": "50% less sugar"
+        },
+        {
+          "name": "Dates with nuts",
+          "type": "homemade",
+          "reason": "Natural sweetness, fiber, protein",
+          "comparison": "No added sugar"
+        }
+      ],
+      "nova_group": 4,
+      "verified": true,
+      "last_updated": "2024-12-01",
+      "data_source": "label"
+    }
+  ],
+  "last_updated": "2024-12-01",
+  "total_count": 20
+}

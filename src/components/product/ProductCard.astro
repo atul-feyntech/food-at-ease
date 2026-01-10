@@ -1,0 +1,48 @@
+---
+import StarRating from '../ui/StarRating.astro';
+import type { Product } from '../../types';
+
+interface Props {
+  product: Product;
+  showBrand?: boolean;
+  variant?: 'default' | 'compact' | 'featured';
+}
+
+const { product, showBrand = true, variant = 'default' } = Astro.props;
+
+const gradeColors: Record<string, string> = {
+  'A': 'border-l-green-safe',
+  'B': 'border-l-green-safe/70',
+  'C': 'border-l-amber-warning',
+  'D': 'border-l-amber-warning',
+  'F': 'border-l-red-critical',
+};
+---
+
+<a
+  href={`/product/${product.slug}`}
+  class={`block bg-white rounded-xl card-shadow card-shadow-hover transition-shadow border-l-4 ${gradeColors[product.mizan_score.grade]} overflow-hidden`}
+>
+  <div class={variant === 'compact' ? 'p-3' : 'p-4'}>
+    <h3 class={`font-heading font-semibold text-gray-900 mb-1 line-clamp-2 ${variant === 'compact' ? 'text-sm' : 'text-base'}`}>
+      {product.name}
+    </h3>
+
+    {showBrand && (
+      <p class={`text-gray-500 mb-2 ${variant === 'compact' ? 'text-xs' : 'text-sm'}`}>
+        {product.brand}
+      </p>
+    )}
+
+    <div class="flex items-center justify-between mt-2">
+      <StarRating stars={product.mizan_score.stars} size="sm" showNumber={variant !== 'compact'} />
+      <span class="text-xs text-gray-400">{product.package_size_g}g</span>
+    </div>
+
+    {variant === 'featured' && (
+      <p class="text-sm text-gray-600 mt-3 line-clamp-2">
+        {product.mizan_score.summary}
+      </p>
+    )}
+  </div>
+</a>

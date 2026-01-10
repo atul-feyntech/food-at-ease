@@ -1,0 +1,114 @@
+---
+// Header component with logo, navigation, and search
+---
+
+<header class="bg-mizan-teal text-white sticky top-0 z-50 shadow-md">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2 hover:opacity-90 transition-opacity">
+        <span class="text-2xl">⚖️</span>
+        <div class="flex flex-col leading-tight">
+          <span class="font-heading font-bold text-xl tracking-wide">MIZAN</span>
+          <span class="text-xs opacity-80 font-urdu">میزان</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="/worst" class="text-sm hover:text-gold-accent transition-colors flex items-center gap-1">
+          <span>⚠️</span>
+          <span>Sab Se Bure</span>
+        </a>
+        <a href="/better" class="text-sm hover:text-gold-accent transition-colors flex items-center gap-1">
+          <span>✅</span>
+          <span>Better Options</span>
+        </a>
+        <a href="/samjho" class="text-sm hover:text-gold-accent transition-colors">
+          Samjho
+        </a>
+        <a href="/hum" class="text-sm hover:text-gold-accent transition-colors">
+          Hum
+        </a>
+      </nav>
+
+      <!-- Search Button (Desktop) -->
+      <div class="hidden md:block">
+        <a
+          href="/#search"
+          class="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-sm"
+        >
+          <span>🔍</span>
+          <span>Search products...</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden p-2 hover:bg-white/10 rounded-lg transition-colors"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-mizan-teal-dark">
+    <nav class="container mx-auto px-4 py-4 flex flex-col gap-3">
+      <a href="/" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
+        <span>🏠</span>
+        <span>Home</span>
+      </a>
+      <a href="/worst" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
+        <span>⚠️</span>
+        <span>Sab Se Bure (Worst)</span>
+      </a>
+      <a href="/better" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
+        <span>✅</span>
+        <span>Better Options</span>
+      </a>
+      <a href="/compare" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
+        <span>🔄</span>
+        <span>Compare</span>
+      </a>
+      <a href="/samjho" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
+        <span>📚</span>
+        <span>Samjho (Learn)</span>
+      </a>
+      <a href="/hum" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
+        <span>👥</span>
+        <span>Hum (About)</span>
+      </a>
+      <div class="pt-3 border-t border-white/20">
+        <a
+          href="/#search"
+          class="flex items-center gap-2 py-2 text-gold-accent"
+        >
+          <span>🔍</span>
+          <span>Search products...</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!menuBtn?.contains(e.target as Node) && !mobileMenu?.contains(e.target as Node)) {
+      mobileMenu?.classList.add('hidden');
+    }
+  });
+</script>
