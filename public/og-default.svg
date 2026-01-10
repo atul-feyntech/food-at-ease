@@ -1,0 +1,34 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0D5C63"/>
+
+  <!-- Subtle pattern -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="100" cy="530" r="200" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="1100" cy="100" r="150" fill="rgba(255,255,255,0.03)"/>
+
+  <!-- Scale emoji placeholder -->
+  <text x="600" y="200" font-size="120" text-anchor="middle" fill="white">⚖️</text>
+
+  <!-- Brand name -->
+  <text x="600" y="320" font-family="Georgia, serif" font-size="96" font-weight="bold" text-anchor="middle" fill="white">MIZAN</text>
+
+  <!-- Tagline -->
+  <text x="600" y="400" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#C9A227">Ab tolo, phir khao</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="470" font-family="system-ui, sans-serif" font-size="28" text-anchor="middle" fill="rgba(255,255,255,0.8)">Indian Packaged Food Health Ratings</text>
+
+  <!-- Stats bar -->
+  <rect x="300" y="520" width="600" height="60" rx="30" fill="rgba(255,255,255,0.1)"/>
+  <text x="450" y="560" font-family="system-ui, sans-serif" font-size="24" text-anchor="middle" fill="white">5,000+ Products</text>
+  <text x="600" y="560" font-family="system-ui, sans-serif" font-size="24" text-anchor="middle" fill="rgba(255,255,255,0.5)">•</text>
+  <text x="750" y="560" font-family="system-ui, sans-serif" font-size="24" text-anchor="middle" fill="white">Honest Ratings</text>
+</svg>
