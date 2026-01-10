@@ -1,51 +1,74 @@
 ---
-import type { Roast } from '../../types';
-
 interface Props {
-  roast: Roast;
+  roast: {
+    text?: string;
+    text_hindi?: string;
+    verdict_en?: string;
+    verdict_hi?: string;
+    title_en?: string;
+    title_hi?: string;
+    emoji?: string;
+    tone?: string;
+    generated_by?: string;
+    approved?: boolean;
+  };
 }
 
 const { roast } = Astro.props;
+
+// Handle both old format (text/text_hindi) and new format (verdict_en/verdict_hi)
+const verdictEn = roast.verdict_en ?? roast.text ?? '';
+const verdictHi = roast.verdict_hi ?? roast.text_hindi ?? '';
+const titleEn = roast.title_en ?? '';
+const titleHi = roast.title_hi ?? '';
+const emoji = roast.emoji ?? '💀';
 ---
 
 <div class="bg-mizan-teal/5 border-l-4 border-mizan-teal rounded-r-xl p-5">
   <div class="flex items-center gap-2 mb-4">
-    <span class="text-2xl">💀</span>
+    <span class="text-2xl">{emoji}</span>
     <h3 class="font-heading text-xl text-mizan-teal font-bold">
       MIZAN KA FAISLA
     </h3>
     <span class="text-sm text-gray-500">(The Verdict)</span>
   </div>
 
+  {titleEn && (
+    <div class="mb-3">
+      <span class="font-bold text-gray-900 text-lg">{titleEn}</span>
+      {titleHi && <span class="text-gray-500 ml-2">• {titleHi}</span>}
+    </div>
+  )}
+
   <blockquote class="text-lg text-gray-800 leading-relaxed mb-4 italic">
-    "{roast.text}"
+    "{verdictEn}"
   </blockquote>
 
-  {roast.text_hindi && (
+  {verdictHi && (
     <blockquote class="text-base text-gray-600 leading-relaxed border-t border-mizan-teal/20 pt-4 mt-4">
-      "{roast.text_hindi}"
+      "{verdictHi}"
     </blockquote>
   )}
 
   <div class="flex items-center justify-between mt-4 pt-3 border-t border-gray-200">
     <div class="flex items-center gap-2">
-      {roast.generated_by === 'ai' && (
-        <span class="text-xs text-gray-400 flex items-center gap-1">
-          <span>🤖</span> AI Generated
-        </span>
-      )}
+      <span class="text-xs text-gray-400 flex items-center gap-1">
+        <span>🤖</span> AI Generated
+      </span>
       {roast.approved && (
         <span class="text-xs text-green-safe flex items-center gap-1">
           <span>✓</span> Verified
         </span>
       )}
     </div>
-    <span class={`text-xs px-2 py-1 rounded-full ${
-      roast.tone === 'witty' ? 'bg-gold-accent/10 text-gold-accent' :
-      roast.tone === 'stern' ? 'bg-red-critical/10 text-red-critical' :
-      'bg-gray-100 text-gray-600'
-    }`}>
-      {roast.tone}
-    </span>
+    {roast.tone && (
+      <span class={`text-xs px-2 py-1 rounded-full ${
+        roast.tone === 'witty' ? 'bg-gold-accent/10 text-gold-accent' :
+        roast.tone === 'stern' ? 'bg-red-critical/10 text-red-critical' :
+        'bg-gray-100 text-gray-600'
+      }`}>
+        {roast.tone}
+      </span>
+    )}
   </div>
 </div>
