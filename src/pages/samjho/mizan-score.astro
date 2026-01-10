@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Mizan Score Kya Hai - Understanding Our Rating System | Mizan"
+  description="Learn how Mizan calculates health scores for packaged foods using FSSAI's Indian Nutrition Rating algorithm."
+>
+  <article class="py-12 md:py-16">
+    <div class="container mx-auto px-4 max-w-3xl">
+
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-gray-500 mb-6">
+        <a href="/" class="hover:text-mizan-teal">Home</a>
+        <span class="mx-2">›</span>
+        <a href="/samjho" class="hover:text-mizan-teal">Samjho</a>
+        <span class="mx-2">›</span>
+        <span class="text-gray-700">Mizan Score</span>
+      </nav>
+
+      <!-- Header -->
+      <header class="mb-8">
+        <span class="text-5xl">⭐</span>
+        <h1 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-2">
+          Mizan Score Kya Hai
+        </h1>
+        <p class="text-xl text-mizan-teal">Understanding Our Rating System</p>
+        <p class="text-gray-500 mt-2">3 min read</p>
+      </header>
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-none">
+
+        <p class="text-lg text-gray-700">
+          Mizan Score ek 1-5 star rating hai jo FSSAI ke Indian Nutrition Rating (INR) algorithm pe based hai.
+          Ye scientifically calculate hota hai — koi opinion nahi, sirf math.
+        </p>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">Star Ratings</h2>
+
+        <div class="space-y-4 my-6">
+          <div class="flex items-center gap-4 p-4 bg-green-safe/10 rounded-lg border border-green-safe/30">
+            <span class="text-3xl font-bold text-gold-accent">5★</span>
+            <div>
+              <span class="font-bold text-gray-900">Grade A</span>
+              <span class="text-gray-600"> — Excellent choice. Low in harmful nutrients.</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 bg-green-safe/5 rounded-lg border border-green-200">
+            <span class="text-3xl font-bold text-gold-accent">4★</span>
+            <div>
+              <span class="font-bold text-gray-900">Grade B</span>
+              <span class="text-gray-600"> — Good choice. Minor concerns.</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 bg-amber-warning/10 rounded-lg border border-amber-warning/30">
+            <span class="text-3xl font-bold text-gold-accent">3★</span>
+            <div>
+              <span class="font-bold text-gray-900">Grade C</span>
+              <span class="text-gray-600"> — Average. Consume in moderation.</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 bg-amber-warning/20 rounded-lg border border-amber-warning/50">
+            <span class="text-3xl font-bold text-gold-accent">2★</span>
+            <div>
+              <span class="font-bold text-gray-900">Grade D</span>
+              <span class="text-gray-600"> — Below average. Limit consumption.</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 bg-red-critical/10 rounded-lg border border-red-critical/30">
+            <span class="text-3xl font-bold text-gold-accent">1★</span>
+            <div>
+              <span class="font-bold text-gray-900">Grade F</span>
+              <span class="text-gray-600"> — Poor choice. High in harmful nutrients.</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">Calculation Method</h2>
+
+        <p class="text-gray-700 mb-4">
+          Score do parts mein calculate hota hai:
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-4 my-6">
+          <div class="bg-red-critical/5 border border-red-critical/20 rounded-xl p-5">
+            <h3 class="font-bold text-red-critical mb-2">Baseline Points (Bad)</h3>
+            <p class="text-sm text-gray-600 mb-2">Ye points add hote hain:</p>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>• Energy (calories)</li>
+              <li>• Sodium</li>
+              <li>• Sugar</li>
+              <li>• Saturated Fat</li>
+            </ul>
+            <p class="text-xs text-gray-500 mt-2">Higher = worse</p>
+          </div>
+          <div class="bg-green-safe/10 border border-green-safe/30 rounded-xl p-5">
+            <h3 class="font-bold text-green-safe mb-2">Modifying Points (Good)</h3>
+            <p class="text-sm text-gray-600 mb-2">Ye points subtract hote hain:</p>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>• Protein</li>
+              <li>• Fiber</li>
+            </ul>
+            <p class="text-xs text-gray-500 mt-2">Higher = better</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 rounded-xl p-5 my-6">
+          <p class="text-center text-gray-700">
+            <strong>Final Score</strong> = Baseline Points − Modifying Points
+          </p>
+          <p class="text-center text-sm text-gray-500 mt-2">
+            Lower final score = More stars
+          </p>
+        </div>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">Kya Mizan Score Perfect Hai?</h2>
+
+        <p class="text-gray-700 mb-4">
+          Nahi. Koi bhi single number poori picture nahi de sakta. Isliye hum ye bhi dikhate hain:
+        </p>
+
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Roz ki Hadd</strong> — Safe daily serving limit</li>
+          <li><strong>Limiting Factors</strong> — Konsa nutrient problem hai</li>
+          <li><strong>Mizan ka Faisla</strong> — Plain language verdict</li>
+          <li><strong>Full Nutrition</strong> — Complete breakdown</li>
+        </ul>
+
+        <div class="bg-mizan-teal/10 border border-mizan-teal/30 rounded-xl p-6 mt-10">
+          <h3 class="font-heading text-lg font-bold text-mizan-teal mb-3">Transparency</h3>
+          <p class="text-gray-700">
+            Humare saare calculations open source hain. Algorithm dekho, verify karo, improve karo.
+          </p>
+          <a href="https://github.com/atul-feyntech/mizan-india" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 mt-3 text-mizan-teal hover:underline font-medium">
+            View on GitHub →
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+      <div class="mt-12 pt-8 border-t border-gray-200 flex justify-between">
+        <a href="/samjho/label-padhna" class="text-mizan-teal hover:underline">← Label Padhna</a>
+        <a href="/samjho/icmr-guidelines" class="text-mizan-teal hover:underline">Next: ICMR Guidelines →</a>
+      </div>
+
+    </div>
+  </article>
+</BaseLayout>

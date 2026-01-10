@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Label Kaise Padhein - How to Read Food Labels | Mizan"
+  description="Learn how to read and understand food nutrition labels. Decode serving sizes, ingredients, and hidden information on packaged food."
+>
+  <article class="py-12 md:py-16">
+    <div class="container mx-auto px-4 max-w-3xl">
+
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-gray-500 mb-6">
+        <a href="/" class="hover:text-mizan-teal">Home</a>
+        <span class="mx-2">›</span>
+        <a href="/samjho" class="hover:text-mizan-teal">Samjho</a>
+        <span class="mx-2">›</span>
+        <span class="text-gray-700">Label Padhna</span>
+      </nav>
+
+      <!-- Header -->
+      <header class="mb-8">
+        <span class="text-5xl">🏷️</span>
+        <h1 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-2">
+          Label Kaise Padhein
+        </h1>
+        <p class="text-xl text-mizan-teal">How to Read Food Labels</p>
+        <p class="text-gray-500 mt-2">5 min read</p>
+      </header>
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-none">
+
+        <p class="text-lg text-gray-700">
+          Packaged food ke peeche wala label boring lagta hai, par yahi tumhari health ka GPS hai.
+          Agar sahi se padhna aa gaya, toh koi company tumhe fool nahi kar sakti.
+        </p>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">1. Serving Size Ka Jhol</h2>
+        <div class="bg-red-critical/5 border border-red-critical/20 rounded-xl p-5 mb-6">
+          <p class="text-gray-700 mb-2">
+            <strong>Sabse bada trick:</strong> Companies serving size chhota rakhti hain taaki numbers achhe lagein.
+          </p>
+          <p class="text-gray-600 text-sm">
+            Example: Ek chips packet "30g serving" dikhata hai, par packet 150g ka hai.
+            Tum poora khaoge, toh multiply karo 5 se!
+          </p>
+        </div>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">2. Per 100g Dekho</h2>
+        <p class="text-gray-700">
+          <strong>"Per 100g"</strong> column sabse honest hai. Isse comparison easy hota hai.
+        </p>
+        <div class="bg-green-safe/10 border border-green-safe/30 rounded-xl p-5 my-4">
+          <p class="font-medium text-green-safe mb-2">Quick Rules (per 100g):</p>
+          <ul class="space-y-1 text-gray-700">
+            <li>Sugar: <strong>&lt;5g</strong> = Low, <strong>&gt;15g</strong> = High</li>
+            <li>Sodium: <strong>&lt;120mg</strong> = Low, <strong>&gt;600mg</strong> = High</li>
+            <li>Sat Fat: <strong>&lt;1.5g</strong> = Low, <strong>&gt;5g</strong> = High</li>
+          </ul>
+        </div>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">3. Ingredients List Ka Secret</h2>
+        <p class="text-gray-700 mb-4">
+          Ingredients <strong>descending order</strong> mein likhe hote hain — jo pehle hai, wo sabse zyada hai.
+        </p>
+        <div class="bg-amber-warning/10 border border-amber-warning/30 rounded-xl p-5 mb-6">
+          <p class="text-gray-700">
+            Agar <strong>sugar</strong> (ya uske aliases) top 3 mein hai, toh product sugar bomb hai.
+            Dekho: Glucose, fructose, corn syrup, maltodextrin — sab sugar hai!
+          </p>
+        </div>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">4. % Daily Value</h2>
+        <p class="text-gray-700 mb-4">
+          Ye batata hai ki ek serving mein kitna % daily limit aa raha hai.
+        </p>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>5% ya kam</strong> = Low (achha for sodium, sugar, sat fat)</li>
+          <li><strong>15% ya zyada</strong> = High (achha for protein, fiber, vitamins)</li>
+        </ul>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">5. "Health" Claims Ignore Karo</h2>
+        <p class="text-gray-700">
+          Front of pack pe jo likha hai — "Natural", "No Added Sugar", "Protein Rich" — ye marketing hai.
+          <strong>Back label</strong> hi sach batata hai.
+        </p>
+
+        <div class="bg-mizan-teal/10 border border-mizan-teal/30 rounded-xl p-6 mt-10">
+          <h3 class="font-heading text-lg font-bold text-mizan-teal mb-3">Mizan Tip</h3>
+          <p class="text-gray-700">
+            Label confusing lage? Sirf Mizan pe product search karo — hum sab calculate karke simple verdict de dete hain.
+          </p>
+          <a href="/" class="inline-flex items-center gap-2 mt-3 text-mizan-teal hover:underline font-medium">
+            Search products →
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+      <div class="mt-12 pt-8 border-t border-gray-200 flex justify-between">
+        <a href="/samjho" class="text-mizan-teal hover:underline">← Back to Samjho</a>
+        <a href="/samjho/mizan-score" class="text-mizan-teal hover:underline">Next: Mizan Score →</a>
+      </div>
+
+    </div>
+  </article>
+</BaseLayout>

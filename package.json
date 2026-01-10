@@ -1,15 +1,16 @@
 {
-  "name": "faithful-field",
+  "name": "mizan",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npx pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.1",
+    "@pagefind/default-ui": "^1.4.0",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.8",
     "tailwindcss": "^4.1.18"

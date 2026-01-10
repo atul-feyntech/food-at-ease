@@ -1,0 +1,321 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import productsData from '../data/products.json';
+import type { Product } from '../types';
+
+const products = productsData.products as Product[];
+---
+
+<BaseLayout
+  title="Compare Products - Side by Side Nutrition Comparison | Mizan"
+  description="Compare packaged food products side by side. See nutrition differences, scores, and make better choices."
+>
+  <section class="py-8 md:py-12">
+    <div class="container mx-auto px-4">
+
+      <!-- Header -->
+      <header class="text-center mb-8">
+        <div class="text-5xl mb-4">⚖️</div>
+        <h1 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          COMPARE PRODUCTS
+        </h1>
+        <p class="text-xl text-gray-600">Tolo Aur Dekho</p>
+        <p class="text-gray-500 mt-2 max-w-xl mx-auto">
+          Do products ko side-by-side compare karo. Dekho kaunsa better hai.
+        </p>
+      </header>
+
+      <!-- Product Selectors -->
+      <div class="grid md:grid-cols-2 gap-6 mb-8 max-w-4xl mx-auto">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Product 1</label>
+          <select id="product1" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mizan-teal focus:border-mizan-teal">
+            <option value="">Select product...</option>
+            {products.map((p) => (
+              <option value={p.slug}>{p.name} ({p.brand})</option>
+            ))}
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Product 2</label>
+          <select id="product2" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mizan-teal focus:border-mizan-teal">
+            <option value="">Select product...</option>
+            {products.map((p) => (
+              <option value={p.slug}>{p.name} ({p.brand})</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      <!-- Comparison Table -->
+      <div id="comparison" class="hidden max-w-4xl mx-auto">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <!-- Header Row -->
+          <div class="grid grid-cols-3 bg-gray-50 border-b border-gray-200">
+            <div class="p-4 font-medium text-gray-500">Attribute</div>
+            <div class="p-4 text-center border-l border-gray-200">
+              <span id="name1" class="font-bold text-gray-900"></span>
+            </div>
+            <div class="p-4 text-center border-l border-gray-200">
+              <span id="name2" class="font-bold text-gray-900"></span>
+            </div>
+          </div>
+
+          <!-- Mizan Score -->
+          <div class="grid grid-cols-3 border-b border-gray-100">
+            <div class="p-4 font-medium text-gray-700">Mizan Score</div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="score1" class="text-2xl font-bold text-gold-accent"></span>
+            </div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="score2" class="text-2xl font-bold text-gold-accent"></span>
+            </div>
+          </div>
+
+          <!-- Grade -->
+          <div class="grid grid-cols-3 border-b border-gray-100 bg-gray-50">
+            <div class="p-4 font-medium text-gray-700">Grade</div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="grade1" class="px-3 py-1 rounded-full text-sm font-bold"></span>
+            </div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="grade2" class="px-3 py-1 rounded-full text-sm font-bold"></span>
+            </div>
+          </div>
+
+          <!-- Safe Limit -->
+          <div class="grid grid-cols-3 border-b border-gray-100">
+            <div class="p-4 font-medium text-gray-700">Roz ki Hadd</div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="limit1" class="font-bold text-gray-900"></span>
+            </div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="limit2" class="font-bold text-gray-900"></span>
+            </div>
+          </div>
+
+          <!-- Calories -->
+          <div class="grid grid-cols-3 border-b border-gray-100 bg-gray-50">
+            <div class="p-4 font-medium text-gray-700">Calories (per 100g)</div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="calories1"></span>
+            </div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="calories2"></span>
+            </div>
+          </div>
+
+          <!-- Sugar -->
+          <div class="grid grid-cols-3 border-b border-gray-100">
+            <div class="p-4 font-medium text-gray-700">Sugar (per 100g)</div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="sugar1"></span>
+            </div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="sugar2"></span>
+            </div>
+          </div>
+
+          <!-- Sodium -->
+          <div class="grid grid-cols-3 border-b border-gray-100 bg-gray-50">
+            <div class="p-4 font-medium text-gray-700">Sodium (per 100g)</div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="sodium1"></span>
+            </div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="sodium2"></span>
+            </div>
+          </div>
+
+          <!-- Saturated Fat -->
+          <div class="grid grid-cols-3 border-b border-gray-100">
+            <div class="p-4 font-medium text-gray-700">Saturated Fat (per 100g)</div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="satfat1"></span>
+            </div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="satfat2"></span>
+            </div>
+          </div>
+
+          <!-- Protein -->
+          <div class="grid grid-cols-3 border-b border-gray-100 bg-gray-50">
+            <div class="p-4 font-medium text-gray-700">Protein (per 100g)</div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="protein1"></span>
+            </div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="protein2"></span>
+            </div>
+          </div>
+
+          <!-- Fiber -->
+          <div class="grid grid-cols-3">
+            <div class="p-4 font-medium text-gray-700">Fiber (per 100g)</div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="fiber1"></span>
+            </div>
+            <div class="p-4 text-center border-l border-gray-100">
+              <span id="fiber2"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Verdict -->
+        <div id="verdict" class="mt-6 p-6 bg-mizan-teal/10 border border-mizan-teal/30 rounded-xl text-center hidden">
+          <p class="text-lg font-medium text-mizan-teal" id="verdict-text"></p>
+        </div>
+
+        <!-- Links -->
+        <div class="mt-6 flex justify-center gap-4">
+          <a id="link1" href="#" class="text-mizan-teal hover:underline">View Product 1 →</a>
+          <a id="link2" href="#" class="text-mizan-teal hover:underline">View Product 2 →</a>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="text-center py-12 bg-gray-50 rounded-xl max-w-4xl mx-auto">
+        <p class="text-gray-500 text-lg">Dono products select karo comparison dekhne ke liye</p>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
+
+<script define:vars={{ products }}>
+  const select1 = document.getElementById('product1');
+  const select2 = document.getElementById('product2');
+  const comparison = document.getElementById('comparison');
+  const emptyState = document.getElementById('empty-state');
+  const verdict = document.getElementById('verdict');
+
+  function getProduct(slug) {
+    return products.find(p => p.slug === slug);
+  }
+
+  function getGradeClass(grade) {
+    const classes = {
+      'A': 'bg-green-safe text-white',
+      'B': 'bg-green-400 text-white',
+      'C': 'bg-amber-warning text-white',
+      'D': 'bg-orange-500 text-white',
+      'F': 'bg-red-critical text-white'
+    };
+    return classes[grade] || 'bg-gray-500 text-white';
+  }
+
+  function highlightBetter(id1, id2, val1, val2, lowerIsBetter = true) {
+    const el1 = document.getElementById(id1);
+    const el2 = document.getElementById(id2);
+
+    el1.classList.remove('text-green-safe', 'text-red-critical', 'font-bold');
+    el2.classList.remove('text-green-safe', 'text-red-critical', 'font-bold');
+
+    if (val1 === val2) return;
+
+    const better1 = lowerIsBetter ? val1 < val2 : val1 > val2;
+
+    if (better1) {
+      el1.classList.add('text-green-safe', 'font-bold');
+      el2.classList.add('text-red-critical');
+    } else {
+      el2.classList.add('text-green-safe', 'font-bold');
+      el1.classList.add('text-red-critical');
+    }
+  }
+
+  function updateComparison() {
+    const slug1 = select1.value;
+    const slug2 = select2.value;
+
+    if (!slug1 || !slug2) {
+      comparison.classList.add('hidden');
+      emptyState.classList.remove('hidden');
+      return;
+    }
+
+    const p1 = getProduct(slug1);
+    const p2 = getProduct(slug2);
+
+    if (!p1 || !p2) return;
+
+    // Show comparison, hide empty state
+    comparison.classList.remove('hidden');
+    emptyState.classList.add('hidden');
+
+    // Update names
+    document.getElementById('name1').textContent = p1.name;
+    document.getElementById('name2').textContent = p2.name;
+
+    // Update scores
+    document.getElementById('score1').textContent = `${p1.mizan_score.stars}★`;
+    document.getElementById('score2').textContent = `${p2.mizan_score.stars}★`;
+    highlightBetter('score1', 'score2', p1.mizan_score.stars, p2.mizan_score.stars, false);
+
+    // Update grades
+    const grade1El = document.getElementById('grade1');
+    const grade2El = document.getElementById('grade2');
+    grade1El.textContent = p1.mizan_score.grade;
+    grade2El.textContent = p2.mizan_score.grade;
+    grade1El.className = `px-3 py-1 rounded-full text-sm font-bold ${getGradeClass(p1.mizan_score.grade)}`;
+    grade2El.className = `px-3 py-1 rounded-full text-sm font-bold ${getGradeClass(p2.mizan_score.grade)}`;
+
+    // Update safe limits
+    document.getElementById('limit1').textContent = `${p1.safe_limit.recommended_serving_g}g`;
+    document.getElementById('limit2').textContent = `${p2.safe_limit.recommended_serving_g}g`;
+    highlightBetter('limit1', 'limit2', p1.safe_limit.recommended_serving_g, p2.safe_limit.recommended_serving_g, false);
+
+    // Update nutrients
+    document.getElementById('calories1').textContent = `${p1.nutrients.energy_kcal} kcal`;
+    document.getElementById('calories2').textContent = `${p2.nutrients.energy_kcal} kcal`;
+    highlightBetter('calories1', 'calories2', p1.nutrients.energy_kcal, p2.nutrients.energy_kcal, true);
+
+    document.getElementById('sugar1').textContent = `${p1.nutrients.sugar_g}g`;
+    document.getElementById('sugar2').textContent = `${p2.nutrients.sugar_g}g`;
+    highlightBetter('sugar1', 'sugar2', p1.nutrients.sugar_g, p2.nutrients.sugar_g, true);
+
+    document.getElementById('sodium1').textContent = `${p1.nutrients.sodium_mg}mg`;
+    document.getElementById('sodium2').textContent = `${p2.nutrients.sodium_mg}mg`;
+    highlightBetter('sodium1', 'sodium2', p1.nutrients.sodium_mg, p2.nutrients.sodium_mg, true);
+
+    document.getElementById('satfat1').textContent = `${p1.nutrients.saturated_fat_g}g`;
+    document.getElementById('satfat2').textContent = `${p2.nutrients.saturated_fat_g}g`;
+    highlightBetter('satfat1', 'satfat2', p1.nutrients.saturated_fat_g, p2.nutrients.saturated_fat_g, true);
+
+    document.getElementById('protein1').textContent = `${p1.nutrients.protein_g}g`;
+    document.getElementById('protein2').textContent = `${p2.nutrients.protein_g}g`;
+    highlightBetter('protein1', 'protein2', p1.nutrients.protein_g, p2.nutrients.protein_g, false);
+
+    document.getElementById('fiber1').textContent = `${p1.nutrients.fiber_g}g`;
+    document.getElementById('fiber2').textContent = `${p2.nutrients.fiber_g}g`;
+    highlightBetter('fiber1', 'fiber2', p1.nutrients.fiber_g, p2.nutrients.fiber_g, false);
+
+    // Update links
+    document.getElementById('link1').href = `/product/${p1.slug}`;
+    document.getElementById('link2').href = `/product/${p2.slug}`;
+
+    // Update verdict
+    const verdictEl = document.getElementById('verdict');
+    const verdictText = document.getElementById('verdict-text');
+
+    if (p1.mizan_score.stars > p2.mizan_score.stars) {
+      verdictText.textContent = `✅ ${p1.name} better hai — ${p1.mizan_score.stars}★ vs ${p2.mizan_score.stars}★`;
+      verdictEl.classList.remove('hidden');
+    } else if (p2.mizan_score.stars > p1.mizan_score.stars) {
+      verdictText.textContent = `✅ ${p2.name} better hai — ${p2.mizan_score.stars}★ vs ${p1.mizan_score.stars}★`;
+      verdictEl.classList.remove('hidden');
+    } else {
+      verdictText.textContent = `⚖️ Dono same score pe hain — ${p1.mizan_score.stars}★. Details dekho!`;
+      verdictEl.classList.remove('hidden');
+    }
+  }
+
+  select1.addEventListener('change', updateComparison);
+  select2.addEventListener('change', updateComparison);
+
+  // Check URL params for pre-selected products
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('p1')) select1.value = urlParams.get('p1');
+  if (urlParams.get('p2')) select2.value = urlParams.get('p2');
+  if (urlParams.get('p1') || urlParams.get('p2')) updateComparison();
+</script>

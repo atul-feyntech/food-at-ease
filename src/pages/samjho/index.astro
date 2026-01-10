@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const articles = [
+  {
+    slug: 'label-padhna',
+    title: 'Label Kaise Padhein',
+    title_en: 'How to Read Food Labels',
+    icon: '🏷️',
+    description: 'Packaged food ke label mein chhupe secrets samjho.',
+    readTime: '5 min'
+  },
+  {
+    slug: 'mizan-score',
+    title: 'Mizan Score Kya Hai',
+    title_en: 'Understanding Mizan Score',
+    icon: '⭐',
+    description: 'Humare 1-5 star rating system ko samjho.',
+    readTime: '3 min'
+  },
+  {
+    slug: 'icmr-guidelines',
+    title: 'ICMR Guidelines',
+    title_en: 'Indian Nutrition Standards',
+    icon: '🇮🇳',
+    description: 'Bharat ke official nutrition standards kya kehte hain.',
+    readTime: '4 min'
+  },
+  {
+    slug: 'hidden-sugar',
+    title: 'Chhupa Hua Sugar',
+    title_en: 'Hidden Sugars in Food',
+    icon: '🍬',
+    description: 'Sugar ke 50+ naam jo companies use karti hain.',
+    readTime: '4 min'
+  }
+];
+---
+
+<BaseLayout
+  title="Samjho - Learn About Food & Nutrition | Mizan"
+  description="Learn how to read food labels, understand nutrition, and make healthier choices. Educational content in Hindi and English."
+>
+  <section class="py-12 md:py-16">
+    <div class="container mx-auto px-4 max-w-4xl">
+
+      <!-- Header -->
+      <header class="text-center mb-12">
+        <div class="text-5xl mb-4">📚</div>
+        <h1 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          SAMJHO
+        </h1>
+        <p class="text-xl text-gray-600">Learn & Understand</p>
+        <p class="text-gray-500 mt-4 max-w-xl mx-auto">
+          Packaged food ke baare mein sab kuch seekho. Labels padhna, nutrients samajhna,
+          aur healthier choices banana.
+        </p>
+      </header>
+
+      <!-- Articles Grid -->
+      <div class="grid md:grid-cols-2 gap-6">
+        {articles.map((article) => (
+          <a
+            href={`/samjho/${article.slug}`}
+            class="block bg-white rounded-xl p-6 card-shadow hover:shadow-lg transition-shadow border border-gray-100"
+          >
+            <div class="flex items-start gap-4">
+              <span class="text-4xl">{article.icon}</span>
+              <div class="flex-1">
+                <h2 class="font-heading text-xl font-bold text-gray-900 mb-1">
+                  {article.title}
+                </h2>
+                <p class="text-sm text-mizan-teal mb-2">{article.title_en}</p>
+                <p class="text-gray-600 text-sm mb-3">{article.description}</p>
+                <span class="text-xs text-gray-400">{article.readTime} read</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <!-- Quick Facts -->
+      <div class="mt-12 bg-amber-warning/10 border border-amber-warning/30 rounded-xl p-6">
+        <h3 class="font-heading text-lg font-bold text-amber-warning mb-4 flex items-center gap-2">
+          <span>⚡</span> Quick Facts
+        </h3>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start gap-2">
+            <span class="text-amber-warning">•</span>
+            <span><strong>2000mg</strong> — Daily sodium limit for adults (ICMR 2024)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-warning">•</span>
+            <span><strong>50g</strong> — Maximum free sugars per day (10% of calories)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-warning">•</span>
+            <span><strong>22g</strong> — Saturated fat limit for 2000 kcal diet</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-warning">•</span>
+            <span><strong>55g</strong> — Recommended daily protein for adults</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-8 text-center">
+        <a href="/" class="inline-flex items-center gap-2 text-mizan-teal hover:text-mizan-teal-dark font-medium">
+          <span>←</span> Back to Home
+        </a>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
