@@ -3,30 +3,41 @@
 /* Mizan Brand Colors */
 @theme {
   /* Primary Colors */
-  --color-mizan-teal: #0D5C63;
-  --color-mizan-teal-light: #1A7A82;
-  --color-mizan-teal-dark: #094449;
+  --color-mizan-teal: #2563EB;
+  /* Royal Blue */
+  --color-mizan-teal-light: #60A5FA;
+  /* Blue 400 */
+  --color-mizan-teal-dark: #1E40AF;
+  /* Blue 800 */
 
   /* Background */
-  --color-warm-white: #F8F4E9;
+  --color-warm-white: #F8FAFC;
+  /* Slate 50 */
 
   /* Status Colors */
-  --color-amber-warning: #E8871E;
-  --color-amber-light: #F5A94D;
-  --color-red-critical: #C23B22;
-  --color-red-light: #D4553D;
-  --color-green-safe: #4A7C59;
-  --color-green-light: #5E9970;
+  --color-amber-warning: #D97706;
+  /* Amber 600 */
+  --color-amber-light: #FBBF24;
+  /* Amber 400 */
+  --color-red-critical: #DC2626;
+  /* Red 600 */
+  --color-red-light: #F87171;
+  /* Red 400 */
+  --color-green-safe: #16A34A;
+  /* Green 600 */
+  --color-green-light: #4ADE80;
+  /* Green 400 */
 
   /* Accent */
-  --color-gold-accent: #C9A227;
-  --color-gold-light: #DAB94A;
+  --color-gold-accent: #EAB308;
+  /* Yellow 500 */
+  --color-gold-light: #FDE047;
+  /* Yellow 300 */
 
   /* Fonts */
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', Consolas, monospace;
-  --font-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
 }
 
 /* Base Styles */
@@ -42,17 +53,18 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
 }
 
-/* Urdu Text */
-.font-urdu {
-  font-family: var(--font-urdu);
-  direction: rtl;
-}
+
 
 /* Utility Classes */
 .text-mizan-teal {
@@ -243,7 +255,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Focus States */
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   outline: 2px solid var(--color-mizan-teal);
   outline-offset: 2px;
 }

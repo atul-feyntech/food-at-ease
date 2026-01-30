@@ -305,7 +305,7 @@ const products = productsData.products as Product[];
       verdictText.textContent = `✅ ${p2.name} is better — ${p2.mizan_score.stars}★ vs ${p1.mizan_score.stars}★`;
       verdictEl.classList.remove('hidden');
     } else {
-      verdictText.textContent = `⚖️ Both have the same score — ${p1.mizan_score.stars}★. Check details!`;
+      verdictText.textContent = `Both have the same score — ${p1.mizan_score.stars}★. Check details!`;
       verdictEl.classList.remove('hidden');
     }
   }
