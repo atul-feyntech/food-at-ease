@@ -2,35 +2,35 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const sugarNames = [
-  { name: 'Sucrose', hindi: 'Regular table sugar', common: true },
-  { name: 'High Fructose Corn Syrup', hindi: 'HFCS', common: true },
-  { name: 'Glucose', hindi: 'Dextrose', common: true },
-  { name: 'Fructose', hindi: 'Fruit sugar', common: true },
-  { name: 'Maltose', hindi: 'Malt sugar', common: false },
-  { name: 'Maltodextrin', hindi: 'Sneaky one!', common: true },
-  { name: 'Corn Syrup', hindi: 'Maize syrup', common: true },
-  { name: 'Invert Sugar', hindi: 'Liquid sugar', common: false },
-  { name: 'Jaggery', hindi: 'Gur — still sugar!', common: true },
-  { name: 'Honey', hindi: 'Shahad — still sugar!', common: true },
-  { name: 'Agave Nectar', hindi: '"Natural" sugar', common: false },
-  { name: 'Brown Sugar', hindi: 'Refined + molasses', common: true },
-  { name: 'Cane Sugar', hindi: 'Sounds fancy, same thing', common: true },
-  { name: 'Coconut Sugar', hindi: 'Trendy but still sugar', common: false },
-  { name: 'Date Sugar', hindi: 'Khajoori cheeni', common: false },
-  { name: 'Molasses', hindi: 'Sheera', common: false },
-  { name: 'Rice Syrup', hindi: 'Chawal ka syrup', common: false },
-  { name: 'Barley Malt', hindi: 'Jau ka malt', common: false },
-  { name: 'Evaporated Cane Juice', hindi: 'Fancy name for sugar', common: false },
-  { name: 'Fruit Juice Concentrate', hindi: 'Concentrated sugar', common: true },
-  { name: 'Dextrin', hindi: 'Modified starch', common: false },
-  { name: 'Caramel', hindi: 'Burnt sugar', common: true },
-  { name: 'Golden Syrup', hindi: 'Inverted sugar syrup', common: false },
-  { name: 'Treacle', hindi: 'British molasses', common: false },
+  { name: 'Sucrose', desc: 'Regular table sugar', common: true },
+  { name: 'High Fructose Corn Syrup', desc: 'HFCS - Corn sweetener', common: true },
+  { name: 'Glucose', desc: 'Dextrose - Simple sugar', common: true },
+  { name: 'Fructose', desc: 'Fruit sugar', common: true },
+  { name: 'Maltose', desc: 'Malt sugar', common: false },
+  { name: 'Maltodextrin', desc: 'Processed starch sugar', common: true },
+  { name: 'Corn Syrup', desc: 'Liquid corn sweetener', common: true },
+  { name: 'Invert Sugar', desc: 'Liquid sugar syrup', common: false },
+  { name: 'Jaggery', desc: 'Unrefined sugar/Gur', common: true },
+  { name: 'Honey', desc: 'Natural sugar syrup', common: true },
+  { name: 'Agave Nectar', desc: '"Natural" syrup', common: false },
+  { name: 'Brown Sugar', desc: 'Refined sugar + molasses', common: true },
+  { name: 'Cane Sugar', desc: 'Regular sugar', common: true },
+  { name: 'Coconut Sugar', desc: 'Palm sugar', common: false },
+  { name: 'Date Sugar', desc: 'Ground dates', common: false },
+  { name: 'Molasses', desc: 'Thick sugar syrup', common: false },
+  { name: 'Rice Syrup', desc: 'Rice derived sweetener', common: false },
+  { name: 'Barley Malt', desc: 'Malted barley sugar', common: false },
+  { name: 'Evaporated Cane Juice', desc: 'Fancy name for sugar', common: false },
+  { name: 'Fruit Juice Concentrate', desc: 'Concentrated sugar', common: true },
+  { name: 'Dextrin', desc: 'Modified starch', common: false },
+  { name: 'Caramel', desc: 'Burnt sugar', common: true },
+  { name: 'Golden Syrup', desc: 'Inverted sugar syrup', common: false },
+  { name: 'Treacle', desc: 'Dark molasses', common: false },
 ];
 ---
 
 <BaseLayout
-  title="Chhupa Hua Sugar - Hidden Sugars in Food | Mizan"
+  title="Hidden Sugars in Food | Mizan"
   description="Learn the 50+ names companies use to hide sugar in ingredient lists. Decode maltodextrin, HFCS, and other sugar aliases."
 >
   <article class="py-12 md:py-16">
@@ -38,9 +38,9 @@ const sugarNames = [
 
       <!-- Breadcrumb -->
       <nav class="text-sm text-gray-500 mb-6">
-        <a href="/" class="hover:text-mizan-teal">Home</a>
+        <a href="/" class="hover:text-mizan-blue">Home</a>
         <span class="mx-2">›</span>
-        <a href="/samjho" class="hover:text-mizan-teal">Samjho</a>
+        <a href="/learn" class="hover:text-mizan-blue">Learn</a>
         <span class="mx-2">›</span>
         <span class="text-gray-700">Hidden Sugar</span>
       </nav>
@@ -49,9 +49,9 @@ const sugarNames = [
       <header class="mb-8">
         <span class="text-5xl">🍬</span>
         <h1 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-2">
-          Chhupa Hua Sugar
+          Hidden Sugars
         </h1>
-        <p class="text-xl text-mizan-teal">Hidden Sugars in Food</p>
+        <p class="text-xl text-mizan-blue">The many faces of sugar.</p>
         <p class="text-gray-500 mt-2">4 min read</p>
       </header>
 
@@ -59,26 +59,26 @@ const sugarNames = [
       <div class="prose prose-lg max-w-none">
 
         <p class="text-lg text-gray-700">
-          "No Added Sugar" likha hai? Check karo — probably kisi aur naam se chhupaya hai.
-          Companies 50+ different names use karti hain sugar ko hide karne ke liye.
+          Does it say "No Added Sugar"? Check the label — it might be hidden under another name.
+          Companies use over 50 different names to hide sugar in the ingredient list.
         </p>
 
         <div class="bg-red-critical/10 border border-red-critical/30 rounded-xl p-5 my-6">
           <p class="font-bold text-red-critical mb-2">The Trick:</p>
           <p class="text-gray-700">
-            Agar ingredients list mein sugar first hai, toh consumers avoid karenge.
-            Solution? Sugar ko 4-5 different types mein split karo — sab neeche chale jaayenge,
-            par total sugar same rahega!
+            If "Sugar" is listed as the first ingredient, consumers might avoid the product.
+            Solution? Split the sugar into 4-5 different types. They all move down the list (since ingredients are listed by weight),
+            but the total sugar content remains high!
           </p>
         </div>
 
-        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">Sugar Ke 24+ Naam</h2>
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">24+ Names for Sugar</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
           {sugarNames.map((sugar) => (
             <div class={`p-3 rounded-lg border ${sugar.common ? 'bg-red-critical/5 border-red-critical/20' : 'bg-gray-50 border-gray-200'}`}>
               <p class="font-medium text-gray-900">{sugar.name}</p>
-              <p class="text-sm text-gray-500">{sugar.hindi}</p>
+              <p class="text-sm text-gray-500">{sugar.desc}</p>
             </div>
           ))}
         </div>
@@ -94,22 +94,22 @@ const sugarNames = [
           <div class="p-4 bg-amber-warning/10 border border-amber-warning/30 rounded-lg">
             <p class="font-bold text-gray-900 mb-1">Maltodextrin</p>
             <p class="text-sm text-gray-700">
-              "Not sugar" technically, par glycemic index sugar se bhi zyada hai!
+              Technically "not sugar", but its glycemic index is higher than sugar!
               Commonly found in protein powders and "health" drinks.
             </p>
           </div>
           <div class="p-4 bg-amber-warning/10 border border-amber-warning/30 rounded-lg">
             <p class="font-bold text-gray-900 mb-1">Fruit Juice Concentrate</p>
             <p class="text-sm text-gray-700">
-              Sounds natural, but it's just sugar with fruit label.
+              Sounds natural, but it's just sugar extracted from fruit.
               "100% fruit juice" drinks often have more sugar than cola.
             </p>
           </div>
           <div class="p-4 bg-amber-warning/10 border border-amber-warning/30 rounded-lg">
             <p class="font-bold text-gray-900 mb-1">Jaggery/Honey in "Healthy" Products</p>
             <p class="text-sm text-gray-700">
-              "Made with jaggery" ≠ healthy. Gur mein trace minerals hain,
-              par sugar content almost same hai. Marketing hai.
+              "Made with jaggery" ≠ healthy. Jaggery has some trace minerals,
+              but its sugar content is almost the same as white sugar. It still spikes insulin.
             </p>
           </div>
         </div>
@@ -138,15 +138,15 @@ const sugarNames = [
         <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">"No Added Sugar" Myth</h2>
 
         <p class="text-gray-700 mb-4">
-          "No Added Sugar" ka matlab sirf ye hai ki <em>extra</em> sugar nahi daala.
-          Product naturally sugary ho sakta hai (fruit juices) ya sugar alcohols use ho sakte hain.
+          "No Added Sugar" only means they didn't add <em>extra</em> white sugar.
+          The product might be naturally sugary (like fruit juice) or contain sugar alcohols/artificial sweeteners.
         </p>
 
-        <div class="bg-mizan-teal/10 border border-mizan-teal/30 rounded-xl p-6 mt-10">
-          <h3 class="font-heading text-lg font-bold text-mizan-teal mb-3">Mizan Tip</h3>
+        <div class="bg-mizan-blue/10 border border-mizan-blue/30 rounded-xl p-6 mt-10">
+          <h3 class="font-heading text-lg font-bold text-mizan-blue mb-3">Mizan Tip</h3>
           <p class="text-gray-700">
-            Ingredients list confusing hai? Sirf "Total Sugars" dekho nutrition table mein.
-            Wo honest number hai — regardless of naam.
+            Confused by the ingredient list? Just look at "Total Sugars" in the nutrition table.
+            That is the honest number — regardless of the name.
           </p>
         </div>
 
@@ -154,8 +154,8 @@ const sugarNames = [
 
       <!-- Navigation -->
       <div class="mt-12 pt-8 border-t border-gray-200 flex justify-between">
-        <a href="/samjho/icmr-guidelines" class="text-mizan-teal hover:underline">← ICMR Guidelines</a>
-        <a href="/samjho" class="text-mizan-teal hover:underline">Back to Samjho →</a>
+        <a href="/learn/nutrition-standards" class="text-mizan-blue hover:underline">← ICMR Guidelines</a>
+        <a href="/learn" class="text-mizan-blue hover:underline">Back to Learn →</a>
       </div>
 
     </div>

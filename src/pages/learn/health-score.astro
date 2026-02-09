@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="Mizan Score Kya Hai - Understanding Our Rating System | Mizan"
+  title="Understanding Our Rating System | Mizan"
   description="Learn how Mizan calculates health scores for packaged foods using FSSAI's Indian Nutrition Rating algorithm."
 >
   <article class="py-12 md:py-16">
@@ -11,9 +11,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
       <!-- Breadcrumb -->
       <nav class="text-sm text-gray-500 mb-6">
-        <a href="/" class="hover:text-mizan-teal">Home</a>
+        <a href="/" class="hover:text-mizan-blue">Home</a>
         <span class="mx-2">›</span>
-        <a href="/samjho" class="hover:text-mizan-teal">Samjho</a>
+        <a href="/learn" class="hover:text-mizan-blue">Learn</a>
         <span class="mx-2">›</span>
         <span class="text-gray-700">Mizan Score</span>
       </nav>
@@ -22,9 +22,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <header class="mb-8">
         <span class="text-5xl">⭐</span>
         <h1 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-2">
-          Mizan Score Kya Hai
+          What is the Mizan Score?
         </h1>
-        <p class="text-xl text-mizan-teal">Understanding Our Rating System</p>
+        <p class="text-xl text-mizan-blue">Understanding Our Rating System</p>
         <p class="text-gray-500 mt-2">3 min read</p>
       </header>
 
@@ -32,8 +32,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <div class="prose prose-lg max-w-none">
 
         <p class="text-lg text-gray-700">
-          Mizan Score ek 1-5 star rating hai jo FSSAI ke Indian Nutrition Rating (INR) algorithm pe based hai.
-          Ye scientifically calculate hota hai — koi opinion nahi, sirf math.
+          The Mizan Score is a 1-5 star rating based on FSSAI's Indian Nutrition Rating (INR) algorithm.
+          It is calculated scientifically — no opinions, just math.
         </p>
 
         <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">Star Ratings</h2>
@@ -79,29 +79,30 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">Calculation Method</h2>
 
         <p class="text-gray-700 mb-4">
-          Score do parts mein calculate hota hai:
+          The score is calculated in two parts:
         </p>
 
         <div class="grid md:grid-cols-2 gap-4 my-6">
           <div class="bg-red-critical/5 border border-red-critical/20 rounded-xl p-5">
-            <h3 class="font-bold text-red-critical mb-2">Baseline Points (Bad)</h3>
-            <p class="text-sm text-gray-600 mb-2">Ye points add hote hain:</p>
+            <h3 class="font-bold text-red-critical mb-2">Baseline Points (Negative)</h3>
+            <p class="text-sm text-gray-600 mb-2">Points are added for:</p>
             <ul class="text-sm text-gray-700 space-y-1">
               <li>• Energy (calories)</li>
               <li>• Sodium</li>
               <li>• Sugar</li>
               <li>• Saturated Fat</li>
             </ul>
-            <p class="text-xs text-gray-500 mt-2">Higher = worse</p>
+            <p class="text-xs text-gray-500 mt-2">Higher points = worse score</p>
           </div>
           <div class="bg-green-safe/10 border border-green-safe/30 rounded-xl p-5">
-            <h3 class="font-bold text-green-safe mb-2">Modifying Points (Good)</h3>
-            <p class="text-sm text-gray-600 mb-2">Ye points subtract hote hain:</p>
+            <h3 class="font-bold text-green-safe mb-2">Modifying Points (Positive)</h3>
+            <p class="text-sm text-gray-600 mb-2">Points are subtracted for:</p>
             <ul class="text-sm text-gray-700 space-y-1">
               <li>• Protein</li>
               <li>• Fiber</li>
+              <li>• Fruit/Veg/Nut content</li>
             </ul>
-            <p class="text-xs text-gray-500 mt-2">Higher = better</p>
+            <p class="text-xs text-gray-500 mt-2">Higher points = better score</p>
           </div>
         </div>
 
@@ -114,26 +115,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           </p>
         </div>
 
-        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">Kya Mizan Score Perfect Hai?</h2>
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">Is Mizan Score Perfect?</h2>
 
         <p class="text-gray-700 mb-4">
-          Nahi. Koi bhi single number poori picture nahi de sakta. Isliye hum ye bhi dikhate hain:
+          No. No single number can give the whole picture. That's why we also show:
         </p>
 
         <ul class="space-y-2 text-gray-700">
-          <li><strong>Roz ki Hadd</strong> — Safe daily serving limit</li>
-          <li><strong>Limiting Factors</strong> — Konsa nutrient problem hai</li>
-          <li><strong>Mizan ka Faisla</strong> — Plain language verdict</li>
+          <li><strong>Daily Limit</strong> — Safe daily serving limit</li>
+          <li><strong>Limiting Factors</strong> — Which nutrient is the problem</li>
+          <li><strong>Mizan's Verdict</strong> — Plain language verdict</li>
           <li><strong>Full Nutrition</strong> — Complete breakdown</li>
         </ul>
 
-        <div class="bg-mizan-teal/10 border border-mizan-teal/30 rounded-xl p-6 mt-10">
-          <h3 class="font-heading text-lg font-bold text-mizan-teal mb-3">Transparency</h3>
+        <div class="bg-mizan-blue/10 border border-mizan-blue/30 rounded-xl p-6 mt-10">
+          <h3 class="font-heading text-lg font-bold text-mizan-blue mb-3">Transparency</h3>
           <p class="text-gray-700">
-            Humare saare calculations open source hain. Algorithm dekho, verify karo, improve karo.
+            All our calculations are open source. Inspect the algorithm, verify it, improve it.
           </p>
           <a href="https://github.com/atul-feyntech/mizan-india" target="_blank" rel="noopener"
-             class="inline-flex items-center gap-2 mt-3 text-mizan-teal hover:underline font-medium">
+             class="inline-flex items-center gap-2 mt-3 text-mizan-blue hover:underline font-medium">
             View on GitHub →
           </a>
         </div>
@@ -142,8 +143,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
       <!-- Navigation -->
       <div class="mt-12 pt-8 border-t border-gray-200 flex justify-between">
-        <a href="/samjho/label-padhna" class="text-mizan-teal hover:underline">← Label Padhna</a>
-        <a href="/samjho/icmr-guidelines" class="text-mizan-teal hover:underline">Next: ICMR Guidelines →</a>
+        <a href="/learn/reading-labels" class="text-mizan-blue hover:underline">← Reading Labels</a>
+        <a href="/learn/nutrition-standards" class="text-mizan-blue hover:underline">Next: Nutrition Standards →</a>
       </div>
 
     </div>

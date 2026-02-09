@@ -1,6 +1,6 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="1200" height="630" fill="#0D5C63"/>
+  <rect width="1200" height="630" fill="#2563EB"/>
 
   <!-- Subtle pattern -->
   <defs>
@@ -14,14 +14,17 @@
   <circle cx="100" cy="530" r="200" fill="rgba(255,255,255,0.03)"/>
   <circle cx="1100" cy="100" r="150" fill="rgba(255,255,255,0.03)"/>
 
-  <!-- Scale emoji placeholder -->
-  <text x="600" y="200" font-size="120" text-anchor="middle" fill="white">⚖️</text>
+  <!-- Logo: Checked M -->
+  <g transform="translate(500, 150) scale(2)">
+    <path d="M25 80V20L50 55L75 20V50" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M60 65L75 80L95 30" stroke="#EAB308" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 
   <!-- Brand name -->
   <text x="600" y="320" font-family="Georgia, serif" font-size="96" font-weight="bold" text-anchor="middle" fill="white">MIZAN</text>
 
   <!-- Tagline -->
-  <text x="600" y="400" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#C9A227">Ab tolo, phir khao</text>
+  <text x="600" y="400" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#C9A227">Measure, then Eat.</text>
 
   <!-- Subtitle -->
   <text x="600" y="470" font-family="system-ui, sans-serif" font-size="28" text-anchor="middle" fill="rgba(255,255,255,0.8)">Indian Packaged Food Health Ratings</text>

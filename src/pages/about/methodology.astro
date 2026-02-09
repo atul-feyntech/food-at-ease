@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Methodology - How We Score | Mizan"
+  description="Transparency first. Detailed explanation of how Mizan calculates health scores and daily limits."
+>
+  <section class="py-12 md:py-16">
+    <div class="container mx-auto px-4 max-w-3xl">
+
+      <!-- Header -->
+      <header class="text-center mb-12">
+        <h1 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          METHODOLOGY
+        </h1>
+        <p class="text-lg text-mizan-blue mt-4">Transparent. Open Source. Science-backed.</p>
+      </header>
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-none">
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mb-4">The Mizan Score</h2>
+        <p class="text-gray-700 mb-6">
+          Our scoring system is based on the <strong>Indian Nutrition Rating (INR)</strong> concept, adapted from international standards like Nutri-Score, but calibrated for the Indian context as per FSSAI draft guidelines.
+        </p>
+        
+        <h3 class="font-bold text-lg mb-2">How it works:</h3>
+        <ul class="list-disc pl-6 mb-6 text-gray-700">
+            <li>We calculate a baseline score based on "negative" nutrients: Energy, Sugars, Saturated Fat, and Sodium.</li>
+            <li>We subtract points for "positive" nutrients: Protein, Fiber, and Fruit/Vegetable/Nut content.</li>
+            <li>The final score is mapped to a 0.5 to 5.0 star rating.</li>
+        </ul>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mb-4 mt-10">Daily Limits</h2>
+        <p class="text-gray-700 mb-6">
+          We use the <strong>ICMR-NIN 2024 Guidelines</strong> for Indians to set daily limits.
+        </p>
+
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 mb-6">
+            <h4 class="font-bold mb-3">Reference Daily Intake (Adults):</h4>
+            <ul class="space-y-2 text-sm">
+                <li class="flex justify-between"><span>Sodium</span> <strong>2000 mg</strong></li>
+                <li class="flex justify-between"><span>Added Sugar</span> <strong>50 g</strong></li>
+                <li class="flex justify-between"><span>Saturated Fat</span> <strong>22 g</strong></li>
+            </ul>
+        </div>
+
+        <p class="text-gray-700 mb-6">
+            When we say "Roz ki Hadd" (Daily Limit), we calculate how much of a product you can eat before hitting 100% of the limit for its most critical nutrient.
+        </p>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mb-4 mt-10">Data Sources</h2>
+        <p class="text-gray-700 mb-6">
+            1. <strong>Open Food Facts:</strong> A global open database of food products.<br/>
+            2. <strong>Product Labels:</strong> We verify data against actual product packaging.<br/>
+            3. <strong>Gemini AI:</strong> Used to extract text from images when raw data is missing (manually verified).
+        </p>
+
+        <div class="mt-12 text-center">
+             <a href="/about" class="text-mizan-blue hover:underline">← Back to About</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>

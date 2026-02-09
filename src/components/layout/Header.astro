@@ -2,11 +2,12 @@
 // Header component with logo, navigation, and search
 ---
 
-<header class="bg-mizan-teal text-white sticky top-0 z-50 shadow-md">
+<header class="bg-mizan-blue text-white sticky top-0 z-50 shadow-md">
   <div class="container mx-auto px-4">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
-      <a href="/" class="flex items-center gap-2 hover:opacity-90 transition-opacity">
+      <a href="/" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+        <img src="/logo.svg" alt="Mizan Logo" class="h-10 w-10" />
         <div class="flex flex-col leading-tight">
           <span class="font-heading font-bold text-xl tracking-wide">MIZAN</span>
         </div>
@@ -22,10 +23,10 @@
           <span>✅</span>
           <span>Better Choices</span>
         </a>
-        <a href="/samjho" class="text-sm hover:text-gold-accent transition-colors">
+        <a href="/learn" class="text-sm hover:text-gold-accent transition-colors">
           Learn
         </a>
-        <a href="/hum" class="text-sm hover:text-gold-accent transition-colors">
+        <a href="/about" class="text-sm hover:text-gold-accent transition-colors">
           About
         </a>
       </nav>
@@ -56,7 +57,7 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-mizan-teal-dark">
+  <div id="mobile-menu" class="hidden md:hidden bg-mizan-blue-dark">
     <nav class="container mx-auto px-4 py-4 flex flex-col gap-3">
       <a href="/" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
         <span>🏠</span>
@@ -74,11 +75,11 @@
         <span>🔄</span>
         <span>Compare</span>
       </a>
-      <a href="/samjho" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
+      <a href="/learn" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
         <span>📚</span>
         <span>Learn</span>
       </a>
-      <a href="/hum" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
+      <a href="/about" class="py-2 hover:text-gold-accent transition-colors flex items-center gap-2">
         <span>👥</span>
         <span>About</span>
       </a>

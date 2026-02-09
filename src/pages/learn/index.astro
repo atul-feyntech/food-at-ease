@@ -3,33 +3,29 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const articles = [
   {
-    slug: 'label-padhna',
+    slug: 'reading-labels',
     title: 'How to Read Food Labels',
-    title_en: 'Label Kaise Padhein',
     icon: '🏷️',
     description: 'Understand the secrets hidden in packaged food labels.',
     readTime: '5 min'
   },
   {
-    slug: 'mizan-score',
+    slug: 'health-score',
     title: 'Understanding Mizan Score',
-    title_en: 'Mizan Score Kya Hai',
     icon: '⭐',
     description: 'Understand our 1-5 star rating system.',
     readTime: '3 min'
   },
   {
-    slug: 'icmr-guidelines',
+    slug: 'nutrition-standards',
     title: 'Indian Nutrition Standards',
-    title_en: 'ICMR Guidelines',
     icon: '🇮🇳',
     description: 'What India\'s official nutrition standards say.',
     readTime: '4 min'
   },
   {
-    slug: 'hidden-sugar',
+    slug: 'sugar-aliases',
     title: 'Hidden Sugars in Food',
-    title_en: 'Chhupa Hua Sugar',
     icon: '🍬',
     description: '50+ names for sugar that companies use.',
     readTime: '4 min'
@@ -38,8 +34,8 @@ const articles = [
 ---
 
 <BaseLayout
-  title="Samjho - Learn About Food & Nutrition | Mizan"
-  description="Learn how to read food labels, understand nutrition, and make healthier choices. Educational content in Hindi and English."
+  title="Learn - Food & Nutrition Guide | Mizan"
+  description="Learn how to read food labels, understand nutrition, and make healthier choices. Educational content simplified."
 >
   <section class="py-12 md:py-16">
     <div class="container mx-auto px-4 max-w-4xl">
@@ -60,7 +56,7 @@ const articles = [
       <div class="grid md:grid-cols-2 gap-6">
         {articles.map((article) => (
           <a
-            href={`/samjho/${article.slug}`}
+            href={`/learn/${article.slug}`}
             class="block bg-white rounded-xl p-6 card-shadow hover:shadow-lg transition-shadow border border-gray-100"
           >
             <div class="flex items-start gap-4">
@@ -69,7 +65,6 @@ const articles = [
                 <h2 class="font-heading text-xl font-bold text-gray-900 mb-1">
                   {article.title}
                 </h2>
-                <p class="text-sm text-mizan-teal mb-2">{article.title_en}</p>
                 <p class="text-gray-600 text-sm mb-3">{article.description}</p>
                 <span class="text-xs text-gray-400">{article.readTime} read</span>
               </div>
@@ -105,7 +100,7 @@ const articles = [
 
       <!-- CTA -->
       <div class="mt-8 text-center">
-        <a href="/" class="inline-flex items-center gap-2 text-mizan-teal hover:text-mizan-teal-dark font-medium">
+        <a href="/" class="inline-flex items-center gap-2 text-mizan-blue hover:text-mizan-blue-dark font-medium">
           <span>←</span> Back to Home
         </a>
       </div>

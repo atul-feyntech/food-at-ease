@@ -43,7 +43,7 @@ const novaInfo = novaDescriptions[novaGroup] ?? novaDescriptions[4];
 
 <div class="bg-white rounded-xl card-shadow p-5">
   <div class="flex items-center gap-2 mb-4">
-    <h3 class="font-heading text-xl text-mizan-teal font-bold">
+    <h3 class="font-heading text-xl text-mizan-blue font-bold">
       INGREDIENT ANALYSIS
     </h3>
   </div>
@@ -54,7 +54,7 @@ const novaInfo = novaDescriptions[novaGroup] ?? novaDescriptions[4];
       <h4 class="text-sm font-medium text-gray-500 uppercase tracking-wide mb-2">Main Ingredients</h4>
       <div class="flex flex-wrap gap-2">
         {primaryIngredients.slice(0, 8).map((ingredient, index) => (
-          <span class={`px-3 py-1 rounded-full text-sm ${index === 0 ? 'bg-mizan-teal text-white' : 'bg-gray-100 text-gray-700'}`}>
+          <span class={`px-3 py-1 rounded-full text-sm ${index === 0 ? 'bg-mizan-blue text-white' : 'bg-gray-100 text-gray-700'}`}>
             #{index + 1} {ingredient}
           </span>
         ))}

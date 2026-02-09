@@ -100,7 +100,7 @@ export interface SafeLimit {
 
 export interface Roast {
   text: string;                       // The roast in English
-  text_hindi: string;                 // The roast in Hindi/Urdu/Hinglish
+  text_hindi: string;                 // The roast in Hindi/Local language
   tone: 'witty' | 'stern' | 'sympathetic';
   generated_by: 'ai' | 'human';
   approved: boolean;                  // Has been human-reviewed

@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="How to Read Food Labels | Mizan"
+  description="Learn how to read and understand food nutrition labels. Decode serving sizes, ingredients, and hidden information on packaged food."
+>
+  <article class="py-12 md:py-16">
+    <div class="container mx-auto px-4 max-w-3xl">
+
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-gray-500 mb-6">
+        <a href="/" class="hover:text-mizan-blue">Home</a>
+        <span class="mx-2">›</span>
+        <a href="/learn" class="hover:text-mizan-blue">Learn</a>
+        <span class="mx-2">›</span>
+        <span class="text-gray-700">Reading Labels</span>
+      </nav>
+
+      <!-- Header -->
+      <header class="mb-8">
+        <span class="text-5xl">🏷️</span>
+        <h1 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-2">
+          How to Read Food Labels
+        </h1>
+        <p class="text-xl text-mizan-blue">Decode the fine print.</p>
+        <p class="text-gray-500 mt-2">5 min read</p>
+      </header>
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-none">
+
+        <p class="text-lg text-gray-700">
+          The label on the back of packaged food is your health GPS. If you learn to read it correctly, no marketing claim can fool you.
+        </p>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">1. The Serving Size Trick</h2>
+        <div class="bg-red-critical/5 border border-red-critical/20 rounded-xl p-5 mb-6">
+          <p class="text-gray-700 mb-2">
+            <strong>The biggest trick:</strong> Companies keep serving sizes small to make the numbers look good.
+          </p>
+          <p class="text-gray-600 text-sm">
+            Example: A chips packet shows "30g serving", but the packet is 150g. If you eat the whole thing, multiply everything by 5!
+          </p>
+        </div>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">2. Check "Per 100g"</h2>
+        <p class="text-gray-700">
+          The <strong>"Per 100g"</strong> column is the most honest. It makes comparison easy.
+        </p>
+        <div class="bg-green-safe/10 border border-green-safe/30 rounded-xl p-5 my-4">
+          <p class="font-medium text-green-safe mb-2">Quick Rules (per 100g):</p>
+          <ul class="space-y-1 text-gray-700">
+            <li>Sugar: <strong>&lt;5g</strong> = Low, <strong>&gt;15g</strong> = High</li>
+            <li>Sodium: <strong>&lt;120mg</strong> = Low, <strong>&gt;600mg</strong> = High</li>
+            <li>Sat Fat: <strong>&lt;1.5g</strong> = Low, <strong>&gt;5g</strong> = High</li>
+          </ul>
+        </div>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">3. Ingredient List Secrets</h2>
+        <p class="text-gray-700 mb-4">
+          Ingredients are listed in <strong>descending order</strong> — what comes first is what the product is mostly made of.
+        </p>
+        <div class="bg-amber-warning/10 border border-amber-warning/30 rounded-xl p-5 mb-6">
+          <p class="text-gray-700">
+            If <strong>sugar</strong> (or its aliases) is in the top 3, it's a sugar bomb.
+            Watch for: Glucose, fructose, corn syrup, maltodextrin — they are all sugar!
+          </p>
+        </div>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">4. % Daily Value</h2>
+        <p class="text-gray-700 mb-4">
+          This tells you how much % of your daily limit comes from one serving.
+        </p>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>5% or less</strong> = Low (good for sodium, sugar, sat fat)</li>
+          <li><strong>15% or more</strong> = High (good for protein, fiber, vitamins)</li>
+        </ul>
+
+        <h2 class="font-heading text-2xl font-bold text-gray-900 mt-10 mb-4">5. Ignore "Health" Claims</h2>
+        <p class="text-gray-700">
+          Front-of-pack claims — "Natural", "No Added Sugar", "Protein Rich" — are marketing. The <strong>back label</strong> tells the truth.
+        </p>
+
+        <div class="bg-mizan-blue/10 border border-mizan-blue/30 rounded-xl p-6 mt-10">
+          <h3 class="font-heading text-lg font-bold text-mizan-blue mb-3">Mizan Tip</h3>
+          <p class="text-gray-700">
+            Confused by the label? Just search for the product on Mizan — we calculate everything and give you a simple verdict.
+          </p>
+          <a href="/" class="inline-flex items-center gap-2 mt-3 text-mizan-blue hover:underline font-medium">
+            Search products →
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+      <div class="mt-12 pt-8 border-t border-gray-200 flex justify-between">
+        <a href="/learn" class="text-mizan-blue hover:underline">← Back to Learn</a>
+        <a href="/learn/health-score" class="text-mizan-blue hover:underline">Next: Mizan Score →</a>
+      </div>
+
+    </div>
+  </article>
+</BaseLayout>

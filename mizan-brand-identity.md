@@ -1,14 +1,11 @@
 # MIZAN
-## میزان
 ### Brand Identity & Platform Guide
 
 ---
 
 # THE NAME
 
-**Mizan** (میزان) — Arabic/Urdu for "Scale" or "Balance"
-
-In classical usage, Al-Mizan refers to the scales of divine justice — the instrument that weighs deeds with perfect accuracy. Nothing hidden, nothing inflated, nothing escaped.
+**Mizan** — "Scale" or "Balance"
 
 For a food transparency platform, it's perfect:
 
@@ -21,23 +18,22 @@ For a food transparency platform, it's perfect:
 # TAGLINES
 
 ### Primary Tagline
-> **"Ab tolo, phir khao."**
-> (Now weigh it, then eat it.)
+> **"Measure, then Eat."**
 
 ### Secondary Options
 
 | Tagline | Usage |
 |---------|-------|
-| "Khane ka asli wazn." | The real weight of food. (Poetic) |
-| "Label ka hisaab." | The account of the label. (Confrontational) |
-| "Har packet ka faisla." | The verdict on every packet. (Judgmental) |
-| "Sach tarazu par." | Truth on the scale. (Direct) |
-| "Know the weight of what you eat." | English version (Global) |
+| "The real weight of food." | Poetic |
+| "The account of the label." | Confrontational |
+| "The verdict on every packet." | Judgmental |
+| "Truth on the scale." | Direct |
+| "Know the weight of what you eat." | Global |
 
 ### For Social Media / Campaigns
-- "Wazn lo. Faisla karo." — Weigh it. Decide.
-- "Yeh packet kitne ka hai — sehat ke hisaab se?" — What's this packet worth — health-wise?
-- "Marketing nahi, Mizan dekho." — Don't look at marketing, look at Mizan.
+- "Weigh it. Decide."
+- "What's this packet worth — health-wise?"
+- "Don't look at marketing, look at Mizan."
 
 ---
 
@@ -48,41 +44,40 @@ For a food transparency platform, it's perfect:
 ```
 ┌─────────────────────────────────────────────┐
 │                                             │
-│              ⚖                              │
+│            [ M✓ ]                           │
 │            MIZAN                            │
-│            میزان                            │
 │                                             │
 └─────────────────────────────────────────────┘
 
-The scale (tarazu) as the icon:
-- One side: The packet/product
-- Other side: Your health
-- The beam shows the true balance
+**The Checked M**
+- A bold, geometric 'M' in Royal Blue.
+- The right leg transforms into a Golden Checkmark.
+- Represents: Measurement + Verification.
+- "We checked it so you don't have to."
 ```
 
 ### Logo Variations
 
-1. **Full Logo**: Scale icon + "MIZAN" + "میزان"
-2. **Compact**: Scale icon + "MIZAN"
-3. **Icon Only**: The balanced scale (for favicons, app icons)
+1. **Full Logo**: Icon + "MIZAN" text
+2. **Icon Only**: The Checked M (for favicons, app icons)
+
 4. **Wordmark Only**: "MIZAN" in custom typography
 
 ## Color Palette
 
 | Color | Hex | Usage | Meaning |
 |-------|-----|-------|---------|
-| **Deep Teal** | #0D5C63 | Primary | Trust, health, depth |
+| **Royal Blue** | #2563EB | Primary | Clean, Medical, Trust |
 | **Warm White** | #F8F4E9 | Background | Clean, readable, not clinical |
 | **Warning Amber** | #E8871E | Alerts, cautions | Attention without panic |
 | **Critical Red** | #C23B22 | Dangers, fails | Stop, reconsider |
 | **Safe Green** | #4A7C59 | Good scores, passes | Proceed, healthy |
-| **Gold Accent** | #C9A227 | Stars, highlights | Quality, the Mizan scale |
+| **Gold Accent** | #C9A227 | Stars, highlights | Quality, the scale |
 
 ### Why These Colors?
-- **Not clinical white** — we're not a hospital
-- **Not startup neon** — we're not selling hype
-- **Warm, grounded, trustworthy** — like an elder giving honest advice
-- **Gold for the scale** — Mizan as something precious, a standard
+- **Blue** — Trust, authority, clarity.
+- **Warm, grounded** — Honest advice.
+- **Gold for the scale** — Mizan as a standard.
 
 ## Typography
 
@@ -90,7 +85,6 @@ The scale (tarazu) as the icon:
 |-----|------|-----|
 | **Headings** | **Playfair Display** or **Cormorant Garamond** | Elegant, editorial, serious |
 | **Body (English)** | **Inter** or **Source Sans Pro** | Clean, readable, modern |
-| **Urdu Script** | **Jameel Noori Nastaleeq** | Beautiful, authentic |
 | **Data/Numbers** | **JetBrains Mono** or **Tabular Inter** | Precise, technical, trustworthy |
 
 ---
@@ -99,34 +93,27 @@ The scale (tarazu) as the icon:
 
 ## The Mizan Persona
 
-**Mizan speaks like:** A sharp, educated elder who's seen through the nonsense. Not angry, but not suffering fools. Think: a retired doctor uncle who finally has time to tell you the truth about what you're feeding your kids.
+**Mizan speaks like:** A sharp, educated expert who's seen through the nonsense. Not angry, but not suffering fools.
 
 ### Voice Attributes
 
 | Attribute | Description | Example |
 |-----------|-------------|---------|
 | **Direct** | No hedging, no "may" or "might" | "This has 85% of your daily sodium." Not "This might be high in sodium." |
-| **Witty** | Sharp humor, not cruel | "39% sugar. At this point, just give them mithai — at least that's honest about being a sweet." |
+| **Witty** | Sharp humor, not cruel | "39% sugar. At this point, just give them sweets — at least that's honest." |
 | **Knowledgeable** | Cites sources, knows the science | "ICMR 2024 guidelines cap sodium at 2000mg. This packet has 1140mg." |
-| **Urdu-inflected** | Natural Urdu-English mix | "Yeh 'health drink' hai ya chini delivery system?" |
 | **Never preachy** | States facts, doesn't lecture | Shows the data. Doesn't say "you shouldn't eat this." |
 
 ### The Roast Voice (Examples)
 
 **Maggi:**
-> "Do minute mein tayaar, blood pressure mein izafa bhi utna hi tez. Is packet mein itna sodium hai ke aapke kidneys overtime maang lein."
->
-> (Ready in 2 minutes, blood pressure rise just as fast. This packet has so much sodium your kidneys will demand overtime.)
+> "Ready in 2 minutes, blood pressure rise just as fast. This packet has so much sodium your kidneys will demand overtime."
 
 **Bournvita:**
-> "Ingredient number 1: cheeni. Number 7 pe jaake milk solids aate hain. Aap doodh mein paise milaake cheeni khareed rahe ho aur use 'brain food' bol rahe ho."
->
-> (Ingredient #1: sugar. Milk solids finally show up at #7. You're adding money to milk to buy sugar and calling it 'brain food.')
+> "Ingredient number 1: sugar. Milk solids finally show up at #7. You're adding money to milk to buy sugar and calling it 'brain food.'"
 
 **Generic "Digestive" Biscuit:**
-> "Digestive biscuit' naam sunke lagta hai sehat ke liye hai. Check karo — isme fiber kam hai Parle-G se bhi. Sirf naam fancy hai, haqeeqat wohi."
->
-> ('Digestive biscuit' sounds healthy. Check it — less fiber than Parle-G. Only the name is fancy, reality is the same.)
+> "'Digestive biscuit' sounds healthy. Check it — less fiber than standard glucose biscuits. Only the name is fancy, reality is the same."
 
 ---
 
