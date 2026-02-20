@@ -23,7 +23,7 @@
   <!-- Main content -->
   <text x="540" y="280" font-size="140" text-anchor="middle" fill="white">⚖️</text>
 
-  <text x="540" y="420" font-family="Georgia, serif" font-size="96" font-weight="bold" text-anchor="middle" fill="white">MIZAN</text>
+  <text x="540" y="420" font-family="Georgia, serif" font-size="96" font-weight="bold" text-anchor="middle" fill="white">FOODATEASE</text>
 
   <text x="540" y="500" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#C9A227">Ab tolo, phir khao.</text>
 
@@ -37,7 +37,7 @@
 
   <!-- CTA -->
   <rect x="340" y="830" width="400" height="80" rx="40" fill="#C9A227"/>
-  <text x="540" y="885" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#0D5C63">mizan.live</text>
+  <text x="540" y="885" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#0D5C63">foodatease.com</text>
 
   <!-- Tagline -->
   <text x="540" y="1000" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="rgba(255,255,255,0.6)">The scale that doesn't lie.</text>

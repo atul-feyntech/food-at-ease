@@ -5,8 +5,8 @@
   <!-- Header bar -->
   <rect width="1080" height="120" fill="#0D5C63"/>
   <text x="80" y="78" font-size="48" fill="white">⚖️</text>
-  <text x="140" y="78" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="white">MIZAN</text>
-  <text x="980" y="78" font-family="Arial, sans-serif" font-size="24" text-anchor="end" fill="#C9A227">mizan.live</text>
+  <text x="140" y="78" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="white">FOODATEASE</text>
+  <text x="980" y="78" font-family="Arial, sans-serif" font-size="24" text-anchor="end" fill="#C9A227">foodatease.com</text>
 
   <!-- Main content area -->
   <rect x="60" y="180" width="960" height="720" rx="24" fill="white" stroke="#E5E7EB" stroke-width="2"/>
@@ -22,10 +22,10 @@
 
   <!-- Verdict bar -->
   <rect x="60" y="760" width="960" height="140" rx="0 0 24 24" fill="#0D5C63"/>
-  <text x="540" y="820" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#C9A227">MIZAN KA FAISLA</text>
+  <text x="540" y="820" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#C9A227">FOODATEASE KA FAISLA</text>
   <text x="540" y="870" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="white">"[Witty verdict here]"</text>
 
   <!-- Footer -->
-  <text x="540" y="1020" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#6b7280">See full rating at mizan.live</text>
-  <text x="540" y="1060" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#9ca3af">#MizanRating #PackagedFood #HealthyEating</text>
+  <text x="540" y="1020" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#6b7280">See full rating at foodatease.com</text>
+  <text x="540" y="1060" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#9ca3af">#FoodAtEase #PackagedFood #HealthyEating</text>
 </svg>

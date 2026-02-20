@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://mizan.live',
+  site: 'https://foodatease.com',
   output: 'static',
   build: {
     format: 'directory',

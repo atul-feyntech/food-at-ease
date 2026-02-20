@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Mizan Expanded Product Fetcher
+FoodAtEase Expanded Product Fetcher
 Fetches diverse Indian packaged foods from Open Food Facts.
 Covers all major categories and brands.
 """
@@ -136,7 +136,7 @@ def search_products(query, page=1, page_size=100):
 
     try:
         req = urllib.request.Request(url)
-        req.add_header('User-Agent', 'Mizan/1.0 (https://mizan.live; contact@mizan.live)')
+        req.add_header('User-Agent', 'FoodAtEase/1.0 (https://foodatease.com; contact@foodatease.com)')
 
         with urllib.request.urlopen(req, timeout=30) as response:
             data = json.loads(response.read().decode('utf-8'))

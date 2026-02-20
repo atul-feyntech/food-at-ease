@@ -18,7 +18,7 @@ const {
   canonicalURL = Astro.url.href
 } = Astro.props;
 
-const fullTitle = title.includes('Mizan') ? title : `${title} | Mizan`;
+const fullTitle = title.includes('FoodAtEase') ? title : `${title} | FoodAtEase`;
 ---
 
 <!DOCTYPE html>
@@ -45,24 +45,24 @@ const fullTitle = title.includes('Mizan') ? title : `${title} | Mizan`;
     <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content={`${fullTitle} - Mizan Health Rating`} />
+    <meta property="og:image:alt" content={`${fullTitle} - FoodAtEase Health Rating`} />
     <meta property="og:locale" content="en_IN" />
-    <meta property="og:site_name" content="Mizan - Measure, then Eat" />
+    <meta property="og:site_name" content="FoodAtEase - Ab Tolo, Phir Khao" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@MizanIndia" />
-    <meta name="twitter:creator" content="@MizanIndia" />
+    <meta name="twitter:site" content="@FoodAtEase" />
+    <meta name="twitter:creator" content="@FoodAtEase" />
     <meta name="twitter:url" content={canonicalURL} />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL(ogImage, Astro.site).href} />
-    <meta name="twitter:image:alt" content={`${fullTitle} - Mizan Health Rating`} />
+    <meta name="twitter:image:alt" content={`${fullTitle} - FoodAtEase Health Rating`} />
 
     <!-- Additional SEO -->
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
-    <meta name="author" content="Mizan" />
+    <meta name="author" content="FoodAtEase" />
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#2563EB" />

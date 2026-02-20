@@ -1,5 +1,5 @@
 /**
- * Mizan Type Definitions
+ * FoodAtEase Type Definitions
  * Core data structures for the Indian packaged food health rating platform
  */
 
@@ -59,7 +59,7 @@ export interface IngredientAnalysis {
 }
 
 // ============================================================================
-// MIZAN SCORE
+// FOODATEASE SCORE
 // ============================================================================
 
 export type Grade = 'A' | 'B' | 'C' | 'D' | 'F';
@@ -148,7 +148,7 @@ export interface Product {
   ingredients: string[];
   ingredients_analysis: IngredientAnalysis;
 
-  // Mizan Ratings
+  // FoodAtEase Ratings
   mizan_score: MizanScore;
   safe_limit: SafeLimit;
   roast: Roast;

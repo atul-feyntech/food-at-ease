@@ -1,4 +1,4 @@
-# Mizan Social Media Kit
+# FoodAtEase Social Media Kit
 
 ## Brand Assets
 
@@ -13,16 +13,16 @@ All images are in `public/social-media/`:
 ## Profile Setup
 
 ### Handle Suggestions
-- **Primary:** @MizanIndia
-- **Alternatives:** @MizanLive, @MizanHealth, @ToloPHirKhao
+- **Primary:** @FoodAtEase
+- **Alternatives:** @FoodAtEaseLive, @FoodAtEaseHealth, @ToloPHirKhao
 
 ### Display Name
 ```
-⚖️ Mizan
+⚖️ FoodAtEase
 ```
 or
 ```
-Mizan | میزان
+FoodAtEase
 ```
 
 ### Bio - Twitter/X (160 chars)
@@ -30,7 +30,7 @@ Mizan | میزان
 ⚖️ Ab tolo, phir khao.
 India's honest packaged food ratings. 5,000+ products rated.
 No marketing BS, just facts.
-🇮🇳 mizan.live
+🇮🇳 foodatease.com
 ```
 
 ### Bio - Instagram (150 chars)
@@ -43,7 +43,7 @@ India's packaged food truth-teller.
 
 ### Link in Bio
 ```
-https://mizan.live
+https://foodatease.com
 ```
 
 ---
@@ -52,7 +52,7 @@ https://mizan.live
 
 ### Launch Tweet/Post #1 - Announcement
 ```
-⚖️ Introducing MIZAN
+⚖️ Introducing FOODATEASE
 
 Ab tolo, phir khao.
 
@@ -63,7 +63,7 @@ No marketing fluff. No paid rankings. Just FSSAI data + brutal honesty.
 Your Maggi? 2 stars. Your "health drink"? Probably worse.
 
 Check any product 👇
-mizan.live
+foodatease.com
 ```
 
 ### Launch Tweet #2 - Problem Statement
@@ -78,14 +78,14 @@ And we're eating "healthy" snacks loaded with sodium and sugar.
 
 Time to see the truth.
 
-⚖️ mizan.live
+⚖️ foodatease.com
 ```
 
 ### Launch Tweet #3 - Product Example
 ```
 Bournvita says: "Tayyari jeet ki" 💪
 
-Mizan says:
+FoodAtEase says:
 - 37g sugar per 100g
 - That's 7+ teaspoons per serving
 - Same as eating chocolate
@@ -93,14 +93,14 @@ Mizan says:
 Our rating: ⭐⭐ (2/5)
 
 See the full breakdown 👇
-mizan.live/product/bournvita
+foodatease.com/product/bournvita
 
-#MizanRating
+#FoodAtEaseRating
 ```
 
 ### Launch Tweet #4 - How It Works
 ```
-How Mizan rates your food:
+How FoodAtEase rates your food:
 
 1️⃣ We use FSSAI's own nutrition guidelines
 2️⃣ Based on sodium, sugar, saturated fat per 100g
@@ -109,7 +109,7 @@ How Mizan rates your food:
 
 No opinions. Just math.
 
-⚖️ mizan.live
+⚖️ foodatease.com
 ```
 
 ---
@@ -120,17 +120,17 @@ No opinions. Just math.
 ```
 [Product Name] ka sach:
 
-⭐ Mizan Rating: [X]/5
+⭐ FoodAtEase Rating: [X]/5
 
 ❌ [Problem 1]
 ❌ [Problem 2]
 ✅ [One good thing if any]
 
-Mizan ka Faisla: "[Witty verdict]"
+FoodAtEase ka Faisla: "[Witty verdict]"
 
-Full breakdown: mizan.live/product/[slug]
+Full breakdown: foodatease.com/product/[slug]
 
-#MizanRating #[Category]
+#FoodAtEaseRating #[Category]
 ```
 
 ### "Guess the Rating" Format
@@ -145,7 +145,7 @@ What do you think?
 
 Comment your guess! Answer in 24 hours.
 
-#GuessTheRating #Mizan
+#GuessTheRating #FoodAtEase
 ```
 
 ### Comparison Format
@@ -162,23 +162,23 @@ A: [X]g | B: [Y]g
 
 Winner: [Product] ✅
 
-Both rated at mizan.live
+Both rated at foodatease.com
 
-#MizanFaceOff
+#FoodAtEaseFaceOff
 ```
 
 ### Daily Fact Format
 ```
-📊 MIZAN FACT
+📊 FOODATEASE FACT
 
 [Shocking statistic about a popular product]
 
 Example:
 "A single packet of Kurkure has 40% of your daily sodium limit"
 
-Check your favorites: mizan.live
+Check your favorites: foodatease.com
 
-#MizanFacts #KnowYourFood
+#FoodAtEaseFacts #KnowYourFood
 ```
 
 ---
@@ -187,7 +187,7 @@ Check your favorites: mizan.live
 
 ### Primary (use always)
 ```
-#Mizan #MizanRating #AbToloPhirKhao
+#FoodAtEase #FoodAtEaseRating #AbToloPhirKhao
 ```
 
 ### Secondary (rotate)
@@ -213,10 +213,10 @@ Check your favorites: mizan.live
 - Background: Brand teal
 - Product image
 - Big star rating overlay
-- Swipe up to mizan.live
+- Swipe up to foodatease.com
 
 ### Story 2: Before/After
-- "What they say" vs "What Mizan says"
+- "What they say" vs "What FoodAtEase says"
 - Split screen
 - Marketing claim vs actual rating
 
@@ -259,7 +259,7 @@ Great question! We use FSSAI's Indian Nutrition Rating (INR) guidelines.
 
 We look at sodium, sugar, saturated fat, and calories per 100g, then compare to ICMR daily limits.
 
-More details: mizan.live/hum/tareeka
+More details: foodatease.com/hum/tareeka
 ```
 
 ### When brands complain
@@ -273,7 +273,7 @@ We'd be happy to update if there's newer data. Please share official nutrition f
 ```
 Added to our list! 📝
 
-Meanwhile, you can check 5,000+ products already rated at mizan.live
+Meanwhile, you can check 5,000+ products already rated at foodatease.com
 
 What product should we add next?
 ```
@@ -323,10 +323,10 @@ What product should we add next?
 ## Download Links
 
 After deployment, images will be at:
-- https://mizan.live/social-media/shared/profile-pic.png
-- https://mizan.live/social-media/twitter/header.png
-- https://mizan.live/social-media/instagram/launch-post.png
-- https://mizan.live/social-media/instagram/post-template.png
+- https://foodatease.com/social-media/shared/profile-pic.png
+- https://foodatease.com/social-media/twitter/header.png
+- https://foodatease.com/social-media/instagram/launch-post.png
+- https://foodatease.com/social-media/instagram/post-template.png
 
 ---
 

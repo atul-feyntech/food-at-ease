@@ -1,5 +1,5 @@
 """
-Mizan Roast Generator - AWS Lambda Function
+FoodAtEase Roast Generator - AWS Lambda Function
 Generates AI roasts for products using Gemini REST API.
 """
 
@@ -17,7 +17,7 @@ def get_secret(secret_name):
     response = secrets_client.get_secret_value(SecretId=secret_name)
     return response['SecretString']
 
-SYSTEM_PROMPT = """You are Mizan, a brutally honest food analyst for Indian packaged foods.
+SYSTEM_PROMPT = """You are FoodAtEase, a brutally honest food analyst for Indian packaged foods.
 Your job is to write short, witty verdicts ("roasts") that expose the truth about products.
 
 Guidelines:
@@ -77,7 +77,7 @@ def generate_roast(api_key, product):
     context = f"""
 Product: {product['name']}
 Brand: {product['brand']}
-MIZAN SCORE: {score.get('stars', 'N/A')} stars (Grade {score.get('grade', 'N/A')})
+FOODATEASE SCORE: {score.get('stars', 'N/A')} stars (Grade {score.get('grade', 'N/A')})
 
 NUTRITION (per 100g):
 - Energy: {nutrients.get('energy_kcal', 'N/A')} kcal
@@ -89,7 +89,7 @@ NUTRITION (per 100g):
 Limiting Factors: {', '.join(score.get('limiting_factors', []))}
 """
 
-    prompt = f"""Based on this product data, write a witty Mizan verdict:
+    prompt = f"""Based on this product data, write a witty FoodAtEase verdict:
 {context}
 Remember: Be factual, witty, and use Hinglish naturally. Output ONLY valid JSON."""
 
@@ -151,7 +151,7 @@ def lambda_handler(event, context):
         return {
             'statusCode': 200,
             'body': json.dumps({
-                'message': 'Mizan Roast Generator Lambda',
+                'message': 'FoodAtEase Roast Generator Lambda',
                 'usage': 'Pass s3_bucket/s3_key or products_data in event',
                 'example': {
                     's3_bucket': 'mizan-data-894140384556',

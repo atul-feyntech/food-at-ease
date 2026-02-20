@@ -11,7 +11,7 @@ from pathlib import Path
 
 API_KEY = "AIzaSyB_5Izc9B4qOfC7RcgYTu3PuhvwXGV2V00"
 
-SYSTEM_PROMPT = """You are Mizan, a brutally honest food analyst for Indian packaged foods.
+SYSTEM_PROMPT = """You are FoodAtEase, a brutally honest food analyst for Indian packaged foods.
 Your job is to write short, witty verdicts ("roasts") that expose the truth about products.
 
 Guidelines:
@@ -55,11 +55,11 @@ def generate_roast(product):
     nutrients = product.get('nutrients', {})
     score = product.get('mizan_score', {})
 
-    prompt = f"""Generate a Mizan verdict for this product:
+    prompt = f"""Generate a FoodAtEase verdict for this product:
 
 Product: {product['name']}
 Brand: {product['brand']}
-MIZAN SCORE: {score.get('stars', 'N/A')} stars (Grade {score.get('grade', 'N/A')})
+FOODATEASE SCORE: {score.get('stars', 'N/A')} stars (Grade {score.get('grade', 'N/A')})
 
 NUTRITION (per 100g):
 - Energy: {nutrients.get('energy_kcal', 'N/A')} kcal

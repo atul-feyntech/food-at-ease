@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Mizan Score Calculator
+FoodAtEase Score Calculator
 Implements FSSAI Indian Nutrition Rating (INR) algorithm
 Based on ICMR-NIN 2024 guidelines
 

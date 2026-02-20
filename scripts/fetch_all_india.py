@@ -64,7 +64,7 @@ def fetch_page(page, page_size=100):
 
     try:
         req = urllib.request.Request(url)
-        req.add_header('User-Agent', 'Mizan/1.0 (https://mizan.live)')
+        req.add_header('User-Agent', 'FoodAtEase/1.0 (https://foodatease.com)')
         with urllib.request.urlopen(req, timeout=60) as resp:
             data = json.loads(resp.read().decode('utf-8'))
             return data.get('products', []), data.get('count', 0)

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Mizan Roast Generator
+FoodAtEase Roast Generator
 Uses Gemini AI to generate witty, factual verdicts for food products.
 
 Usage:
@@ -30,7 +30,7 @@ except ImportError:
     sys.exit(1)
 
 
-SYSTEM_PROMPT = """You are Mizan, a brutally honest food analyst for Indian packaged foods.
+SYSTEM_PROMPT = """You are FoodAtEase, a brutally honest food analyst for Indian packaged foods.
 Your job is to write short, witty verdicts ("roasts") that expose the truth about products.
 
 Guidelines:
@@ -71,7 +71,7 @@ Brand: {product['brand']}
 Category: {product['category']}
 Package Size: {product.get('package_size_g', 'N/A')}g
 
-MIZAN SCORE: {score.get('stars', 'N/A')} stars (Grade {score.get('grade', 'N/A')})
+FOODATEASE SCORE: {score.get('stars', 'N/A')} stars (Grade {score.get('grade', 'N/A')})
 INR Score: {score.get('inr_score', 'N/A')} (lower is better)
 Limiting Factors: {', '.join(score.get('limiting_factors', []))}
 
@@ -103,7 +103,7 @@ def generate_roast(product: dict, model, dry_run: bool = False) -> dict | None:
     """Generate a roast for a single product."""
     context = get_product_context(product)
 
-    prompt = f"""Based on this product data, write a witty Mizan verdict:
+    prompt = f"""Based on this product data, write a witty FoodAtEase verdict:
 
 {context}
 
@@ -151,7 +151,7 @@ Remember: Be factual, witty, and use Hinglish naturally. Output ONLY valid JSON.
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate Mizan roasts using Gemini AI")
+    parser = argparse.ArgumentParser(description="Generate FoodAtEase roasts using Gemini AI")
     parser.add_argument("--dry-run", action="store_true", help="Print prompts without API calls")
     parser.add_argument("--product", type=str, help="Only process specific product slug")
     parser.add_argument("--force", action="store_true", help="Regenerate even if approved")

@@ -9,7 +9,7 @@
   <text x="200" y="180" font-size="100" text-anchor="middle" fill="white">⚖️</text>
 
   <!-- Brand name -->
-  <text x="200" y="280" font-family="Georgia, serif" font-size="72" font-weight="bold" text-anchor="middle" fill="white">MIZAN</text>
+  <text x="200" y="280" font-family="Georgia, serif" font-size="72" font-weight="bold" text-anchor="middle" fill="white">FOODATEASE</text>
 
   <!-- Urdu text -->
   <text x="200" y="330" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#C9A227">میزان</text>

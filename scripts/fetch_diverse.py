@@ -78,7 +78,7 @@ def search(query, page_size=30):
 
     try:
         req = urllib.request.Request(url)
-        req.add_header('User-Agent', 'Mizan/1.0')
+        req.add_header('User-Agent', 'FoodAtEase/1.0')
         with urllib.request.urlopen(req, timeout=30) as resp:
             return json.loads(resp.read().decode('utf-8')).get('products', [])
     except:

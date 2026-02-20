@@ -21,7 +21,7 @@
   </g>
 
   <!-- Brand name -->
-  <text x="600" y="320" font-family="Georgia, serif" font-size="96" font-weight="bold" text-anchor="middle" fill="white">MIZAN</text>
+  <text x="600" y="320" font-family="Georgia, serif" font-size="96" font-weight="bold" text-anchor="middle" fill="white">FOODATEASE</text>
 
   <!-- Tagline -->
   <text x="600" y="400" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#C9A227">Measure, then Eat.</text>

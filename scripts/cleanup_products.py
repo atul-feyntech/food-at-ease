@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Mizan Product Data Cleanup
+FoodAtEase Product Data Cleanup
 Removes duplicates, fixes data quality issues, and filters incomplete products.
 """
 
