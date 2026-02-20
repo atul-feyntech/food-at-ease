@@ -8,7 +8,7 @@ const products = productsData.products as Product[];
 
 // Sort by worst score
 const worstProducts = [...products]
-  .sort((a, b) => a.mizan_score.stars - b.mizan_score.stars)
+  .sort((a, b) => a.foodatease_score.stars - b.foodatease_score.stars)
   .slice(0, 20);
 ---
 

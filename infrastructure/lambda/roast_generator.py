@@ -72,7 +72,7 @@ def call_gemini_api(api_key, prompt):
 def generate_roast(api_key, product):
     """Generate a roast for a single product."""
     nutrients = product.get('nutrients', {})
-    score = product.get('mizan_score', {})
+    score = product.get('foodatease_score', {})
 
     context = f"""
 Product: {product['name']}
@@ -131,7 +131,7 @@ def lambda_handler(event, context):
     print(f"Event: {json.dumps(event)}")
 
     # Get API key from Secrets Manager
-    api_key = get_secret('mizan/gemini-api-key')
+    api_key = get_secret('foodatease/gemini-api-key')
 
     # Get products data from S3 or event
     s3_bucket = event.get('s3_bucket')
@@ -154,7 +154,7 @@ def lambda_handler(event, context):
                 'message': 'FoodAtEase Roast Generator Lambda',
                 'usage': 'Pass s3_bucket/s3_key or products_data in event',
                 'example': {
-                    's3_bucket': 'mizan-data-894140384556',
+                    's3_bucket': 'foodatease-data-894140384556',
                     's3_key': 'products.json',
                     'product_slug': 'optional-specific-product',
                     'force': False

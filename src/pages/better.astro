@@ -8,7 +8,7 @@ const products = productsData.products as Product[];
 
 // Sort by best score
 const bestProducts = [...products]
-  .sort((a, b) => b.mizan_score.stars - a.mizan_score.stars)
+  .sort((a, b) => b.foodatease_score.stars - a.foodatease_score.stars)
   .slice(0, 20);
 ---
 

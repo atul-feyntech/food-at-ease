@@ -28,7 +28,7 @@ const products = productsData.products as Product[];
       <div class="grid md:grid-cols-2 gap-6 mb-8 max-w-4xl mx-auto">
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-2">Product 1</label>
-          <select id="product1" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mizan-teal focus:border-mizan-teal">
+          <select id="product1" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fae-teal focus:border-fae-teal">
             <option value="">Select product...</option>
             {products.map((p) => (
               <option value={p.slug}>{p.name} ({p.brand})</option>
@@ -37,7 +37,7 @@ const products = productsData.products as Product[];
         </div>
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-2">Product 2</label>
-          <select id="product2" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mizan-teal focus:border-mizan-teal">
+          <select id="product2" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fae-teal focus:border-fae-teal">
             <option value="">Select product...</option>
             {products.map((p) => (
               <option value={p.slug}>{p.name} ({p.brand})</option>
@@ -60,7 +60,7 @@ const products = productsData.products as Product[];
             </div>
           </div>
 
-          <!-- Mizan Score -->
+          <!-- FoodAtEase Score -->
           <div class="grid grid-cols-3 border-b border-gray-100">
             <div class="p-4 font-medium text-gray-700">FoodAtEase Score</div>
             <div class="p-4 text-center border-l border-gray-100">
@@ -161,14 +161,14 @@ const products = productsData.products as Product[];
         </div>
 
         <!-- Verdict -->
-        <div id="verdict" class="mt-6 p-6 bg-mizan-teal/10 border border-mizan-teal/30 rounded-xl text-center hidden">
-          <p class="text-lg font-medium text-mizan-teal" id="verdict-text"></p>
+        <div id="verdict" class="mt-6 p-6 bg-fae-teal/10 border border-fae-teal/30 rounded-xl text-center hidden">
+          <p class="text-lg font-medium text-fae-teal" id="verdict-text"></p>
         </div>
 
         <!-- Links -->
         <div class="mt-6 flex justify-center gap-4">
-          <a id="link1" href="#" class="text-mizan-teal hover:underline">View Product 1 →</a>
-          <a id="link2" href="#" class="text-mizan-teal hover:underline">View Product 2 →</a>
+          <a id="link1" href="#" class="text-fae-teal hover:underline">View Product 1 →</a>
+          <a id="link2" href="#" class="text-fae-teal hover:underline">View Product 2 →</a>
         </div>
       </div>
 
@@ -247,17 +247,17 @@ const products = productsData.products as Product[];
     document.getElementById('name2').textContent = p2.name;
 
     // Update scores
-    document.getElementById('score1').textContent = `${p1.mizan_score.stars}★`;
-    document.getElementById('score2').textContent = `${p2.mizan_score.stars}★`;
-    highlightBetter('score1', 'score2', p1.mizan_score.stars, p2.mizan_score.stars, false);
+    document.getElementById('score1').textContent = `${p1.foodatease_score.stars}★`;
+    document.getElementById('score2').textContent = `${p2.foodatease_score.stars}★`;
+    highlightBetter('score1', 'score2', p1.foodatease_score.stars, p2.foodatease_score.stars, false);
 
     // Update grades
     const grade1El = document.getElementById('grade1');
     const grade2El = document.getElementById('grade2');
-    grade1El.textContent = p1.mizan_score.grade;
-    grade2El.textContent = p2.mizan_score.grade;
-    grade1El.className = `px-3 py-1 rounded-full text-sm font-bold ${getGradeClass(p1.mizan_score.grade)}`;
-    grade2El.className = `px-3 py-1 rounded-full text-sm font-bold ${getGradeClass(p2.mizan_score.grade)}`;
+    grade1El.textContent = p1.foodatease_score.grade;
+    grade2El.textContent = p2.foodatease_score.grade;
+    grade1El.className = `px-3 py-1 rounded-full text-sm font-bold ${getGradeClass(p1.foodatease_score.grade)}`;
+    grade2El.className = `px-3 py-1 rounded-full text-sm font-bold ${getGradeClass(p2.foodatease_score.grade)}`;
 
     // Update safe limits
     document.getElementById('limit1').textContent = `${p1.safe_limit.recommended_serving_g}g`;
@@ -297,14 +297,14 @@ const products = productsData.products as Product[];
     const verdictEl = document.getElementById('verdict');
     const verdictText = document.getElementById('verdict-text');
 
-    if (p1.mizan_score.stars > p2.mizan_score.stars) {
-      verdictText.textContent = `✅ ${p1.name} is better — ${p1.mizan_score.stars}★ vs ${p2.mizan_score.stars}★`;
+    if (p1.foodatease_score.stars > p2.foodatease_score.stars) {
+      verdictText.textContent = `✅ ${p1.name} is better — ${p1.foodatease_score.stars}★ vs ${p2.foodatease_score.stars}★`;
       verdictEl.classList.remove('hidden');
-    } else if (p2.mizan_score.stars > p1.mizan_score.stars) {
-      verdictText.textContent = `✅ ${p2.name} is better — ${p2.mizan_score.stars}★ vs ${p1.mizan_score.stars}★`;
+    } else if (p2.foodatease_score.stars > p1.foodatease_score.stars) {
+      verdictText.textContent = `✅ ${p2.name} is better — ${p2.foodatease_score.stars}★ vs ${p1.foodatease_score.stars}★`;
       verdictEl.classList.remove('hidden');
     } else {
-      verdictText.textContent = `Both have the same score — ${p1.mizan_score.stars}★. Check details!`;
+      verdictText.textContent = `Both have the same score — ${p1.foodatease_score.stars}★. Check details!`;
       verdictEl.classList.remove('hidden');
     }
   }

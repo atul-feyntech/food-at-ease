@@ -62,7 +62,7 @@ Output format: Return ONLY a JSON object with these fields:
 def get_product_context(product: dict) -> str:
     """Generate context string for a product."""
     nutrients = product.get("nutrients", {})
-    score = product.get("mizan_score", {})
+    score = product.get("foodatease_score", {})
     safe_limit = product.get("safe_limit", {})
 
     context = f"""

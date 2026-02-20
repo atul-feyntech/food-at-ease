@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
-/* Mizan Brand Colors */
+/* FoodAtEase Brand Colors */
 @theme {
   /* Primary Colors */
-  --color-mizan-blue: #2563EB;
+  --color-fae-blue: #2563EB;
   /* Royal Blue */
-  --color-mizan-blue-light: #60A5FA;
+  --color-fae-blue-light: #60A5FA;
   /* Blue 400 */
-  --color-mizan-blue-dark: #1E40AF;
+  --color-fae-blue-dark: #1E40AF;
   /* Blue 800 */
 
   /* Background */
@@ -67,12 +67,12 @@ h6 {
 
 
 /* Utility Classes */
-.text-mizan-blue {
-  color: var(--color-mizan-blue);
+.text-fae-blue {
+  color: var(--color-fae-blue);
 }
 
-.bg-mizan-blue {
-  background-color: var(--color-mizan-blue);
+.bg-fae-blue {
+  background-color: var(--color-fae-blue);
 }
 
 .text-warm-white {
@@ -132,20 +132,20 @@ h6 {
   background-color: var(--color-amber-light);
 }
 
-.text-mizan-blue-light {
-  color: var(--color-mizan-blue-light);
+.text-fae-blue-light {
+  color: var(--color-fae-blue-light);
 }
 
-.bg-mizan-blue-light {
-  background-color: var(--color-mizan-blue-light);
+.bg-fae-blue-light {
+  background-color: var(--color-fae-blue-light);
 }
 
-.text-mizan-blue-dark {
-  color: var(--color-mizan-blue-dark);
+.text-fae-blue-dark {
+  color: var(--color-fae-blue-dark);
 }
 
-.bg-mizan-blue-dark {
-  background-color: var(--color-mizan-blue-dark);
+.bg-fae-blue-dark {
+  background-color: var(--color-fae-blue-dark);
 }
 
 .text-gold-light {
@@ -173,12 +173,12 @@ h6 {
   background-color: var(--color-amber-light);
 }
 
-.hover\:bg-mizan-blue-light:hover {
-  background-color: var(--color-mizan-blue-light);
+.hover\:bg-fae-blue-light:hover {
+  background-color: var(--color-fae-blue-light);
 }
 
-.hover\:bg-mizan-blue-dark:hover {
-  background-color: var(--color-mizan-blue-dark);
+.hover\:bg-fae-blue-dark:hover {
+  background-color: var(--color-fae-blue-dark);
 }
 
 .hover\:text-green-light:hover {
@@ -189,8 +189,8 @@ h6 {
   color: var(--color-amber-light);
 }
 
-.hover\:text-mizan-blue-light:hover {
-  color: var(--color-mizan-blue-light);
+.hover\:text-fae-blue-light:hover {
+  color: var(--color-fae-blue-light);
 }
 
 /* Star Rating */
@@ -258,7 +258,7 @@ h6 {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 2px solid var(--color-mizan-blue);
+  outline: 2px solid var(--color-fae-blue);
   outline-offset: 2px;
 }
 
@@ -273,10 +273,10 @@ textarea:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-mizan-blue);
+  background: var(--color-fae-blue);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-mizan-blue-dark);
+  background: var(--color-fae-blue-dark);
 }

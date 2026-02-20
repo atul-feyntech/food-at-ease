@@ -244,7 +244,7 @@ Check your favorites: foodatease.com
 - Day 7: Weekend roundup
 
 ### Ongoing Weekly
-- Monday: #MizanMonday - Worst rated product of the week
+- Monday: #FoodAtEaseMonday - Worst rated product of the week
 - Wednesday: #WinnerWednesday - Best alternative
 - Friday: #FaceOffFriday - Product comparison
 - Saturday: User choice poll
@@ -283,7 +283,7 @@ What product should we add next?
 ## Visual Guidelines
 
 ### Colors
-- Primary: #0D5C63 (Mizan Teal)
+- Primary: #0D5C63 (FoodAtEase Teal)
 - Accent: #C9A227 (Gold)
 - Safe: #4A7C59 (Green)
 - Warning: #E8871E (Amber)
@@ -295,7 +295,7 @@ What product should we add next?
 - Body: Inter (or system sans-serif)
 
 ### Emoji Usage
-- ⚖️ - Mizan brand
+- ⚖️ - FoodAtEase brand
 - ⭐ - Ratings
 - ✅ - Good/Safe
 - ⚠️ - Warning
@@ -330,4 +330,4 @@ After deployment, images will be at:
 
 ---
 
-*Generated for Mizan - Ab tolo, phir khao.*
+*Generated for FoodAtEase - Ab tolo, phir khao.*

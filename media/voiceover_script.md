@@ -1,24 +1,24 @@
-# Mizan: The Scale of Truth for Indian Packaged Food - Video Script & Report
+# FoodAtEase: The Scale of Truth for Indian Packaged Food - Video Script & Report
 
 ## Video Concept
-**Title**: Introducing Mizan (میزان)
-**Visual Style**: Clean, fast-paced screencast of the mizan.live website (or local build).
+**Title**: Introducing FoodAtEase (FoodAtEase)
+**Visual Style**: Clean, fast-paced screencast of the foodatease.com website (or local build).
 **Voiceover Tone**: Knowledgeable, direct, slightly witty ("The Roast" style), trustworthy. Like a "smart elder" or a "no-nonsense doctor".
 
 ---
 
 ## section 1: Introduction (0:00 - 0:45)
 
-**(Visual: Homepage of Mizan. Shows the Logo, the search bar, and the tagline "Ab tolo, phir khao".)**
+**(Visual: Homepage of FoodAtEase. Shows the Logo, the search bar, and the tagline "Ab tolo, phir khao".)**
 
 **Voiceover**:
-"Welcome to Mizan. In Urdu and Arabic, 'Mizan' means 'The Scale' or 'Balance'. It refers to an instrument of perfect justice—nothing hidden, nothing inflated.
+"Welcome to FoodAtEase. In Urdu and Arabic, 'FoodAtEase' means 'The Scale' or 'Balance'. It refers to an instrument of perfect justice—nothing hidden, nothing inflated.
 
-We built Mizan with a singular purpose: to bringing that same uncompromising transparency to the packaged food we eat every day in India.
+We built FoodAtEase with a singular purpose: to bringing that same uncompromising transparency to the packaged food we eat every day in India.
 
 We are facing a crisis. 73% of Indians are protein deficient. Diabetes affects nearly 90 million of us. Yet, our food labels are confusing, misleading, and often hide the truth behind marketing jargon.
 
-Mizan changes that. We weigh your food’s true worth against your health."
+FoodAtEase changes that. We weigh your food’s true worth against your health."
 
 ---
 
@@ -41,22 +41,22 @@ Mizan changes that. We weigh your food’s true worth against your health."
 **(Visual: Click on a product result, e.g., 'Maggi 2-Minute Noodles' or a high-sugar drink. The Product Page loads instantly.)**
 
 **Voiceover**:
-"Let's look at the heart of Mizan: The Product Page.
+"Let's look at the heart of FoodAtEase: The Product Page.
 
-**(Visual: Highlight the Star Rating and the 'Mizan Score'.)**
+**(Visual: Highlight the Star Rating and the 'FoodAtEase Score'.)**
 
 **Voiceover**:
-"First, the **Mizan Score**. This isn't a paid review. It's a calculated rating based on the FSSAI's Indian Nutrition Rating and ICMR guidelines. 1.5 stars. The scale doesn't lie.
+"First, the **FoodAtEase Score**. This isn't a paid review. It's a calculated rating based on the FSSAI's Indian Nutrition Rating and ICMR guidelines. 1.5 stars. The scale doesn't lie.
 
 **(Visual: Highlight 'Roz ki Hadd' - Daily Limit section.)**
 
 **Voiceover**:
 "Next, **'Roz ki Hadd'**. We tell you exactly how much is safe. '45 grams'. That's half a packet. Eat more, and you're borrowing health from your future self.
 
-**(Visual: Scroll to 'Mizan ka Faisla' - The Verdict/Roast.)**
+**(Visual: Scroll to 'FoodAtEase ka Faisla' - The Verdict/Roast.)**
 
 **Voiceover**:
-"And here is **'Mizan ka Faisla'**—our verdict. We don't sugarcoat it.
+"And here is **'FoodAtEase ka Faisla'**—our verdict. We don't sugarcoat it.
 *'Ready in 2 minutes, heart patient in 2 decades.'*
 We translate the data into plain, sometimes harsh, English and Urdu. If a 'health drink' is mostly sugar, we'll tell you you're buying expensive sugar water."
 
@@ -81,14 +81,14 @@ We translate the data into plain, sometimes harsh, English and Urdu. If a 'healt
 **(Visual: Briefly switch to VS Code or Terminal showing the project structure/build process.)**
 
 **Voiceover**:
-"Under the hood, Mizan is as efficient as it is honest. It's built with **Astro**.
+"Under the hood, FoodAtEase is as efficient as it is honest. It's built with **Astro**.
 
 Why Astro? Because speed matters. This is a static site. It loads instantly, even on slower 4G connections across India. We don't need heavy servers or complex backends.
 
 **(Visual: Show `package.json` or the GitHub repo page.)**
 
 **Voiceover**:
-"It's Open Source. The data comes from Open Food Facts and our community contributors. The entire project is hosted on GitHub Pages, costing almost nothing to run. This ensures Mizan remains independent—no corporate sponsors, no conflicts of interest."
+"It's Open Source. The data comes from Open Food Facts and our community contributors. The entire project is hosted on GitHub Pages, costing almost nothing to run. This ensures FoodAtEase remains independent—no corporate sponsors, no conflicts of interest."
 
 ---
 
@@ -97,11 +97,11 @@ Why Astro? Because speed matters. This is a static site. It loads instantly, eve
 **(Visual: Back to the Website Homepage. Scroll to the footer 'Contribute' link.)**
 
 **Voiceover**:
-"Mizan is a movement. We need translations in Tamil, Telugu, Hindi, Bengali. We need you to add products.
+"FoodAtEase is a movement. We need translations in Tamil, Telugu, Hindi, Bengali. We need you to add products.
 
 The scale is ready.
 **Ab tolo, phir khao.** (Now weigh it, then eat it).
 
-Visit mizan.live or check out the code on GitHub."
+Visit foodatease.com or check out the code on GitHub."
 
 ---

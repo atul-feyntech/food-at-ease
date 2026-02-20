@@ -53,7 +53,7 @@ def call_gemini(prompt):
 
 def generate_roast(product):
     nutrients = product.get('nutrients', {})
-    score = product.get('mizan_score', {})
+    score = product.get('foodatease_score', {})
 
     prompt = f"""Generate a FoodAtEase verdict for this product:
 

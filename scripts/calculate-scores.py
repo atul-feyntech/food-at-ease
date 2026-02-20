@@ -327,7 +327,7 @@ def calculate_safe_limit(nutrients: dict, package_size_g: float) -> dict:
 
 def process_product(product: dict) -> dict:
     """
-    Process a single product and add/update Mizan score data.
+    Process a single product and add/update FoodAtEase score data.
     """
     nutrients = product.get("nutrients", {})
     package_size = product.get("package_size_g", 100)
@@ -338,8 +338,8 @@ def process_product(product: dict) -> dict:
     grade = score_to_grade(stars)
     limiting_factors = get_limiting_factors(nutrients)
 
-    # Update mizan_score
-    product["mizan_score"] = {
+    # Update foodatease_score
+    product["foodatease_score"] = {
         "stars": stars,
         "grade": grade,
         "inr_score": inr_score,
@@ -383,7 +383,7 @@ def main():
     for i, product in enumerate(products):
         product = process_product(product)
         products[i] = product
-        print(f"  Processed: {product['name']} -> {product['mizan_score']['stars']} stars ({product['mizan_score']['grade']})")
+        print(f"  Processed: {product['name']} -> {product['foodatease_score']['stars']} stars ({product['foodatease_score']['grade']})")
 
     # Save results
     data["products"] = products

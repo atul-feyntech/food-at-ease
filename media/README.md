@@ -1,10 +1,10 @@
-# Mizan Video Demo & Report
+# FoodAtEase Video Demo & Report
 
-This directory contains the video demonstration and the accompanying voiceover script for Mizan.
+This directory contains the video demonstration and the accompanying voiceover script for FoodAtEase.
 
 ## Video Demo
 
-![Mizan Demo](./mizan_demo.webp)
+![FoodAtEase Demo](./foodatease_demo.webp)
 
 ## Resources
 

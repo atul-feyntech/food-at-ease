@@ -64,7 +64,7 @@ export interface IngredientAnalysis {
 
 export type Grade = 'A' | 'B' | 'C' | 'D' | 'F';
 
-export interface MizanScore {
+export interface FoodAtEaseScore {
   stars: number;                      // 0.5 to 5, in 0.5 increments
   baseline_points: number;            // Bad stuff score (energy, sugar, sodium, sat fat)
   modifying_points: number;           // Good stuff score (protein, fiber)
@@ -149,7 +149,7 @@ export interface Product {
   ingredients_analysis: IngredientAnalysis;
 
   // FoodAtEase Ratings
-  mizan_score: MizanScore;
+  foodatease_score: FoodAtEaseScore;
   safe_limit: SafeLimit;
   roast: Roast;
 

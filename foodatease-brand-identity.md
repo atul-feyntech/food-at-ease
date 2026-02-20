@@ -1,11 +1,11 @@
-# MIZAN
+# FOODATEASE
 ### Brand Identity & Platform Guide
 
 ---
 
 # THE NAME
 
-**Mizan** — "Scale" or "Balance"
+**FoodAtEase** — "Scale" or "Balance"
 
 For a food transparency platform, it's perfect:
 
@@ -33,7 +33,7 @@ For a food transparency platform, it's perfect:
 ### For Social Media / Campaigns
 - "Weigh it. Decide."
 - "What's this packet worth — health-wise?"
-- "Don't look at marketing, look at Mizan."
+- "Don't look at marketing, look at FoodAtEase."
 
 ---
 
@@ -45,7 +45,7 @@ For a food transparency platform, it's perfect:
 ┌─────────────────────────────────────────────┐
 │                                             │
 │            [ M✓ ]                           │
-│            MIZAN                            │
+│            FOODATEASE                            │
 │                                             │
 └─────────────────────────────────────────────┘
 
@@ -58,10 +58,10 @@ For a food transparency platform, it's perfect:
 
 ### Logo Variations
 
-1. **Full Logo**: Icon + "MIZAN" text
+1. **Full Logo**: Icon + "FOODATEASE" text
 2. **Icon Only**: The Checked M (for favicons, app icons)
 
-4. **Wordmark Only**: "MIZAN" in custom typography
+4. **Wordmark Only**: "FOODATEASE" in custom typography
 
 ## Color Palette
 
@@ -77,7 +77,7 @@ For a food transparency platform, it's perfect:
 ### Why These Colors?
 - **Blue** — Trust, authority, clarity.
 - **Warm, grounded** — Honest advice.
-- **Gold for the scale** — Mizan as a standard.
+- **Gold for the scale** — FoodAtEase as a standard.
 
 ## Typography
 
@@ -91,9 +91,9 @@ For a food transparency platform, it's perfect:
 
 # VOICE & TONE
 
-## The Mizan Persona
+## The FoodAtEase Persona
 
-**Mizan speaks like:** A sharp, educated expert who's seen through the nonsense. Not angry, but not suffering fools.
+**FoodAtEase speaks like:** A sharp, educated expert who's seen through the nonsense. Not angry, but not suffering fools.
 
 ### Voice Attributes
 
@@ -117,10 +117,10 @@ For a food transparency platform, it's perfect:
 
 ---
 
-# WEBSITE STRUCTURE (Updated for Mizan)
+# WEBSITE STRUCTURE (Updated for FoodAtEase)
 
 ```
-mizan.in/
+foodatease.com/
 │
 ├── /                           → Homepage
 │                                 • Search bar (hero)
@@ -131,7 +131,7 @@ mizan.in/
 ├── /search?q=maggi             → Search results
 │
 ├── /product/[slug]             → Product page (THE CORE)
-│                                 • Mizan Score (stars)
+│                                 • FoodAtEase Score (stars)
 │                                 • Safe limit
 │                                 • The Roast
 │                                 • Full breakdown
@@ -147,7 +147,7 @@ mizan.in/
 ├── /compare                    → Side-by-side comparison
 │
 ├── /worst                      → Hall of shame
-│                                 • "Mizan ki nazar mein: sabse bure"
+│                                 • "FoodAtEase ki nazar mein: sabse bure"
 │
 ├── /better                     → Better alternatives
 │                                 • "Yeh try karo instead"
@@ -166,12 +166,12 @@ mizan.in/
 
 ---
 
-# THE PRODUCT PAGE (Mizan Style)
+# THE PRODUCT PAGE (FoodAtEase Style)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  ⚖️ MIZAN                                           [Search]   │
+│  ⚖️ FOODATEASE                                           [Search]   │
 │                                                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
@@ -180,7 +180,7 @@ mizan.in/
 │                                                                 │
 │  ┌─────────────────────────────────────────────────────────┐   │
 │  │                                                         │   │
-│  │   ⚖️ MIZAN SCORE                                        │   │
+│  │   ⚖️ FOODATEASE SCORE                                        │   │
 │  │                                                         │   │
 │  │   ★ ★ ☆ ☆ ☆                                             │   │
 │  │   1.5 / 5                                               │   │
@@ -229,7 +229,7 @@ mizan.in/
 │                                                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│  💀 MIZAN KA FAISLA                                             │
+│  💀 FOODATEASE KA FAISLA                                             │
 │                                                                 │
 │  "Do minute mein tayaar, do decade mein dil ka mareez.          │
 │  Tastemaker packet mein itna sodium hai ke agar bahar           │
@@ -248,7 +248,7 @@ mizan.in/
 │  🔄 BEHTAR OPTIONS                                              │
 │                                                                 │
 │  • Homemade noodles + vegetables — You control the salt         │
-│  • Atta noodles (various brands) — Check Mizan scores           │
+│  • Atta noodles (various brands) — Check FoodAtEase scores           │
 │  • Poha/Upma — Traditional, 70% less sodium                     │
 │                                                                 │
 ├─────────────────────────────────────────────────────────────────┤
@@ -280,8 +280,8 @@ mizan.in/
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
 │                         ⚖️                                      │
-│                       MIZAN                                     │
-│                       میزان                                     │
+│                       FOODATEASE                                     │
+│                       FoodAtEase                                     │
 │                                                                 │
 │              "Ab tolo, phir khao."                              │
 │                                                                 │
@@ -312,7 +312,7 @@ mizan.in/
 │                                                                 │
 │  ───────────────────────────────────────────────────────────── │
 │                                                                 │
-│  🇮🇳 KYUN MIZAN?                                                │
+│  🇮🇳 KYUN FOODATEASE?                                                │
 │                                                                 │
 │  73% Indians protein deficient hain.                            │
 │  57% auraton ko anemia hai.                                     │
@@ -325,7 +325,7 @@ mizan.in/
 │                                                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│  ⚖️ Mizan | Open Source | Free Forever                          │
+│  ⚖️ FoodAtEase | Open Source | Free Forever                          │
 │                                                                 │
 │  GitHub | About | Methodology | Contribute                      │
 │                                                                 │
@@ -334,22 +334,22 @@ mizan.in/
 
 ---
 
-# THE DIALOGUE (UPDATED FOR MIZAN)
+# THE DIALOGUE (UPDATED FOR FOODATEASE)
 
-## Scene 2: Six Months Later — Now Named "Mizan"
+## Scene 2: Six Months Later — Now Named "FoodAtEase"
 
 ---
 
 **PRIYA:**
 Six months ago, Dr. Mehta asked me what I was going to build.
 
-*(She clicks. A clean website appears. The scale logo. The word MIZAN in both English and Urdu.)*
+*(She clicks. A clean website appears. The scale logo. The word FOODATEASE in both English and Urdu.)*
 
-This is Mizan.
+This is FoodAtEase.
 
 *(Beat)*
 
-You know what mizan means? The scale. The balance. In the Quran, it's the scale on which all deeds are weighed on Judgment Day. Nothing hidden. Nothing inflated. The exact truth.
+You know what foodatease means? The scale. The balance. In the Quran, it's the scale on which all deeds are weighed on Judgment Day. Nothing hidden. Nothing inflated. The exact truth.
 
 That's what we built for packaged food.
 
@@ -362,11 +362,11 @@ Let's weigh something.
 **PRIYA:**
 *(Reading from the screen)*
 
-Mizan Score: 1.5 stars.
+FoodAtEase Score: 1.5 stars.
 
 Roz ki hadd: 45 grams. Aadha packet.
 
-Aur yeh hai Mizan ka faisla:
+Aur yeh hai FoodAtEase ka faisla:
 
 *(She reads the roast)*
 
@@ -377,7 +377,7 @@ Aur yeh hai Mizan ka faisla:
 ---
 
 **PRIYA:**
-This isn't an opinion. This is the mizan — the precise measurement of what's in the packet, weighed against what your body can handle.
+This isn't an opinion. This is the foodatease — the precise measurement of what's in the packet, weighed against what your body can handle.
 
 The scale doesn't lie. The scale doesn't have a marketing budget. The scale just... weighs.
 
@@ -386,7 +386,7 @@ The scale doesn't lie. The scale doesn't have a marketing budget. The scale just
 **PRIYA:**
 *(Later in the presentation)*
 
-We called it Mizan because this country needs a new standard. A new scale. Not the scale that companies use — where "healthy" means "we added vitamins to sugar." Not the scale that regulators use — where "legal" means "we haven't banned it yet."
+We called it FoodAtEase because this country needs a new standard. A new scale. Not the scale that companies use — where "healthy" means "we added vitamins to sugar." Not the scale that regulators use — where "legal" means "we haven't banned it yet."
 
 The scale of actual health. The scale of what happens to your body when you eat this every day for ten years.
 
@@ -396,7 +396,7 @@ Now weigh it, then eat it.
 
 *(She gestures to the screen)*
 
-Mizan.in. Har packet ka hisaab.
+FoodAtEase.in. Har packet ka hisaab.
 
 ---
 
@@ -406,24 +406,24 @@ Mizan.in. Har packet ka hisaab.
 
 | Priority | Domain | Status |
 |----------|--------|--------|
-| 1 | **mizan.in** | Check availability |
-| 2 | **mizanfood.in** | Backup |
-| 3 | **mizan.health** | Premium option |
-| 4 | **getmizan.in** | If .in taken |
+| 1 | **foodatease.com** | Check availability |
+| 2 | **foodatease.com** | Backup |
+| 3 | **foodatease.com** | Premium option |
+| 4 | **getfoodatease.com** | If .in taken |
 
 ## Social Handles
 
 | Platform | Handle | Use |
 |----------|--------|-----|
-| Twitter/X | @MizanIndia | Updates, roasts, engagement |
-| Instagram | @mizan.in | Visual product comparisons |
+| Twitter/X | @FoodAtEaseIndia | Updates, roasts, engagement |
+| Instagram | @foodatease.com | Visual product comparisons |
 | WhatsApp | Business account | Share links, updates |
-| YouTube | Mizan India | Video roasts, explanations |
+| YouTube | FoodAtEase India | Video roasts, explanations |
 
 ## Hashtags
 
 - #AbTolo — Primary campaign
-- #MizanScore — When sharing ratings
+- #FoodAtEaseScore — When sharing ratings
 - #PacketKaHisaab — The account of the packet
 - #SachTarazuPar — Truth on the scale
 
@@ -431,26 +431,26 @@ Mizan.in. Har packet ka hisaab.
 
 # LAUNCH ASSETS
 
-## GitHub README (Mizan Edition)
+## GitHub README (FoodAtEase Edition)
 
 ```markdown
-# ⚖️ Mizan — میزان
+# ⚖️ FoodAtEase — FoodAtEase
 
 **The open-source scale for packaged food in India.**
 
-[mizan.in](https://mizan.in) | [Contribute](#contributing)
+[foodatease.com](https://foodatease.com) | [Contribute](#contributing)
 
 ---
 
 ## Ab tolo, phir khao.
 
-Mizan is a free, searchable database of 12,000+ packaged food products sold in India.
+FoodAtEase is a free, searchable database of 12,000+ packaged food products sold in India.
 
-Every product is weighed on the Mizan — the scale of actual health impact.
+Every product is weighed on the FoodAtEase — the scale of actual health impact.
 
-- ⭐ **Mizan Score** — Based on FSSAI's Indian Nutrition Rating
+- ⭐ **FoodAtEase Score** — Based on FSSAI's Indian Nutrition Rating
 - ⚠️ **Roz ki Hadd** — How much you can eat before hitting daily limits
-- 💀 **Mizan ka Faisla** — The honest verdict on what this does to your body
+- 💀 **FoodAtEase ka Faisla** — The honest verdict on what this does to your body
 - 🚫 **Khabardar** — Additives banned elsewhere but legal in India
 
 ## Kyun?
@@ -491,17 +491,17 @@ MIT — Free forever. Fork it. Improve it.
 
 | Element | Decision |
 |---------|----------|
-| **Name** | Mizan (میزان) |
+| **Name** | FoodAtEase (FoodAtEase) |
 | **Meaning** | The Scale / The Balance |
 | **Tagline** | "Ab tolo, phir khao." |
 | **Voice** | Sharp, knowledgeable, Urdu-inflected, never preachy |
 | **Visual** | Deep teal + warm white + gold scale |
-| **Domain** | mizan.in (check availability) |
-| **Core Feature** | "Mizan Score" (the star rating) |
-| **Signature** | "Mizan ka Faisla" (the roast/verdict) |
+| **Domain** | foodatease.com (check availability) |
+| **Core Feature** | "FoodAtEase Score" (the star rating) |
+| **Signature** | "FoodAtEase ka Faisla" (the roast/verdict) |
 
 ---
 
-**Mizan. The scale that doesn't lie.**
+**FoodAtEase. The scale that doesn't lie.**
 
 ⚖️

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import MizanScore from '../../components/product/MizanScore.astro';
+import FoodAtEaseScore from '../../components/product/FoodAtEaseScore.astro';
 import SafeLimit from '../../components/product/SafeLimit.astro';
 import NutritionBar from '../../components/product/NutritionBar.astro';
 import IngredientAnalysis from '../../components/product/IngredientAnalysis.astro';
@@ -52,11 +52,11 @@ const novaGroup = product.nova_group ?? 4;
 const brandSlug = product.brand_slug ?? product.brand?.toLowerCase().replace(/\s+/g, '-') ?? '';
 const dataSource = product.source ?? product.data_source ?? 'Open Food Facts';
 const lastUpdated = product.last_updated ?? new Date().toISOString().split('T')[0];
-const scoreSummary = product.mizan_score?.summary ?? `${product.mizan_score?.stars ?? 0} star rating based on FSSAI guidelines`;
+const scoreSummary = product.foodatease_score?.summary ?? `${product.foodatease_score?.stars ?? 0} star rating based on FSSAI guidelines`;
 ---
 
 <BaseLayout
-  title={`${product.name} - FoodAtEase Score ${product.mizan_score.stars}/5`}
+  title={`${product.name} - FoodAtEase Score ${product.foodatease_score.stars}/5`}
   description={`${product.name} by ${product.brand}: ${scoreSummary}. Safe limit: ${product.safe_limit.recommended_serving_g}g. Honest health rating and verdict.`}
 >
   <article class="py-8 md:py-12">
@@ -64,9 +64,9 @@ const scoreSummary = product.mizan_score?.summary ?? `${product.mizan_score?.sta
 
       <!-- Breadcrumb -->
       <nav class="text-sm text-gray-500 mb-6">
-        <a href="/" class="hover:text-mizan-blue">Home</a>
+        <a href="/" class="hover:text-fae-blue">Home</a>
         <span class="mx-2">›</span>
-        <a href={`/category/${product.category_slug}`} class="hover:text-mizan-blue">{product.category}</a>
+        <a href={`/category/${product.category_slug}`} class="hover:text-fae-blue">{product.category}</a>
         <span class="mx-2">›</span>
         <span class="text-gray-700">{product.name}</span>
       </nav>
@@ -79,9 +79,9 @@ const scoreSummary = product.mizan_score?.summary ?? `${product.mizan_score?.sta
               {product.name}
             </h1>
             <p class="text-gray-600">
-              <span class="hover:text-mizan-blue">{product.brand}</span>
+              <span class="hover:text-fae-blue">{product.brand}</span>
               <span class="mx-2">•</span>
-              <a href={`/category/${product.category_slug}`} class="hover:text-mizan-blue">{product.category}</a>
+              <a href={`/category/${product.category_slug}`} class="hover:text-fae-blue">{product.category}</a>
               <span class="mx-2">•</span>
               {product.package_size_g}g
               {product.price_inr && (
@@ -99,7 +99,7 @@ const scoreSummary = product.mizan_score?.summary ?? `${product.mizan_score?.sta
 
       <!-- FoodAtEase Score -->
       <section class="mb-8">
-        <MizanScore score={product.mizan_score} size="lg" />
+        <FoodAtEaseScore score={product.foodatease_score} size="lg" />
       </section>
 
       <!-- Safe Limit -->
@@ -111,7 +111,7 @@ const scoreSummary = product.mizan_score?.summary ?? `${product.mizan_score?.sta
       <section class="mb-8 bg-white rounded-xl card-shadow p-5">
         <div class="flex items-center gap-2 mb-6">
           <span class="text-2xl">📊</span>
-          <h2 class="font-heading text-xl text-mizan-blue font-bold">
+          <h2 class="font-heading text-xl text-fae-blue font-bold">
             NUTRITION BREAKDOWN
           </h2>
           <span class="text-sm text-gray-400">(per 100g)</span>
@@ -205,8 +205,8 @@ const scoreSummary = product.mizan_score?.summary ?? `${product.mizan_score?.sta
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <ShareButtons
             url={Astro.url.href}
-            title={`${product.name} - FoodAtEase Score: ${product.mizan_score.stars}/5`}
-            text={roast?.verdict_en ?? `${product.name} has a ${product.mizan_score.stars}-star FoodAtEase rating`}
+            title={`${product.name} - FoodAtEase Score: ${product.foodatease_score.stars}/5`}
+            text={roast?.verdict_en ?? `${product.name} has a ${product.foodatease_score.stars}-star FoodAtEase rating`}
           />
 
           <div class="text-sm text-gray-500">
@@ -216,9 +216,9 @@ const scoreSummary = product.mizan_score?.summary ?? `${product.mizan_score?.sta
               Updated: {lastUpdated}
             </p>
             <p class="mt-1">
-              <a href="/hum/tareeka" class="text-mizan-blue hover:underline">Methodology</a>
+              <a href="/hum/tareeka" class="text-fae-blue hover:underline">Methodology</a>
               <span class="mx-2">•</span>
-              <a href="#" class="text-mizan-blue hover:underline">Report Error</a>
+              <a href="#" class="text-fae-blue hover:underline">Report Error</a>
             </p>
           </div>
         </div>

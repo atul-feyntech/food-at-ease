@@ -173,7 +173,7 @@ def is_valid_product(product):
     return has_energy or has_other
 
 def process_product(off_product, existing_slugs):
-    """Convert Open Food Facts product to Mizan format."""
+    """Convert Open Food Facts product to FoodAtEase format."""
     name = off_product.get('product_name', '').strip()
     brand = off_product.get('brands', '').split(',')[0].strip() if off_product.get('brands') else 'Unknown'
 

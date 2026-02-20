@@ -9,7 +9,7 @@ const products = productsData.products as Product[];
 const categories = categoriesData.categories as Category[];
 
 // Sort products by score
-const sortedByScore = [...products].sort((a, b) => a.mizan_score.stars - b.mizan_score.stars);
+const sortedByScore = [...products].sort((a, b) => a.foodatease_score.stars - b.foodatease_score.stars);
 const worstProducts = sortedByScore.slice(0, 4);
 const bestProducts = sortedByScore.slice(-4).reverse();
 
@@ -22,7 +22,7 @@ const searchableProducts = products.slice(0, 500).map(p => ({
   brand: p.brand,
   category: p.category,
   slug: p.slug,
-  stars: p.mizan_score?.stars ?? 0
+  stars: p.foodatease_score?.stars ?? 0
 }));
 ---
 
@@ -31,7 +31,7 @@ const searchableProducts = products.slice(0, 500).map(p => ({
   description="FoodAtEase weighs your packaged food's true health impact. Search 100+ Indian products with honest ratings, safe limits, and witty verdicts. Free forever."
 >
   <!-- Hero Section -->
-  <section class="bg-gradient-to-b from-mizan-blue to-[#094449] text-white py-16 md:py-24">
+  <section class="bg-gradient-to-b from-fae-blue to-[#094449] text-white py-16 md:py-24">
     <div class="container mx-auto px-4 text-center">
       <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-2">FOODATEASE</h1>
       <p class="text-xl md:text-2xl text-white/90 mb-8">Ab tolo, phir khao.</p>
@@ -86,7 +86,7 @@ const searchableProducts = products.slice(0, 500).map(p => ({
               <ProductCard product={product} variant="compact" />
             ))}
           </div>
-          <a href="/worst" class="inline-flex items-center gap-1 mt-4 text-mizan-blue hover:text-mizan-blue-dark font-medium text-sm">
+          <a href="/worst" class="inline-flex items-center gap-1 mt-4 text-fae-blue hover:text-fae-blue-dark font-medium text-sm">
             See all <span>→</span>
           </a>
         </div>
@@ -122,7 +122,7 @@ const searchableProducts = products.slice(0, 500).map(p => ({
         {categories.map((category) => (
           <a
             href={`/category/${category.slug}`}
-            class="flex items-center gap-2 px-4 py-2 bg-warm-white rounded-full hover:bg-mizan-blue hover:text-white transition-colors border border-gray-200"
+            class="flex items-center gap-2 px-4 py-2 bg-warm-white rounded-full hover:bg-fae-blue hover:text-white transition-colors border border-gray-200"
           >
             <span>{category.icon}</span>
             <span>{category.name}</span>
@@ -133,9 +133,9 @@ const searchableProducts = products.slice(0, 500).map(p => ({
   </section>
 
   <!-- Why FoodAtEase Section -->
-  <section class="py-12 md:py-16 bg-mizan-blue/5">
+  <section class="py-12 md:py-16 bg-fae-blue/5">
     <div class="container mx-auto px-4 max-w-3xl text-center">
-      <h2 class="font-heading text-2xl md:text-3xl font-bold text-mizan-blue mb-8">🇮🇳 WHY FOODATEASE?</h2>
+      <h2 class="font-heading text-2xl md:text-3xl font-bold text-fae-blue mb-8">🇮🇳 WHY FOODATEASE?</h2>
       <div class="grid md:grid-cols-3 gap-6 mb-8">
         <div class="bg-white p-6 rounded-xl card-shadow">
           <div class="text-3xl font-bold text-red-critical mb-2">73%</div>
@@ -154,7 +154,7 @@ const searchableProducts = products.slice(0, 500).map(p => ({
         And what we are eating — the truth is hidden in the labels.<br />
         We are making that truth understandable.
       </p>
-      <a href="/hum" class="inline-flex items-center gap-2 text-mizan-blue hover:text-mizan-blue-dark font-medium">
+      <a href="/hum" class="inline-flex items-center gap-2 text-fae-blue hover:text-fae-blue-dark font-medium">
         Read more <span>→</span>
       </a>
     </div>
@@ -163,7 +163,7 @@ const searchableProducts = products.slice(0, 500).map(p => ({
   <!-- Browse Products CTA -->
   <section class="py-12 md:py-16">
     <div class="container mx-auto px-4">
-      <div class="bg-gradient-to-r from-mizan-blue to-mizan-blue-dark rounded-2xl p-8 md:p-12 text-white text-center">
+      <div class="bg-gradient-to-r from-fae-blue to-fae-blue-dark rounded-2xl p-8 md:p-12 text-white text-center">
         <div class="text-4xl mb-4">📦</div>
         <h2 class="font-heading text-2xl md:text-3xl font-bold mb-2">{products.length.toLocaleString()}+ Products</h2>
         <p class="text-white/80 mb-6 max-w-md mx-auto">
@@ -172,7 +172,7 @@ const searchableProducts = products.slice(0, 500).map(p => ({
         <div class="flex flex-wrap justify-center gap-4">
           <button
             data-search-trigger
-            class="px-6 py-3 bg-white text-mizan-blue rounded-full font-medium hover:bg-gold-accent hover:text-white transition-colors"
+            class="px-6 py-3 bg-white text-fae-blue rounded-full font-medium hover:bg-gold-accent hover:text-white transition-colors"
           >
             🔍 Search Products
           </button>
